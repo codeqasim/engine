@@ -1,0 +1,18 @@
+{
+  "InvalidData": null,
+  "Booking": null,
+  "ResponseInfo": {
+    "EchoToken": null,
+    "Error": {
+      "RecordId": null,
+      "FullText": "[MissingField, TTI.PublicApi.Services.Server.Common.PublicApiException, TTI.PublicApi.Services, Business, 0]:\r\nTTI.PublicApi.Services.Server.Common.PublicApiException: Missing field RefCustomer.\r\n   at TTI.PublicApi.Services.Server.Connectors.Nbe.BookingUtils.DoCreateBooking(Identity identity, CreateBookingRequest request) in D:\\Sources\\8088\\Aeropack\\AP.Main\\src\\Main\\Source\\Zenith\\TTI.PublicApi.Services\\Server\\Connectors\\Nbe\\BookingUtils.cs:line 353\r\n   at TTI.PublicApi.Services.Server.Connectors.Nbe.ConnectorNbe.CreateBooking(CreateBookingRequest request) in D:\\Sources\\8088\\Aeropack\\AP.Main\\src\\Main\\Source\\Zenith\\TTI.PublicApi.Services\\Server\\Connectors\\Nbe\\ConnectorNbe.cs:line 93\r\n   at TTI.PublicApi.Services.Server.SaleEngineService.<>c.<CreateBooking>b__12_0(Kernel k, CreateBookingRequest r) in D:\\Sources\\8088\\Aeropack\\AP.Main\\src\\Main\\Source\\Zenith\\TTI.PublicApi.Services\\Server\\SaleEngineService.cs:line 141\r\n   at TTI.PublicApi.Services.Server.Common.KernelPublicApiUtils.<>c__DisplayClass8_1`2.<ProceedPublicCall>b__2(Kernel kernel, KernelRequest`1 req) in D:\\Sources\\8088\\Aeropack\\AP.Main\\src\\Main\\Source\\Zenith\\TTI.PublicApi.Services\\Server\\Common\\KernelPublicApiUtils.cs:line 450\r\n   at TTI.Core.Kernel.ProceedInvocation[TEndPoint,TRequest,TResponse](KernelInvocation`2 invocation, Func`3 body) in D:\\Sources\\8088\\Aeropack\\AP.Main\\src\\Main\\Source\\Projects\\tticorlib\\Core\\Kernel.cs:line 251",
+      "Code": "MissingField",
+      "Message": "Missing field RefCustomer.",
+      "Extensions": null
+    },
+    "Warnings": null,
+    "ProcessingMs": 1563,
+    "Extensions": null
+  },
+  "Extensions": null
+}

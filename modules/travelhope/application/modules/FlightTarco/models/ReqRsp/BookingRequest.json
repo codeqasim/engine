@@ -1,0 +1,86 @@
+{
+  "RequestInfo": {
+    "AuthenticationKey": "_JEAAAAItez_R0N96jD_EXB6vWJCuU_RbKL0C4i_RTF_E_E7biqFPTufkquR1_RysBFkxwcMktlT70Q_U_U",
+    "CultureName": "en-GB"
+  },
+  "Passengers": [
+    {
+      "Ref": "Traveler_Type_1_Index_0",
+      "RefClient": "PADT",
+      "PassengerQuantity": 1,
+      "PassengerTypeCode": "AD",
+      "NameElement": {
+        "CivilityCode": "Mr",
+        "Firstname": "Masood",
+        "Middlename": "Ur",
+        "Surname": "Rehman",
+        "Extensions": null
+      },
+      "Extensions": []
+    }
+  ],
+  "SpecialServices": [
+    {
+      "Text": "masoodurrehman42@gmail.com",
+      "Data": null,
+      "Status": null,
+      "RefPassenger": "Traveler_Type_1_Index_0",
+      "RefSegment": null,
+      "Code": "CTCE",
+      "TechnicalType": null,
+      "Extensions": null
+    },
+    {
+      "Text": "+923339227639",
+      "Data": null,
+      "Status": null,
+      "RefPassenger": "Traveler_Type_1_Index_0",
+      "RefSegment": null,
+      "Code": "CTCH",
+      "TechnicalType": null,
+      "Extensions": null
+    },
+    {
+      "Text": "+923339227639",
+      "Data": null,
+      "Status": null,
+      "RefPassenger": "Traveler_Type_1_Index_0",
+      "RefSegment": null,
+      "Code": "CTCM",
+      "TechnicalType": null,
+      "Extensions": null
+    },
+    {
+      "Text": "NI/2240159600697",
+      "Data": {
+        "Doca": null,
+        "Doco": null,
+        "Docs": null,
+        "Foid": {
+          "DocumentTypeCode": "NI",
+          "DocumentNumber": "2240159600697",
+          "Extensions": null
+        },
+        "Fqtv": null,
+        "Inft": null,
+        "Chld": null,
+        "Umnr": null,
+        "Adof": null,
+        "Seat": null,
+        "Pctc": null,
+        "Ectc": null,
+        "Extensions": null
+      },
+      "Status": null,
+      "RefPassenger": "Traveler_Type_1_Index_0",
+      "RefSegment": null,
+      "Code": "FOID",
+      "TechnicalType": null,
+      "Extensions": null
+    }
+  ],
+  "Offer": {
+    "Ref": "04e97e0a-53d2-4c5e-aed3-bb7209a46816",
+    "RefItinerary": "Itin_1"
+  }
+}
