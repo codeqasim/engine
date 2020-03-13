@@ -25,7 +25,7 @@
                 <div class="logo">
                     <a href="<?php echo base_url(); ?>">
                     <img alt="logo" src="<?php echo base_url(); ?>assets/img/logo.png" />
-                    B2B Booking
+                    Booknow
                     </a>
                 </div>
                 <div class="bars show-m">
