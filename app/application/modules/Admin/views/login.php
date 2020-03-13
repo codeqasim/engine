@@ -9,7 +9,7 @@
 <?php echo $error; ?>
 </div>
 <?php } ?>
-<div class="panel-heading"><img src="<?php echo base_url(); ?>assets/img/logo.png" alt="logo" width="" height="27" class="logo-img"><span class="splash-description">Please enter your user information.</span></div>
+<div class="panel-heading"><img src="<?php echo base_url(); ?>assets/img/logo.png" alt="logo" width="" height="27" class="logo-img"><span class="splash-description">Only administrators allowed here.</span></div>
 <div class="panel-body">
 <form action="<?=base_url('admin/login')?>" method="post">
 <div class="login-form">
