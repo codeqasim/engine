@@ -23,9 +23,11 @@
                     <span class="input-label"><i class="mdi mdi-calendar"></i> Departure</span>
                     <div class="input-items">
                         <input
+                            class="busdepart"
                             type="text"
                             placeholder=""
                             value=""
+                            value="20/03/2020"
                             />
                     </div>
                 </div>
@@ -34,9 +36,11 @@
                     <div class="input-items">
                         <span class="dashed hide show-md">-</span>
                         <input
+                            class="busreturning"
                             type="text"
                             placeholder=""
                             value=""
+                            value="28/03/2020"
                             />
                     </div>
                 </div>

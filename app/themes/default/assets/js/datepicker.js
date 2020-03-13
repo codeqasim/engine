@@ -75,3 +75,27 @@ return date.valueOf() <= depart.date.valueOf() ? 'disabled' : ''; }
 var newDate = new Date(ev.date);
 returning.hide();
 }).data('datepicker');
+
+/* bus */ 
+var nowTemp = new Date();
+var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+var busdepart = $('.busdepart').datepicker({
+format: 'dd/mm/yyyy',
+onRender: function(date) {
+return date.valueOf() < now.valueOf() ? 'disabled' : ''; }
+}).on('changeDate', function(ev) {
+var newDate = new Date(ev.date);
+newDate.setDate(newDate.getDate() + 1);
+busreturning.setValue(newDate);
+busdepart.hide();
+
+$('.busreturning')[0].focus();
+}).data('datepicker');
+var busreturning = $('.busreturning').datepicker({
+format: 'dd/mm/yyyy',
+onRender: function(date) {
+return date.valueOf() <= busdepart.date.valueOf() ? 'disabled' : ''; }
+}).on('changeDate', function(ev) {
+var newDate = new Date(ev.date);
+busreturning.hide();
+}).data('datepicker');
