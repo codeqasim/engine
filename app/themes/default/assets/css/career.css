@@ -1,0 +1,8 @@
+.career .title{text-transform:capitalize;font-size:18px;font-weight:500;color:#363636;border-left:4px solid #363636;padding-left:5px;margin-bottom:40px}
+.card .card-block{padding-left:20px;width:60%}
+.career .card{padding:20px;border-radius:8px 8px 0 0;word-wrap:break-word;background-color:#fff;background-clip:border-box;position:relative;margin-bottom:100px;display: flex; flex-wrap: wrap;}
+.career .card.row{flex-wrap:nowrap}
+.card .card-block .card-title{font-size:26px;color:#363636;font-weight:500;margin-bottom:18px;width:90%}
+.card .card-block .card-text{font-size:14px;color:#949494;line-height:22px;width:85%;display:inline-block}
+.card .card-block .mail{font-size:15px;color:#3c91e0;font-weight:500;display:inline-block;margin-bottom:45px}
+.card .card-block .good_luck{font-size:22px;color:#363636;font-weight:500}

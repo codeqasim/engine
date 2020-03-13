@@ -1,0 +1,22 @@
+.account{padding-top:100px;padding-bottom:132px}
+.account h1{font-size:45px;font-weight:700;margin-bottom:24px;color:#2b2a58}
+.account .list-info li{font-size:16px;position:relative;line-height:25px;padding:5px 0 5px 35px;font-weight:600}
+.account .list-info li:before{content:"\ea98";font-family:icomoon;display:block;position:absolute;left:0;width:23px;height:23px;font-size:23px;color:#3c91e0}
+.account .desc-img{margin-top:63px}
+.account .account-tab{width:437px;margin:0 auto;border-radius:4px;background-color:#fff;padding:30px}
+.account .account-tab .tabs-btn li{width:128px;text-align:center}
+.account .account-tab .tabs-btn li label{display:block;width:100%;text-align:center;border-radius:4px;background-color:#f1efef;color:#424242;font-size:16px;font-weight:400;padding:10px 0;cursor: pointer;}
+.account .account-tab .tabs-btn li:first-child label{border-top-right-radius:0;border-bottom-right-radius:0}
+.account .account-tab .tabs-btn li:last-child label{border-top-left-radius:0;border-bottom-left-radius:0}
+.account .account-tab .tabs-btn li label.active{background-color:#3c91e0;transition:all .5s;-webkit-transition:.5s;-moz-transition:.5s;-o-transition:.5s;color:#fff}
+.account .account-tab h3{font-size:14px;color:#363636;margin-bottom:20px}
+.account .account-tab .btn-facebook{background-color:#507cc0;margin-right:5px;border:none;color:#fff;line-height:35px}
+.account .account-tab .btn-google{background-color:#fff;border:1px solid rgba(151,151,151,0.37);color:#000;margin-left:5px}
+.account .account-tab hr{box-sizing:content-box;height:0;overflow:visible;margin-top:2rem;margin-bottom:2rem;border:0;border-top:1px solid rgba(0,0,0,0.1)}
+.account .account-tab .login{display: none}
+.account .account-tab .signup{display: none;}
+.account .account-tab input:checked + .login{display: block;}
+.account .account-tab input:checked + .signup{display: block;}
+.account .account-tab .login .remember-sec{display:flex;justify-content:space-between;margin-top:15px;align-items:center}
+.account .account-tab .login .remember-sec label{font-size:15px;color:#000}
+.account .account-tab .login .remember-sec .forgetPassword{text-decoration:underline;font-size:15px;color:#4bb1d6}

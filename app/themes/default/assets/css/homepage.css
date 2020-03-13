@@ -1,0 +1,78 @@
+/* hero section */
+.hero{background: #838383; display: flex; background-attachment: fixed;align-items: center; justify-content: center;background-size:cover;background-repeat: no-repeat;background-position: center;background-size: cover;min-height: 400px;height: 400px;width: 100%;}
+.hero .hero-content { text-align: center; top: -45px; color: #fff; letter-spacing: 1px; text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.84); }
+
+/* hero search */
+.hero .search {background-color: rgba(33, 37, 41, 0.48); padding: 15px 10px 5px 10px;position:relative;/*border-radius:4px 0 4px 4px*/}
+.hero .search  ul { display: flex;margin-bottom: 10px;}
+.hero .search  li label{cursor: pointer; background-color:transparent;padding:7px 20px;color:#fff;border-radius:4px;font-size:18px;font-weight:500;color:#fff;text-transform:capitalize;border:none;text-align:center}
+.hero .search  li:not(:last-child){margin-right:10px}
+.hero .search .fade{top: 37px;}
+.hero .search .input-items input { background: rgba(26, 57, 96, 0.10196078431372549); width: 100%; border: none; outline: 0; color: #363636; font-size: 15px; font-weight: 500; padding: 10px; height: 40px; }
+.hero .search .input-items:hover input { background: rgba(26, 57, 96, 0.15) }
+.passenger-dropdown {opacity:0;visibility:hidden;-webkit-transition: all 0.1s ease-out; -moz-transition: all 0.1s ease-out; -o-transition: all 0.1s ease-out; transition: all 0.1s ease-out; box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);}
+.dropshow:hover + .passenger-dropdown { -webkit-transition: opacity .3s,padding .3s; -moz-transition: opacity .3s,padding .3s; transition: opacity .3s,padding .3s; visibility: visible; opacity: 1; }
+.search li input[type=radio]:checked+label {background-color:#0d00bc }
+.search li input[type=radio]:checked+label+.tab { -webkit-transition: opacity .3s,padding .3s; -moz-transition: opacity .3s,padding .3s; transition: opacity .3s,padding .3s; visibility: visible; opacity: 1; }
+.search li input[type=date]::-webkit-inner-spin-button{ -webkit-appearance: none; display: none; }
+.passenger-dropdown:hover { display: block !important;opacity: 1;visibility: visible; }
+input[type="date"]:after { content: "\25BC"; color: #555; padding: 0 5px; }
+input[type="date"]:hover:after { color: #bf1400; }
+input[type="date"]::-webkit-calendar-picker-indicator { position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: auto; height: auto; color: transparent; background: transparent; }  
+input[type="date"]::-webkit-inner-spin-button { z-index: 1; }
+
+.search .fade { margin: 15px 0px; position: absolute; width: 100%; left: 0; right: 0; z-index: 2; opacity:0;visibility:hidden;-webkit-transition: all 0.1s ease-out; -moz-transition: all 0.1s ease-out; -o-transition: all 0.1s ease-out; transition: all 0.1s ease-out; }
+
+.offers img{ margin: 25px 0; border-radius: 4px; box-shadow: 0 2px 10px 0 rgba(0,0,0,.07);  }
+.offers img:hover { opacity: 0.8;  }
+
+/*tabs*/
+.input-items{position:relative;}
+.input-label{margin-bottom: 5px;display: block;}
+.input-items input{width: 100%;border: none;outline: 0;color: #363636;font-size: 15px;font-weight: 500;background: transparent;}
+.input-items .dashed{position: absolute;left: -30px;}
+
+#flights .dashed{left: -22px;}
+.hotel-search-item{position: relative;}
+.passenger-dropdown{border: 1px solid #ccc; border: 0px solid rgba(0,0,0,.15); border-radius: 0; position: absolute;top: 100%;background: #fff;width: 345px;border: 1px solid #e6e6e6;border-radius: 4px;z-index: 100;right: 62px;}
+.passenger-dropdown-head{padding: 11px 17px;background-color: #f3f3f3;}
+.passenger-dropdown .room-row{padding: 10px 20px;width: 100%;}
+.passenger-dropdown .room-row span{font-size: 14px}
+.passenger-dropdown-right .decrease{text-align: center; color: #000; cursor: pointer; border-radius: 12px; padding: 0px 8px; font-size: 20px; margin-right: 7px; outline: none; background: #fcfcfc; border: solid 1.5px #424a52;}
+.passenger-dropdown-right .increase{text-align: center; color: #000; cursor: pointer; border-radius: 12px; padding: 0px 6px; font-size: 20px; margin-left: 7px; outline: none; background: #fcfcfc; border: solid 1.5px #424a52;}
+.passenger-dropdown .add-room{background: transparent;border: none; font-size: 14px;font-weight: bold;outline: none;display: block;text-align: center;width: 100%;cursor: pointer;}
+.input-wrapper.travelers{flex: 3}
+.searchbutton{flex: 1}
+.searchbutton:hover{opacity: 0.7;}
+.icon-search{font-size: 40px;font-weight: 700;color: #fff;display: inline-block;transform: rotate(81deg);margin-left: 7px;margin-top: 2px;}
+.searchbutton button{cursor: pointer;border: none;width: 100%;height: 100%;background-color: #ff002d;outline: 0;/*border-top-right-radius:4px;border-bottom-right-radius: 4px */}
+.input-wrapper{position:relative;min-height:80px;background:#fff;padding:15px 10px;cursor:pointer}
+/*.data-input:first-child .input-wrapper{border-top-left-radius: 4px;border-bottom-left-radius: 4px}*/
+.data-input:not(:last-child) .input-wrapper{border-right: 1px solid #eee;}
+
+/*offers*/
+.offer-img{width: 100%;margin-bottom: 20px;border-radius: 4px;box-shadow: 0 2px 10px 0 rgba(0,0,0,.07);}
+
+/*hotelsfeature*/
+.hotels-feature{padding-top: 79px;background-color: #f2f6fb;padding-bottom: 50px;}
+.hotels-feature-items{overflow: hidden;background: #fff;box-shadow: 0 2px 10px 0 rgba(0,0,0,.07);border-radius: 4px;margin-bottom: 30px;}
+.section-subtitle {text-align: center;width: 100%;margin-bottom: 50px;}
+.section-subtitle h3 {font-size: 15px;color: #949494;font-weight: 500;}
+.section-subtitle h2{font-size: 26px;font-weight: 500;color: #363636;margin-bottom: 8px;}
+.hotel-image{width: 100%;height: 207px;background-repeat: no-repeat;background-size: cover;background-position: center;}
+.item-info-title h4{font-size: 18px; font-weight: 500;color: #363636;}
+.item-info{padding: 17px 20px;overflow: hidden;}
+.item-rating{margin: 7px 0}
+.item-rating span{color:#ffc100;}
+
+/*top Destination*/
+.top-destinations{padding-bottom: 50px}
+.top-destinations .country-recommendation{height: 260px; border-radius: 4px;margin: 10px auto 10px 0;cursor: pointer;background-size: cover;background-repeat: no-repeat;position: relative;overflow: hidden;}
+.country-recommendation:after{content: '';width: 100%;height: 100%;left: 0;top: 0; position: absolute;background: rgba(0,0,0,.3);transition: all .5s ease-in-out}
+.top-destinations .country-recommendation:hover:after{background: rgba(0,0,0,.5)}
+.country-recommendation .country-name{position:relative;font-size: 22px;color: #fff;font-weight: 500;text-transform: uppercase;z-index: 9;text-align: center;top:50%;}
+
+/*Features*/
+.features{position: relative;padding:50px}
+.features .feature-item img {margin-bottom: 20px;max-height: 65px;}
+.features .feature-item p {font-size: 18px;font-weight: 500;}

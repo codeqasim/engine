@@ -1,0 +1,115 @@
+/*globel*/
+.row-rtl{flex-direction:row-reverse}
+.rtl-align-right{text-align:right!important}
+.rtl-f-left{float:left}
+.rtl-f-right{float:right}
+.rtl-mr-auto{margin-right:auto}
+.contact ul+ul{justify-content:flex-end}
+.contact ul+ul li:last-child{margin-right:0!important}
+.pure-material-textfield-outlined{direction: rtl;}
+.pure-material-textfield-outlined > input + span::before, .pure-material-textfield-outlined > textarea + span::before {margin-right: 0px !important;border-radius: 1px 5px !important;}
+.pure-material-textfield-outlined > input + span::after, .pure-material-textfield-outlined > textarea + span::after {margin-left: 0px !important;border-radius: 10px 5px !important;}
+.wrapper-shared select{direction: rtl}
+.list-wrapper .detail ul{direction: rtl}
+.list-wrapper .detail ul li{float: right !important;}
+.wrapper-shared label.label-title:before{right: unset !important;left: -10px;}
+.result-card .right-side{border-right: 2px dashed #c6c6c6;border-left: 0 !important;}
+.result-card .right-side .social-container{right: unset !important;left: 20px;}
+.result-card .left-side:before{right: unset !important;left: 0;}
+.result-card .left-side:after{right: unset !important;left: 0;}
+.result-card .left-side-row .left-side-row-info .airline-info{    border-right:0 !important;border-left: 1px solid #e3e3e3;}
+.result-card .left-side-row .left-side-row-info .direction-info .direction-info__row{flex-direction: row-reverse;justify-content: flex-start;width: 100%;}
+.result-card .left-side-row .left-side-row-info .direction-info h5{width: 100%;text-align: right;}
+.result-card .has-stops .flight-detail-card .flight-detail-header .flight-detail-header-right img{margin-right: 0 !important;margin-left: 10px}
+.result-card .timeline-group{align-items: flex-end !important;}
+.result-card .timeline-group:before{left:unset !important;right: 10px !important}
+.result-card .timeline-group .timeline-group__details:before{left:unset !important;right: 0}
+.result-card .timeline-group .timeline-group__details__extraInfo{left: 0 !important;}
+.result-card .timeline-group .timeline-group__details{padding-left: 0 !important;padding-right: 40px}
+.result-card .timeline-group .timeline-group__details ul li{justify-content: flex-end;}
+.result-card .timeline-group .timeline-group__details__extraInfo img{margin-right: 0!important;margin-left: 10px}
+.result-card .timeline-group .timeline-group__details__extraInfo ul li{text-align: right;}
+.result-card .left-side-row .showDetails{margin-left: 15px !important}
+.rtl-ml{margin-left: 10px!important}
+.rtl-flex-end{justify-content: flex-end;}
+/*header*/
+header .dropdown li {direction: rtl;text-align: right;}
+header .nav-right .dropdown_show{direction: rtl}
+header .arrow-down{ left: -3px!important;   transform: rotate(90deg) !important; -webkit-transform: rotate(90deg)!important; -moz-transform: rotate(90deg)!important; -ms-transform: rotate(90deg)!important; -o-transform: rotate(90deg)!important;}
+/*home page*/
+aside .filter-section input[type="checkbox"]{float:right;margin-right:0!important;top: 0 !important;}
+header .nav .nav-right ul{float:right!important}
+.searchbutton button{border-top-right-radius:0!important;border-bottom-right-radius:0!important;border-top-left-radius:4px;border-bottom-left-radius:4px}
+.data-input:first-child .input-wrapper{border-top-right-radius:4px;border-bottom-right-radius:4px;border-top-left-radius:0!important;border-bottom-left-radius:0!important}
+.input-label{text-align:right!important}
+.input-items input{direction:rtl}
+@media screen and (min-width: 768px) {
+.passenger-dropdown{right:-62px!important}
+}
+/*footer*/
+.apps h2{width:100%!important}
+footer .footer h3{text-align:right}
+footer .footer .links ul li{direction:rtl;text-align:right}
+footer .footer .links ul li:before{left:unset!important;right:-12px}
+
+/*hotels list page*/
+.list-page aside .filter-section .filter-header{text-align:right}
+.list-page aside input[type="text"]{direction:rtl;padding-right:10px!important}
+
+.list-page aside .chain-hotel input[type="checkbox"],.list-page aside .amenities input[type="checkbox"]{top:0!important}
+.list-page .list-wrapper .border-right,.hotels-detail-page .list-wrapper .border-right{border:0;border-left:1px solid #eee}
+.list-page .list-wrapper .discount-precentage{border-radius:0 13px 13px 0!important;right:unset!important;left:0}
+/*hotels detail page*/
+.hotels-detail-page .list-wrapper .trust-you{flex-direction:row-reverse}
+.hotels-detail-page .content-section .room-wrapper .filter-section input[type="checkbox"]{float:right;margin-right:0!important;top:0!important}
+.hotels-detail-page .content-section .room-wrapper .filter-section .service-title{text-align:right}
+.hotels-detail-page .content-section .room-wrapper .filter-section label{text-align:right}
+.hotels-detail-page .content-section .room-wrapper .room-cart .room-header span{float:left;margin-right:10px}
+.hotels-detail-page .content-section .room-wrapper-inner:after{right:unset!important;left:25%}
+.hotels-detail-page .content-section .room-wrapper-inner ul{direction:rtl}
+.hotels-detail-page .content-section .overview .trust-score{float:right!important;margin-left:10px!important}
+.hotels-detail-page .content-section .overview .score{float:right!important}
+.hotels-detail-page .content-section .overview h1{float:right!important;margin-left:0!important;margin-right:30px}
+.hotels-detail-page .content-section .category .category-stats{float:right!important}
+.hotels-detail-page .content-section .category .category-details{text-align:right;padding-right:200px}
+.hotels-detail-page .content-section .category .category-stats h2{padding-right:0!important}
+.hotels-detail-page .hotel-amenities ul li{flex-direction:row-reverse}
+.hotels-detail-page .content-section .category .category-stats .rating .bar-chart{float:right!important}
+/*hotels booking page*/
+.wrapper-shared label.label-title:before{right: unset !important;left: -10px;}
+.booking-page .special-requests input{top: 0;float: right;}
+aside .title .rating{margin-right: 10px}
+aside .selected-rooms .cancel-policy{float: left !important;}
+/*hotels booking pay page*/
+.booking-payment .list-wrapper .detail .rating{margin-right: 10px}
+/*flight listing*/
+.flight-list-page .visa-transits-note p{padding-right: 20px}
+.flight-list-page aside .filter-section .filter-header h5{text-align: right}
+.flight-list-page aside .filter-section select{direction: rtl}
+.flight-list-page aside .filter-section .airlines label{display: flex; flex-direction: row-reverse; align-items: center;}
+.flight-list-page aside .filter-section .airlines img{margin-left: 10px}
+.flight-list-page aside .filter-section .timing{display: block;text-align:right;}
+.flight-list-page aside .filter-section .stoping-airport label{float: right !important;text-align: right;}
+.flight-list-page aside .filter-section .stoping-airport input[type="checkbox"]{top: 7px !important;}
+/*flight detail*/
+aside .summary-card .destination ul li{flex-direction: row-reverse;}
+aside .summary-card .destination ul li i{margin-right: 0!important;margin-left: 5px}
+aside .selected-rooms .rooms-bg .cost-breakdown ul li{flex-direction: row-reverse;}
+/*flight booking*/
+.wrapper-shared ol{direction: rtl}
+/*footer-pages*/
+.contact-us .title,.faq .title, .policy .title,.about-us .title{text-align:right;padding-left: 0px!important;padding-right: 5px;border-left:0 !important;    border-right: 4px solid #363636;}
+.contact-us .page-section .contact{float: none !important;}
+.contact ul+ul{justify-content: flex-start!important; }
+.contact-us .c10.ml-auto{margin-left: 0!important}
+.card .card-block .card-text{width: 95% !important;text-align: right;}
+.card .card-block .card-title{width: 95%!important;text-align: right;}
+.card .card-block .mail{width: 95%;text-align: right;}
+.faq .faq-tabs li + li{margin-left: 0!important;margin-right: 10px}
+.policy .tab-content .policy-content{direction: rtl}
+.policy .tab-content .policy-content ul{margin-left: 0!important;margin-right: 18px}
+.policy aside ul li{text-align: right;}
+.policy aside ul li a{justify-content: flex-end;}
+.account .list-info li:before{left: unset !important;right: 0}
+.account .list-info li{padding-right: 35px !important;padding-left: 0 !important}
+.account .account-tab .login .remember-sec input{float: right; top: 0px!important;}

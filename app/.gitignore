@@ -1,0 +1,5 @@
+system/cache/*
+.idea
+**/.DS_Store
+application/logs
+application/cache/*
