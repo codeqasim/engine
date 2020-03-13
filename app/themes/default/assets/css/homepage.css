@@ -46,7 +46,7 @@ input[type="date"]::-webkit-inner-spin-button { z-index: 1; }
 .searchbutton:hover{opacity: 0.7;}
 .icon-search{font-size: 40px;font-weight: 700;color: #fff;display: inline-block;transform: rotate(81deg);margin-left: 7px;margin-top: 2px;}
 .searchbutton button{cursor: pointer;border: none;width: 100%;height: 100%;background-color: #ff002d;outline: 0;/*border-top-right-radius:4px;border-bottom-right-radius: 4px */}
-.input-wrapper{position:relative;min-height:80px;background:#fff;padding:15px 19px;cursor:pointer}
+.input-wrapper{position:relative;min-height:80px;background:#fff;padding:15px 10px;cursor:pointer}
 /*.data-input:first-child .input-wrapper{border-top-left-radius: 4px;border-bottom-left-radius: 4px}*/
 .data-input:not(:last-child) .input-wrapper{border-right: 1px solid #eee;}
 

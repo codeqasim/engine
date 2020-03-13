@@ -18,9 +18,10 @@
                 <span class="input-label"><i class="mdi mdi-calendar"></i> Check In</span>
                 <div class="input-items">
                     <input
-                        type="date"
-                        placeholder=""
-                        value="2012-10-01"
+                        class="depart"
+                        type="text"
+                        placeholder="10/13/2020"
+                        value=""
                         />
                 </div>
             </div>
@@ -29,9 +30,10 @@
                 <div class="input-items">
                     <span class="dashed hide show-md">-</span>
                     <input
-                        type="date"
-                        placeholder=""
-                        value="2012-10-01"
+                        class="return"
+                        type="text"
+                        placeholder="12/13/2020"
+                        value=""
                         />
                 </div>
             </div>
