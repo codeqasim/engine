@@ -1,0 +1,12 @@
+.policy .title{text-transform:capitalize;font-size:18px;font-weight:500;color:#363636;border-left:4px solid #363636;padding-left:5px;margin-bottom:40px}
+.policy aside ul{display:flex;flex-direction:column;border-radius:8px;background-color:#fff;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);overflow:hidden}
+.policy aside ul li a{display:flex;align-items:center;margin:0 20px;padding:20px 0;font-size:16px;font-weight:500;color:#56666f;cursor:pointer}
+.policy aside ul li.active{background-color:#4ea05a}
+.policy aside ul li.active a{color:#fff}
+.policy .tab-content{border-radius:8px;background-color:#fff;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);overflow:hidden;padding:20px;margin-bottom:20px}
+.policy .tab-content .policy-content{border-bottom:1px solid #e6ebfa;margin-bottom:20px;padding-top:10px}
+.policy .tab-content .policy-content h3{font-size:15px;font-weight:700;color:#56666f;margin-bottom:10px;text-transform:capitalize}
+.policy .tab-content .policy-content p{font-size:13px;color:#56666f;line-height:25px;margin-bottom:20px}
+.policy .tab-content .policy-content p a{color:#0031bc}
+.policy .tab-content .policy-content ul{margin-left:18px;margin-bottom:20px}
+.policy .tab-content .policy-content li{font-size:13px;color:#56666f;line-height:25px;list-style-type:disc}

@@ -1,0 +1,20 @@
+/* Global CSS */
+
+@import url("global.css");
+@import url("flags.css");
+@import url("icons.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("homepage.css");
+@import url("hotels.css");
+@import url("flight.css");
+@import url("bus.css");
+@import url("about.css");
+@import url("account.css");
+@import url("career.css");
+@import url("contact.css");
+@import url("faq.css");
+@import url("policy.css");
+@import url("resp.css");
+
+@charset "UTF-8";

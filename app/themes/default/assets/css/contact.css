@@ -1,0 +1,6 @@
+.contact-us .title{text-transform:capitalize;font-size:18px;font-weight:500;color:#363636;border-left:4px solid #363636;padding-left:5px;margin-bottom:40px}
+.contact-us .page-section{padding:20px;margin:20px 0;background-color:#fff;border-radius:8px;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07)}
+.contact-us .page-section .contact{float: right;width: 65%;}
+.contact-us .page-section .page-section-title{font-size:16px;color:#363636;margin-bottom:10px;text-transform:capitalize}
+.contact-us .page-section .page-section-info{font-size:14px;color:#56666f;line-height:20px}
+.contact-us .page-section select{color:rgba(0,0,0,0.6);cursor:default;font-size:16px;outline:0;overflow:hidden;position:relative;width:100%;background:#fff;border:thin solid #000;height:58px}

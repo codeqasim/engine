@@ -1,0 +1,26 @@
+.apps{background: #0d00bc;padding-top: 40px;}
+.apps h2{margin: 0 0 7px;font-size: 28px;line-height: 35px;text-transform: uppercase;font-weight: 600;color: #fff;width: 90%;}
+.apps .section-info h3{color: #fff;line-height: 25px;margin-bottom: 17px;font-size: 14px;}
+.apps .section-info{padding-left: 44px;}
+.apps .apps-image {display: flex;}
+footer{background:#000;}
+footer .footer{background-color: #222;padding:50px 0;}
+footer .footer h3{font-size: 18px;font-weight: 500;color: #ffffff;margin-bottom: 20px;}
+footer .footer .links{padding-left: 12px}
+footer .footer .links ul li{position:relative;margin-bottom: 10px;color: #949494;}
+footer .footer .links ul li:before{content: '\276F';position: absolute;left: -12px;top: 5px;font-size: 10px;}
+footer .footer .links ul li a{font-size: 14px;color: #ffffff;text-transform: capitalize;}
+.contact ul li a{color: #ffffff;font-size: 14px}
+.contact ul li span{color: #ffffff;font-size: 14px}
+
+.contact ul+ul {display: flex;margin-top: 10px}
+.contact ul+ul li {width: 35px; height: 35px; text-align: center;margin-right: 5px}
+.contact ul+ul li a{display: block;height: 100%; color:#fff;font-weight: bold;line-height: 35px;border-radius: 50%;}
+.contact ul+ul li:nth-child(1) a {background-color: #3b5998}
+.contact ul+ul li a {background-color: #00aced}
+.contact ul+ul li:nth-child(3) a {background-color: #007bb6}
+.contact ul+ul li:nth-child(4) a {background-color: #bb0000}
+
+footer .sub-footer{position: relative;padding: 19px 0;margin-top: 0px;border-top: 1px solid #4c4c4c;}
+footer .sub-footer .coy_right{font-size: 12px;color: #d1d1d1;margin-bottom: 4px}
+footer .sub-footer img{max-width: 30px}

@@ -1,0 +1,86 @@
+
+@media screen and (max-width:1000px){
+header nav {position: fixed; z-index: 10;top: 0;}
+header .bars {display: block !important;position: fixed; z-index: 90; left: -5px; top: 0px;z-index: 1;}
+header .c2{position: static !important;}
+header label{display: block;cursor: pointer;margin-top: 18px;}
+header .logo img{ position: absolute;top:20%;left: 50%;transform: translateX(-50%)}
+header .mobnav .menu a { display: block; line-height: 45px; font-size: 20px; }
+header .mobnav .nav-right li,header .mobnav .nav-right a { width: 100%; display: block; }
+header .bars input[type=checkbox]:checked+label+.mobnav {display: block !important;background: #fff; width: 65%; left: 0; position: fixed; height: 100vh; z-index: 10; top: 0;box-shadow:10px -5px 10px rgba(0, 0, 0, 0.2784313725490196);padding: 55px 15px !important;}
+header .menu { margin: 0 7px; }
+    .list-page .list-wrapper .main-img{height: 110px}
+	.list-page .list-wrapper .detail .title{margin-bottom: 0}
+	.list-page .list-wrapper .detail .title a{font-size: 16px;}
+	.list-page .list-wrapper .detail .rating {margin-bottom: 0 !important}
+	.list-page .list-wrapper .detail:after{display: none}
+	.list-page .list-wrapper .detail{min-height: auto}
+	.list-page .list-wrapper .discount-precentage{font-size: 12px}
+	.list-page .list-wrapper .total-price .total-price-value{font-size: 15px}
+	.list-page .list-wrapper .total-price{margin-top: 40px;text-align: right}
+    .detail-page .list-wrapper .detail{margin-top:0px;}
+	.detail-page .list-wrapper .detail .title{margin-bottom: 0;padding-top:0;flex-direction: column;}
+	.detail-page .list-wrapper .detail .title a{font-size: 16px;}
+	.detail-page .list-wrapper .detail .rating {margin-bottom: 0 !important;margin-left: 0!important}
+	.detail-page .list-wrapper .total-price{text-align: right}
+	.detail-page .content-section .room-wrapper-inner:after{display: none}
+}
+
+@media only screen and (max-width:768px){
+.data-input .input-wrapper{border-radius: 0!important}
+.hero{align-items: flex-start;}	
+.hero .search{top: 100px;}	
+.apps .apps-image {justify-content: center;}
+.detail-page .hotel-amenities{margin-top:20px;}
+.result-card .left-side-row  .left-side-row__info{margin:0;}
+.result-card .left-side-row  .left-side-row-info  .airline-info{padding-left:0;}
+.result-card .left-side-row .left-side-row-info .airline-info{border:none;}
+.result-card .left-side-row  .showDetails{text-align:right;height:100%;margin-top:0;margin-bottom:0;}
+.result-card .timeline-group .timeline-group__details__extraInfo{position:relative;margin:0 auto}
+ aside .help-detail .info{text-align: center;}
+.account .account-tab{width:100%}
+.card-header{display:block;width:100%}
+.career .card-header img{width:100%}
+.card .card-block{width:100%;margin-top:20px;padding-left:0}
+.career .card.row{flex-wrap:wrap}
+.input-wrapper{margin-bottom: 10px}
+.passenger-dropdown{top:95%;width: 100%;right: 0;}
+.options{position: static;background-color:rgba(33,37,41,0.3);text-align: center;padding-bottom: 20px}
+header .nav .nav-right ul li:not(:last-child) a{border: 0!important}
+.flight-list-page aside{height: auto;overflow-y: hidden;padding: 0 0 !important;transition:transform 0.3s ease-out;transform:scaleY(0);height: 0}
+.flight-list-page .btn-filter{display: inline-block !important;}
+.flight-list-page input#filter:checked + aside{transform:scaleY(1); transform-origin:top;height: auto;transition:transform 0.3s ease-in}
+}
+@media screen and (max-width:650px){
+ .result-card .left-side-row:not(:last-of-type){border-bottom:none;}
+ .result-card .left-side-row .airline-info__type{display:none;}
+ .result-card .left-side-row .left-side-row__info{height:100px;}
+ .result-card .left-side-row .left-side-row-info .airline-info{border:none;max-width:50px;padding-left:10px;max-height:110px;}
+ .result-card .left-side-row .left-side-row-info .airline-info .airline-info__logo{margin:0;}
+ .result-card .left-side-row .left-side-row-info .airline-info .airline-info__logo .logo-container{height:50px;}
+ .result-card .left-side-row .left-side-row-info .airline-info .airline-info__logo .logo-container img{width:22px!important;margin:0!important;display:inline-block;}
+ .result-card .left-side-row .left-side-row-info .airline-info .airline-info__logo .logo-container .fit-alignment{display:inline-block;width:1px;height:100%;vertical-align:middle;border:none;}
+ .result-card .left-side-row .left-side-row-info .airline-info .airline-info__logoName{display:none;}
+ .result-card .left-side-row .left-side-row-info .airline-info .airline-info__class,  .result-card  .left-side-row  .left-side-row-info  .direction-info  h5{display:none;}
+ .result-card .left-side-row .left-side-row-info .direction-info .direction-info__row .direction-line{width:160px;}
+ .result-card .left-side-row .left-side-row-info .direction-info .direction-info__row .direction-line  h6{color:#949494;}
+ .result-card .left-side-row .left-side-row-info .direction-info .direction-info__row .direction-line:after,  .result-card  .left-side-row  .left-side-row-info  .direction-info  .direction-info__row  .direction-line:before{display:none;}
+ .result-card .left-side-row .left-side-row-info .direction-info .direction-info__row span{font-size:13px;}
+ .result-card .left-side-row .left-side-row-info .direction-info .direction-info__row .direction-line  .direction-line__points  .airpoint  span.airpoint__name{color:#949494;font-size:10px;}
+ .result-card .left-side-row .left-side-row-info .direction-info{padding-left:5px;padding-right:5px;}
+ .result-card .left-side-row .bottom-options{width:calc(100% - 20px);background-color:#eff6ff;padding:5px;height:26px;margin:10px;}
+ .result-card .left-side-row.has-stops  .left-side-row__info{height:120px;}
+ .result-card .timeline-group{margin:0 5px 5px}
+ .result-card .timeline-group:before{height:37%}
+ .result-card .timeline-group .timeline-group__details{margin-bottom:20px;padding-left:25px}
+ .result-card .timeline-group .timeline-group__details ul li span{line-height:18px}
+ .result-card .timeline-group .timeline-group__details__extraInfo{width:calc(100% + 0px);margin-right:5px}
+}
+@media screen and (max-width:400px){
+ .result-card .left-side-row .left-side-row-info .direction-info{margin-top:15px;}
+ .result-card .left-side-row .left-side-row-info .direction-info .direction-info__row  span.location{font-size:12px;font-weight:400;color:#363636;margin-top:3px;}
+}
+@media screen and (max-width:320px){
+ .result-card .left-side-row{width:200px;}
+ .result-card .left-side-row .left-side-row-info .airline-info{padding-top:25px;}
+}
