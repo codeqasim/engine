@@ -1,5 +1,5 @@
 <div class="tab fade">
-<form action="<?php echo base_url(); ?>" method="GET">
+<form action="<?php echo base_url(); ?>flights/" method="GET">
 <div class="row">
     <div class="c12">
         <div class="options">
