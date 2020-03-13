@@ -4,10 +4,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<title>Travel</title>
+<title>Booknow</title>
 <link rel="stylesheet" href="<?php echo $theme_url;?>assets/css/style.css" />
 <!--<link rel="stylesheet" href="<?php echo $theme_url;?>assets/css/rtl.css" />-->
 <script> var baseurl = "<?php echo base_url(); ?>"; </script>
+<link rel="shortcut icon" href="<?php echo base_url(); ?>assets/img/logo.png">
 <meta property="og:type" content="website">
 <meta property="og:url" content="<?php echo base_url(); ?>">
 <meta property="og:description" content="">
@@ -25,7 +26,7 @@
                 <div class="logo">
                     <a href="<?php echo base_url(); ?>">
                     <img alt="logo" src="<?php echo base_url(); ?>assets/img/logo.png" />
-                    Booknow
+                    <strong>BOOK</strong>NOW
                     </a>
                 </div>
                 <div class="bars show-m">
