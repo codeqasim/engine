@@ -25,7 +25,7 @@
             <div class="c2 p0 rtl-align-right">
                 <div class="logo">
                     <a href="<?php echo base_url(); ?>">
-                    <img alt="logo" src="<?php echo base_url(); ?>assets/img/logo.png" />
+                    <img alt="logo" src="<?php echo base_url(); ?>uploads/main/logo.png" />
                     <strong>BOOK</strong>NOW
                     </a>
                 </div>
