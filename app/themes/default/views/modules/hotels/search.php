@@ -5,6 +5,7 @@
         <span class="input-label"><i class="mdi mdi-my-location"></i> Going to</span>
         <div class="input-items">
             <input
+                autocomplete="off"
                 type="text"
                 placeholder="Destination or Hotel"
                 />

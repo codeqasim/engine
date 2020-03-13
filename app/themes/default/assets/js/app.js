@@ -12,3 +12,6 @@ var counter=0;$(".autocomplete-wrapper").each(function(){counter++;var self=$(th
 /* oneway and return */
 function oneway() { document.getElementById("return").disabled = true; };
 function returns() { document.getElementById("return").disabled = false; };
+
+function busoneway() { document.getElementById("return").disabled = true; };
+function busreturns() { document.getElementById("return").disabled = false; };

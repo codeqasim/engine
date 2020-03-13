@@ -5,12 +5,12 @@
         <div class="options">
             <label class="pure-material-switch">
             <input type="checkbox">
-            <span>Direct Flights</span>
+            <span>Direct</span>
             </label>
             <input type="radio" name="trip" checked id="one-way" hidden>
-            <label for="one-way" onclick="oneway()">One Way</label>
+            <label for="one-way" onclick="busoneway()">One Way</label>
             <input type="radio" name="trip" id="round-trip" hidden>
-            <label for="round-trip" onclick="returns()"> Round Trip</label>
+            <label for="round-trip" onclick="busreturns()"> Round Trip</label>
         </div>
     </div>
 </div>
@@ -19,7 +19,7 @@
         <div class="input-wrapper">
             <span class="input-label"><i class="mdi mdi-flight-takeoff"></i> From Origin</span>
             <div class="input-items">
-                <input type="text" placeholder="Origin" onfocus="this.value=''" name="from" id="autocomplete" class="autocomplete-airport" />
+                <input autocomplete="off" type="text" placeholder="Origin" onfocus="this.value=''" name="from" id="autocomplete" class="autocomplete-airport" />
             </div>
         </div>
     </div>
@@ -27,7 +27,7 @@
         <div class="input-wrapper">
             <span class="input-label"><i class="mdi mdi-flight-land"></i> To Destination</span>
             <div class="input-items">
-                <input type="text" onfocus="this.value=''" name="to" id="autocomplete2" class="autocomplete-airport" placeholder="Destination" />
+                <input autocomplete="off" type="text" onfocus="this.value=''" name="to" id="autocomplete2" class="autocomplete-airport" placeholder="Destination" />
             </div>
         </div>
     </div>
