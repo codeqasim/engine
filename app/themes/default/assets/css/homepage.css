@@ -8,6 +8,7 @@
 .hero .search  li label{cursor: pointer; background-color:transparent;padding:7px 20px;color:#fff;border-radius:4px;font-size:18px;font-weight:500;color:#fff;text-transform:capitalize;border:none;text-align:center}
 .hero .search  li:not(:last-child){margin-right:10px}
 .hero .search .fade{top: 37px;}
+.hero .search .input-items input::first-letter { color: #fff }
 .hero .search .input-items input { background: rgba(26, 57, 96, 0.10196078431372549); width: 100%; border: none; outline: 0; color: #363636; font-size: 15px; font-weight: 500; padding: 10px; height: 40px; }
 .hero .search .input-items:hover input { background: rgba(26, 57, 96, 0.15) }
 .hero .search .input-items input:disabled { color: transparent; }
