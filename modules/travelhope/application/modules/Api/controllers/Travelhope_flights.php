@@ -55,14 +55,49 @@ class Travelhope_flights extends REST_Controller {
         $thfBooking->setChildren($searchForm->children);
         $thfBooking->setInfants($searchForm->infants);
         $thope = new ApiClient($this->config);
-        $response = $thope->sendRequest('GET', 'search', $searchForm);
+        $response = json_decode($thope->sendRequest('GET', 'search', $searchForm));
+
+        $main_object = array();
+        foreach ($response->data as $item){
+            $FlightInfo = array(
+                "Departure"=>$item->from_code,
+                "Arrival"=>$item->to_code,
+                "Price"=>$item->flight_price,
+                "Duration"=>$item->flight_duration,
+                "Stops"=>$item->stops,
+                "BagLimit"=>$item->baglimit,
+                "Supplier"=>"TravelHope",
+                "BookingCode"=>(object)array(
+                    "flight_id"=>$item->flight_id
+            ),
+            );
+            $Segments = array();
+            foreach ($item->route as $route){
+                $Segment = array(
+                  "DepartureCity"=>$route->city_from,
+                  "DepartureCode"=>$route->city_to,
+                  "ArrivalCode"=>$route->to_code,
+                  "DepartureTime"=>$route->departure_time,
+                  "ArrivalTime"=>$route->arrival_time,
+                  "FlightNo"=>$route->flight_no,
+                  "AirLineCode"=>$route->airline,
+                  "AirLineType"=>$route->airline_type,
+                );
+                array_push($Segments,$Segment);
+            }
+            array_push($main_object,(object)array("FlightInfo"=>$FlightInfo,"Segments"=>$Segments));
+
+        }
+
+
 
         $thfBooking->setSearchResponse('');
         $thfBooking->save();
 
 
         if (!empty ($response)) {
-            echo  $response;
+            $this->response(array('response' => $main_object, 'error' => array('status' => FALSE,'msg' => 'Record not found')), 200);
+
         }else{
 
             $this->response(array('response' => '', 'error' => array('status' => FALSE,'msg' => 'Record not found')), 200);
