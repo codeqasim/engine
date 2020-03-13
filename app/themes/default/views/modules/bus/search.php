@@ -7,7 +7,7 @@
                 <input type="text" placeholder="Origin" />
             </div>
         </div>
-    </div>                
+    </div>
     <div class="c3 data-input">
         <div class="input-wrapper">
             <span class="input-label"><i class="mdi mdi-flight-land"></i> To Destination</span>
@@ -23,9 +23,9 @@
                     <span class="input-label"><i class="mdi mdi-calendar"></i> Departure</span>
                     <div class="input-items">
                         <input
-                            type="date"
+                            type="text"
                             placeholder=""
-                            value="12-01-2020"
+                            value=""
                             />
                     </div>
                 </div>
@@ -34,9 +34,9 @@
                     <div class="input-items">
                         <span class="dashed hide show-md">-</span>
                         <input
-                            type="date"
+                            type="text"
                             placeholder=""
-                            value="12-01-2020"
+                            value=""
                             />
                     </div>
                 </div>

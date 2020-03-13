@@ -1,4 +1,29 @@
-/*flights globle*/
+/* search  */
+.autocomplete-wrapper input{width:100%}
+.autocomplete-results{overflow: auto; max-height: 350px;-webkit-box-shadow: rgba(0,0,0,.37) 0 50px 100px, rgba(0,0,0,.22) 0 5px 50px; box-shadow: rgba(0,0,0,.37) 0 50px 100px, rgba(0,0,0,.22) 0 5px 50px;width: 100%;position:absolute;background:white;z-index:100;top:100%;left:0;font-size:13px;border:solid 0px #ddd;border-top-width:0;border-bottom-color:#ccc}
+.autocomplete-result{-webkit-transition: background-color 100ms linear; -moz-transition: background-color 100ms linear; -o-transition: background-color 100ms linear; -ms-transition: background-color 100ms linear; transition: background-color 100ms linear;padding:5px;border-bottom:solid 1px #eee;cursor:pointer}
+.autocomplete-result:last-child{border-bottom-width:0}
+.autocomplete-result:hover{color: #fff; background: #0942cb;}
+.autocomplete-result:hover b{color: #000000; background: #ffffff;}
+.autocomplete-result b { float: left; width: 50px; margin: 3px 10px; border: 1px solid #cecaca; border-radius: 4px; padding: 5px 6px; font-size: 12px; font-weight: 700; max-width: 70%; text-align: -webkit-center; vertical-align: -webkit-baseline-middle;}
+.autocomplete-location{opacity:.8;font-size:smaller}
+.autocomplete-results[data-highlight='0']>:nth-child(1){color:white;background:#26c9ff;border-bottom-color:#26c9ff;outline:solid 1px #00b6f2}
+.autocomplete-results[data-highlight='1']>:nth-child(2){color:white;background:#26c9ff;border-bottom-color:#26c9ff;outline:solid 1px #00b6f2}
+.autocomplete-results[data-highlight='2']>:nth-child(3){color:white;background:#26c9ff;border-bottom-color:#26c9ff;outline:solid 1px #00b6f2}
+.autocomplete-results[data-highlight='3']>:nth-child(4){color:white;background:#26c9ff;border-bottom-color:#26c9ff;outline:solid 1px #00b6f2}
+.autocomplete-results[data-highlight='4']>:nth-child(5){color:white;background:#26c9ff;border-bottom-color:#26c9ff;outline:solid 1px #00b6f2}
+.autocomplete-results[data-highlight='5']>:nth-child(6){color:white;background:#26c9ff;border-bottom-color:#26c9ff;outline:solid 1px #00b6f2}
+.autocomplete-results[data-highlight='6']>:nth-child(7){color:white;background:#26c9ff;border-bottom-color:#26c9ff;outline:solid 1px #00b6f2}
+.autocomplete-results[data-highlight='7']>:nth-child(8){color:white;background:#26c9ff;border-bottom-color:#26c9ff;outline:solid 1px #00b6f2}
+.autocomplete-results[data-highlight='8']>:nth-child(9){color:white;background:#26c9ff;border-bottom-color:#26c9ff;outline:solid 1px #00b6f2}
+
+/*search*/
+.options{position: absolute; right: 16px; top: -42px;}
+.options label{display: inline-block;line-height: 28px;border-radius: 14px;font-size: 15px;text-align: center;cursor: pointer;color: #fff;text-transform: capitalize;}
+.options input:checked + label{background-color: #ff002d!important}
+.options label{padding: 3px 18px !important; color: #fff !important; font-size: 14px !important;}
+
+/* flights globle*/
 .flight-itenrary-group{border: 1px solid #adbfd5; border-radius: 4px; position: relative; margin-bottom: 20px;}
 .flight-itenrary-group .result-card{background-color: #fff; border-radius: 4px; filter: drop-shadow(0 2px 10px rgba(0, 0, 0, .07)); -webkit-filter: drop-shadow(0 2px 10px rgba(0, 0, 0, .07));}
 .result-card .left-side-row .left-side-row-info .airline-info .airline-info__logo span{width:50px;display:block;margin:0 auto;}
@@ -67,7 +92,8 @@
 .result-card .flight-detail-card .timeline-seperator h3{font-size: 16px;font-weight: 500;margin-right: 5px;}
 .result-card .flight-detail-card .timeline-seperator .airport{font-size: 14px}
 .result-card .flight-detail-card .details-footer{border-top: 2px dashed #e3e3e3; height: 45px; background-color: #fff; border-bottom: 1px solid #e1e2e6;}
-/*flight listing*/
+
+/* listing */
 .flight-list-page{background-color:#f2f6fb}
 .flight-list-page aside{position:-webkit-sticky;position:sticky;top:0;height: 100vh;overflow-y:scroll;padding:0 10px; }
 .flight-list-page .edit-search{background:#fff;width:100%;padding:25px 0;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);margin-bottom:31px}
@@ -110,7 +136,8 @@
 .flight-list-page .filter-tabs .filter-tab.active{background-color: #0d00bc; color: #fff; box-shadow: 0 2px 10px 0 rgba(0,0,0,.07);}
 .flight-list-page .visa-transits-note{position: relative; background-color: #fff5da; padding: 10px 0; margin-bottom: 10px; border-radius: 2px; border: 1px solid #ebdaac;}
 .flight-list-page .visa-transits-note p{padding-left: 33px; margin-bottom: 0; padding-bottom: 0; font-size: 14px; color: #b69645;}
-/*flight Details*/
+
+/* Details */
 .flight-detail-page .flight-itenrary-group{border:none;}
 .flight-detail-page .details-header {background-color: #3491e7; border-radius: 4px; height: 40px; padding: 0px 13.5px 0 20px;}
 .flight-detail-page .details-header h2{font-size: 14px; color: #fff; margin: 0; font-weight: 400}
@@ -143,11 +170,6 @@ aside .help-detail .info a{font-size: 22px; font-weight: 500; color: #fff;}
 .modify-search input[type=checkbox]:checked+label+.panel {
 -webkit-transition: opacity .3s,padding .3s; -moz-transition: opacity .3s,padding .3s; transition: opacity .3s,padding .3s; visibility: visible; opacity: 1;
 }
-/*search*/
-.options{position: absolute; right: 16px; top: -42px;}
-.options label{display: inline-block;line-height: 28px;border-radius: 14px;font-size: 15px;text-align: center;cursor: pointer;color: #fff;text-transform: capitalize;}
-.options input:checked + label{background-color: #ff002d!important}
-.options label{padding: 3px 18px !important; color: #fff !important; font-size: 14px !important;}
 
 /* top flights */
 .airline-card .tab-panel { margin: 15px 0px; position: absolute; width: 100%; left: 0; top: 48px; z-index: 2; opacity:0;visibility:hidden;-webkit-transition: all 0.1s ease-out; -moz-transition: all 0.1s ease-out; -o-transition: all 0.1s ease-out; transition: all 0.1s ease-out; background: #fff; }

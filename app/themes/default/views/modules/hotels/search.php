@@ -18,7 +18,7 @@
                 <span class="input-label"><i class="mdi mdi-calendar"></i> Check In</span>
                 <div class="input-items">
                     <input
-                        class="depart"
+                        class="checkin"
                         type="text"
                         placeholder="10/13/2020"
                         value=""
@@ -30,7 +30,7 @@
                 <div class="input-items">
                     <span class="dashed hide show-md">-</span>
                     <input
-                        class="return"
+                        class="checkout"
                         type="text"
                         placeholder="12/13/2020"
                         value=""

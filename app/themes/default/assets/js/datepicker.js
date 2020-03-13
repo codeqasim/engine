@@ -31,7 +31,7 @@ return date.join(format.separator)},headTemplate:'<thead>'+'<tr>'+'<th class="pr
 
 var nowTemp = new Date();
 var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
-var checkin = $('.d1').datepicker({
+var checkin = $('.checkin').datepicker({
 format: 'dd/mm/yyyy',
 onRender: function(date) {
 return date.valueOf() < now.valueOf() ? 'disabled' : ''; }
@@ -41,9 +41,9 @@ newDate.setDate(newDate.getDate() + 1);
 checkout.setValue(newDate);
 checkin.hide();
 
-$('.d2')[0].focus();
+$('.checkout')[0].focus();
 }).data('datepicker');
-var checkout = $('.d2').datepicker({
+var checkout = $('.checkout').datepicker({
 format: 'dd/mm/yyyy',
 onRender: function(date) {
 return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : ''; }
@@ -54,23 +54,23 @@ checkout.hide();
 
 var nowTemp = new Date();
 var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
-var checkin = $('.depart').datepicker({
+var from = $('.from').datepicker({
 format: 'dd/mm/yyyy',
 onRender: function(date) {
 return date.valueOf() < now.valueOf() ? 'disabled' : ''; }
 }).on('changeDate', function(ev) {
 var newDate = new Date(ev.date);
 newDate.setDate(newDate.getDate() + 1);
-checkout.setValue(newDate);
-checkin.hide();
+to.setValue(newDate);
+from.hide();
 
-$('.return')[0].focus();
+$('.to')[0].focus();
 }).data('datepicker');
-var checkout = $('.return').datepicker({
+var to = $('.to').datepicker({
 format: 'dd/mm/yyyy',
 onRender: function(date) {
-return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : ''; }
+return date.valueOf() <= from.date.valueOf() ? 'disabled' : ''; }
 }).on('changeDate', function(ev) {
 var newDate = new Date(ev.date);
-checkout.hide();
+to.hide();
 }).data('datepicker');
