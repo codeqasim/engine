@@ -3,21 +3,15 @@
 <div class="row">
     <div class="c12">
         <div class="options">
-
             <label class="pure-material-switch">
             <input type="checkbox">
             <span>Direct Flights</span>
             </label>
-
             <input type="radio" name="trip" checked id="one-way" hidden>
             <label for="one-way" onclick="oneway()">One Way</label>
             <input type="radio" name="trip" id="round-trip" hidden>
             <label for="round-trip" onclick="returns()"> Round Trip</label>
-
-
         </div>
-
-
     </div>
 </div>
 <div class="row no-gutters row-rtl">
@@ -44,7 +38,7 @@
                     <span class="input-label"><i class="mdi mdi-calendar"></i> Departure</span>
                     <div class="input-items">
                         <input
-                            class="from"
+                            class="depart"
                             type="text"
                             placeholder=" "
                             value="26/03/2020"
@@ -56,7 +50,7 @@
                     <div class="input-items">
                         <span class="dashed hide show-md">-</span>
                         <input
-                            class="to"
+                            class="returning"
                             id="return"
                             type="text"
                             placeholder=" "

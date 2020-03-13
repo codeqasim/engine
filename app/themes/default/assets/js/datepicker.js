@@ -52,25 +52,26 @@ var newDate = new Date(ev.date);
 checkout.hide();
 }).data('datepicker');
 
+/* flights */ 
 var nowTemp = new Date();
 var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
-var from = $('.from').datepicker({
+var depart = $('.depart').datepicker({
 format: 'dd/mm/yyyy',
 onRender: function(date) {
 return date.valueOf() < now.valueOf() ? 'disabled' : ''; }
 }).on('changeDate', function(ev) {
 var newDate = new Date(ev.date);
 newDate.setDate(newDate.getDate() + 1);
-to.setValue(newDate);
-from.hide();
+returning.setValue(newDate);
+depart.hide();
 
-$('.to')[0].focus();
+$('.returning')[0].focus();
 }).data('datepicker');
-var to = $('.to').datepicker({
+var returning = $('.returning').datepicker({
 format: 'dd/mm/yyyy',
 onRender: function(date) {
-return date.valueOf() <= from.date.valueOf() ? 'disabled' : ''; }
+return date.valueOf() <= depart.date.valueOf() ? 'disabled' : ''; }
 }).on('changeDate', function(ev) {
 var newDate = new Date(ev.date);
-to.hide();
+returning.hide();
 }).data('datepicker');
