@@ -17,7 +17,7 @@
 <meta property="og:image:height" content="300">
 <meta property="og:image" content="">
 </head>
-<body>
+<body onload="oneway()">
 <header class="sticky">
     <nav>
         <div class="contain flex flex-content-between row-rtl">

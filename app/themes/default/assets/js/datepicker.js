@@ -31,7 +31,7 @@ return date.join(format.separator)},headTemplate:'<thead>'+'<tr>'+'<th class="pr
 
 var nowTemp = new Date();
 var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
-var checkin = $('.d1').datepicker({
+var checkin = $('.checkin').datepicker({
 format: 'dd/mm/yyyy',
 onRender: function(date) {
 return date.valueOf() < now.valueOf() ? 'disabled' : ''; }
@@ -41,9 +41,9 @@ newDate.setDate(newDate.getDate() + 1);
 checkout.setValue(newDate);
 checkin.hide();
 
-$('.d2')[0].focus();
+$('.checkout')[0].focus();
 }).data('datepicker');
-var checkout = $('.d2').datepicker({
+var checkout = $('.checkout').datepicker({
 format: 'dd/mm/yyyy',
 onRender: function(date) {
 return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : ''; }
@@ -52,25 +52,26 @@ var newDate = new Date(ev.date);
 checkout.hide();
 }).data('datepicker');
 
+/* flights */ 
 var nowTemp = new Date();
 var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
-var checkin = $('.depart').datepicker({
+var depart = $('.depart').datepicker({
 format: 'dd/mm/yyyy',
 onRender: function(date) {
 return date.valueOf() < now.valueOf() ? 'disabled' : ''; }
 }).on('changeDate', function(ev) {
 var newDate = new Date(ev.date);
 newDate.setDate(newDate.getDate() + 1);
-checkout.setValue(newDate);
-checkin.hide();
+returning.setValue(newDate);
+depart.hide();
 
-$('.return')[0].focus();
+$('.returning')[0].focus();
 }).data('datepicker');
-var checkout = $('.return').datepicker({
+var returning = $('.returning').datepicker({
 format: 'dd/mm/yyyy',
 onRender: function(date) {
-return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : ''; }
+return date.valueOf() <= depart.date.valueOf() ? 'disabled' : ''; }
 }).on('changeDate', function(ev) {
 var newDate = new Date(ev.date);
-checkout.hide();
+returning.hide();
 }).data('datepicker');

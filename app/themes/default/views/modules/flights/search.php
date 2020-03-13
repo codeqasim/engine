@@ -1,11 +1,16 @@
 <div class="tab fade">
+<form action="<?php echo base_url(); ?>" method="GET">
 <div class="row">
     <div class="c12">
         <div class="options">
-        <input type="radio" name="trip" checked id="one-way" hidden>
-            <label for="one-way">One Way</label>
+            <label class="pure-material-switch">
+            <input type="checkbox">
+            <span>Direct Flights</span>
+            </label>
+            <input type="radio" name="trip" checked id="one-way" hidden>
+            <label for="one-way" onclick="oneway()">One Way</label>
             <input type="radio" name="trip" id="round-trip" hidden>
-            <label for="round-trip"> Round Trip</label>
+            <label for="round-trip" onclick="returns()"> Round Trip</label>
         </div>
     </div>
 </div>
@@ -14,7 +19,7 @@
         <div class="input-wrapper">
             <span class="input-label"><i class="mdi mdi-flight-takeoff"></i> From Origin</span>
             <div class="input-items">
-                <input type="text" placeholder="Origin" />
+                <input type="text" placeholder="Origin" onfocus="this.value=''" name="from" id="autocomplete" class="autocomplete-airport" />
             </div>
         </div>
     </div>
@@ -22,7 +27,7 @@
         <div class="input-wrapper">
             <span class="input-label"><i class="mdi mdi-flight-land"></i> To Destination</span>
             <div class="input-items">
-                <input type="text" placeholder="Destination" />
+                <input type="text" onfocus="this.value=''" name="to" id="autocomplete2" class="autocomplete-airport" placeholder="Destination" />
             </div>
         </div>
     </div>
@@ -33,9 +38,10 @@
                     <span class="input-label"><i class="mdi mdi-calendar"></i> Departure</span>
                     <div class="input-items">
                         <input
-                            type="date"
-                            placeholder=""
-                            value="12-01-2020"
+                            class="depart"
+                            type="text"
+                            placeholder=" "
+                            value="26/03/2020"
                             />
                     </div>
                 </div>
@@ -44,9 +50,11 @@
                     <div class="input-items">
                         <span class="dashed hide show-md">-</span>
                         <input
-                            type="date"
-                            placeholder=""
-                            value="12-01-2020"
+                            class="returning"
+                            id="return"
+                            type="text"
+                            placeholder=" "
+                            value="28/03/2020"
                             />
                     </div>
                 </div>
@@ -106,4 +114,5 @@
         </div>
     </div>
 </div>
+</form>
 </div>
