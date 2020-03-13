@@ -38,6 +38,7 @@
                     <span class="input-label"><i class="mdi mdi-calendar"></i> Departure</span>
                     <div class="input-items">
                         <input
+                            name="depart"
                             class="depart"
                             type="text"
                             placeholder=" "
@@ -50,6 +51,7 @@
                     <div class="input-items">
                         <span class="dashed hide show-md">-</span>
                         <input
+                            name="return"
                             class="returning"
                             id="return"
                             type="text"
