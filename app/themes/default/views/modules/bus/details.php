@@ -1,4 +1,4 @@
-<div class="bus-detail-page pt-20">
+<div class="bus-detail-page">
   <div class="extra-info mb-20">
     <div class="contain">
       <?php include $themeurl. 'views/modules/bus/search.php';?>
@@ -18,15 +18,19 @@
               <div class="seats-map">
                 <div class="flex items-center">
                   <span class="seat-bage-1"></span>
-                  <span class="seat-bage-text">Some Text</span>
+                  <span class="seat-bage-text">Available</span>
                 </div>
                 <div class="flex items-center mt-10">
                   <span class="seat-bage-2"></span>
-                  <span class="seat-bage-text">Some Text</span>
+                  <span class="seat-bage-text">Reserved</span>
                 </div>
                 <div class="flex items-center mt-10">
                   <span class="seat-bage-3"></span>
-                  <span class="seat-bage-text">Some Text</span>
+                  <span class="seat-bage-text">Occupaid</span>
+                </div>
+                <div class="flex items-center mt-10">
+                  <span class="seat-bage-4"></span>
+                  <span class="seat-bage-text">Female</span>
                 </div>
                 <div class="available">
                   You choose <span>1</span> Chairs <br><br>
@@ -45,24 +49,24 @@
                   </div>
                   <input type="checkbox" name="" id="seat1" hidden>
                   <label for="seat1" class="seat"></label>
-                  <input type="checkbox" name="" id="seat1" hidden>
-                  <label for="seat1" class="seat"></label>
-                  <input type="checkbox" name="" id="seat1" hidden>
-                  <label for="seat1" class="seat"></label>
-                  <input type="checkbox" name="" id="seat1" hidden>
-                  <label for="seat1" class="seat"></label>
+                  <input type="checkbox" name="" id="seat2" hidden>
+                  <label for="seat2" class="seat"></label>
+                  <input type="checkbox" name="" id="seat3" hidden>
+                  <label for="seat3" class="seat"></label>
+                  <input type="checkbox" name="" id="seat4" hidden>
+                  <label for="seat4" class="seat"></label>
                 </div>
                 <div class="row flex-content-between items-center">
-                <input type="checkbox" name="" id="seat1" hidden>
-                  <label for="seat1" class="seat"></label>
-                  <input type="checkbox" name="" id="seat1" hidden>
-                  <label for="seat1" class="seat"></label>
-                  <input type="checkbox" name="" id="seat1" hidden>
-                  <label for="seat1" class="seat"></label>
-                  <input type="checkbox" name="" id="seat1" hidden>
-                  <label for="seat1" class="seat"></label>
-                  <input type="checkbox" name="" id="seat1" hidden>
-                  <label for="seat1" class="seat"></label>
+                <input type="checkbox" name="" id="seat5" hidden>
+                  <label for="seat5" class="seat"></label>
+                  <input type="checkbox" name="" id="seat6" hidden>
+                  <label for="seat6" class="seat"></label>
+                  <input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat7" class="seat"></label>
+                  <input type="checkbox" name="" id="seat8" hidden>
+                  <label for="seat8" class="seat"></label>
+                  <input type="checkbox" name="" id="seat9" hidden>
+                  <label for="seat9" class="seat"></label>
                 </div>
                 </form>
               </div>
