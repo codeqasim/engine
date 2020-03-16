@@ -1,0 +1,8 @@
+{
+  "modules": [
+    {
+      "name":"travelhope",
+      "type": "flights"
+    }
+  ]
+}

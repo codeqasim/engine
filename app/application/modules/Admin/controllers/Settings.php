@@ -80,17 +80,8 @@ class Settings extends MX_Controller
 
     public function modules()
     {
-        $xcrud = xcrud_get_instance();
-        $xcrud->table('modules');
-        $xcrud->unset_title();
-        $data['title'] = 'Modules';
-        $data['head'] = 'Modules';
-        $xcrud->column_callback('active', 'change_modules_status');
-        $data['content'] = $xcrud->render();
-        $data['main_content'] = 'Admin/xcrud';
-        $data['crumbdata'] = array('Settings','Modules');
-        $data['crumb'] = 'Admin/crumb';
-        $data['base_url'] = base_url(ADMINURL.'settings/delete_all');
+        $data = [];
+        $data['main_content'] = 'Admin/settings';
         $this->load->view('Admin/template', $data);
     }
     public function update_status()
