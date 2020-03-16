@@ -2055,7 +2055,7 @@ body.open-right-sidebar .be-right-sidebar{-webkit-transform:translate3d(0,0,0);t
 .settings-list>li{margin:0;padding:5px 0;line-height:24px;font-size:14px}
 .settings-list>li .name{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .settings-list>li .switch-button{float:right;margin-left:5px}
-.be-content{position:relative;left:0;margin-left:230px;min-height:100%}
+.be-content{position:relative;left:0;margin-left:230px;min-height:100%padding-right: 15px;padding-left: 15px;}
 @media(max-width:767px){.be-content{margin-left:0}
 }.be-nosidebar-left .be-content{margin-left:0}
 .be-collapsible-sidebar-collapsed .be-content{margin-left:60px}

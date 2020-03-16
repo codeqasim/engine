@@ -1,5 +1,7 @@
 
-<div class="col-md-6 pull-left col-xs-12" style="margin-bottom:25px margin-top:25px">
+<button class="btn btn-success" style="margin-top:25px;">Update</button>
+<div class="row">
+<div class="col-md-6 pull-left col-xs-12" style="margin-bottom:25px; margin-top:25px">
    <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="" style=";background:#234cbf">
         <a style=" background: transparent !important;" role="button" data-toggle="collapse" data-parent="#accordion" href="#hotels" aria-expanded="true" aria-controls="hotels">
@@ -106,7 +108,7 @@
   </div>
   <span style="position: absolute; top: 14px; font-size: 17px; color: #fff; right: 32px; font-weight: bold; background: rgba(238, 238, 238, 0.22); padding: 3px; border-radius: 48px; width: 30px; text-align: center;">7</span>
 </div>
-
+</div>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
@@ -169,7 +171,7 @@
           <input type="text" name="" class="form-control" id="">
           </div>
           </div>
-          
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
