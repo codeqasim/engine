@@ -9,4 +9,4 @@ application/json/visits.json
 application/modules/Sabre/libraries/Cache/*
 application/modules/Travelport_hotels/libraries/ReqRsp/*
 application/logs/*
-**/.DS_Store
+
