@@ -81,7 +81,7 @@ class Settings extends MX_Controller
     public function modules()
     {
         $data = [];
-        $data['main_content'] = 'Admin/settings';
+        $data['main_content'] = 'Admin/modules';
         $this->load->view('Admin/template', $data);
     }
     public function update_status()
