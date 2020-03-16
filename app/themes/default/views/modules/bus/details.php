@@ -68,6 +68,103 @@
                   <input type="checkbox" name="" id="seat9" hidden>
                   <label for="seat9" class="seat">9</label>
                 </div>
+                <div class="row flex-content-between items-center">
+                <input type="checkbox" name="" id="seat5" hidden>
+                  <label for="seat5" class="seat">5</label>
+                  <input type="checkbox" name="" id="seat6" hidden>
+                  <label for="seat6" class="seat">6</label>
+                  <input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat7" class="seat">7</label>
+                  <input type="checkbox" name="" id="seat8" hidden>
+                  <label for="seat8" class="seat">8</label>
+                  <input type="checkbox" name="" id="seat9" hidden>
+                  <label for="seat9" class="seat">9</label>
+                </div>
+                <div class="row flex-content-between items-center">
+                <input type="checkbox" name="" id="seat5" hidden>
+                  <label for="seat5" class="seat">5</label>
+                  <input type="checkbox" name="" id="seat6" hidden>
+                  <label for="seat6" class="seat">6</label>
+                  <input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat7" class="seat">7</label>
+                  <input type="checkbox" name="" id="seat8" hidden>
+                  <label for="seat8" class="seat">8</label>
+                  <input type="checkbox" name="" id="seat9" hidden>
+                  <label for="seat9" class="seat">9</label>
+                </div>
+                <div class="row flex-content-between items-center">
+                <input type="checkbox" name="" id="seat5" hidden>
+                  <label for="seat5" class="seat">5</label>
+                  <input type="checkbox" name="" id="seat6" hidden>
+                  <label for="seat6" class="seat">6</label>
+                  <input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat7" class="seat">7</label>
+                  <input type="checkbox" name="" id="seat8" hidden>
+                  <label for="seat8" class="seat">8</label>
+                  <input type="checkbox" name="" id="seat9" hidden>
+                  <label for="seat9" class="seat">9</label>
+                </div>
+                <div class="row flex-content-between items-center">
+                <input type="checkbox" name="" id="seat5" hidden>
+                  <label for="seat5" class="seat">5</label>
+                  <input type="checkbox" name="" id="seat6" hidden>
+                  <label for="seat6" class="seat">6</label>
+                  <input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat7" class="seat">7</label>
+                  <input type="checkbox" name="" id="seat8" hidden>
+                  <label for="seat8" class="seat">8</label>
+                  <input type="checkbox" name="" id="seat9" hidden>
+                  <label for="seat9" class="seat">9</label>
+                </div>
+                <div class="row flex-content-between items-center">
+                <input type="checkbox" name="" id="seat5" hidden>
+                  <label for="seat5" class="seat">5</label>
+                  <input type="checkbox" name="" id="seat6" hidden>
+                  <label for="seat6" class="seat">6</label>
+                  <input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat7" class="seat">7</label>
+                  <input type="checkbox" name="" id="seat8" hidden>
+                  <label for="seat8" class="seat">8</label>
+                  <input type="checkbox" name="" id="seat9" hidden>
+                  <label for="seat9" class="seat">9</label>
+                </div>
+                <div class="row flex-content-between items-center">
+                <input type="checkbox" name="" id="seat5" hidden>
+                  <label for="seat5" class="seat">5</label>
+                  <input type="checkbox" name="" id="seat6" hidden>
+                  <label for="seat6" class="seat">6</label>
+                  <input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat7" class="seat">7</label>
+                  <input type="checkbox" name="" id="seat8" hidden>
+                  <label for="seat8" class="seat">8</label>
+                  <input type="checkbox" name="" id="seat9" hidden>
+                  <label for="seat9" class="seat">9</label>
+                </div>
+                <div class="row flex-content-between items-center">
+                <input type="checkbox" name="" id="seat5" hidden>
+                  <label for="seat5" class="seat">5</label>
+                  <input type="checkbox" name="" id="seat6" hidden>
+                  <label for="seat6" class="seat">6</label>
+                  <input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat7" class="seat">7</label>
+                  <input type="checkbox" name="" id="seat8" hidden>
+                  <label for="seat8" class="seat">8</label>
+                  <input type="checkbox" name="" id="seat9" hidden>
+                  <label for="seat9" class="seat">9</label>
+                </div>
+                <div class="row flex-content-between items-center">
+                <input type="checkbox" name="" id="seat5" hidden>
+                  <label for="seat5" class="seat">5</label>
+                  <input type="checkbox" name="" id="seat6" hidden>
+                  <label for="seat6" class="seat">6</label>
+                  <input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat7" class="seat">7</label>
+                  <input type="checkbox" name="" id="seat8" hidden>
+                  <label for="seat8" class="seat">8</label>
+                  <input type="checkbox" name="" id="seat9" hidden>
+                  <label for="seat9" class="seat">9</label>
+                </div>
+                
                 </form>
               </div>
             </div>
