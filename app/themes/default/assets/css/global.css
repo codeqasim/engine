@@ -131,6 +131,7 @@ ul{list-style-type: none; }
 /*flex*/
 .flex{display:flex}
 .flex-column{flex-direction: column !important;}
+.flex-content-start{justify-content: flex-start;}
 .flex-content-between{justify-content:space-between}
 .flex-content-center{justify-content: center;}
 .flex-content-end{justify-content: flex-end;}

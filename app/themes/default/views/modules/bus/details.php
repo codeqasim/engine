@@ -22,7 +22,7 @@
                 </div>
                 <div class="flex items-center mt-10">
                   <span class="seat-bage-2"></span>
-                  <span class="seat-bage-text">Reserved</span>
+                  <span class="seat-bage-text">Reserve</span>
                 </div>
                 <div class="flex items-center mt-10">
                   <span class="seat-bage-3"></span>
@@ -39,7 +39,7 @@
                 <a href="" class="btn-succes mt-20">Complete</a>
               </div>
             </div>
-            <div class="c9">
+            <div class="c9 flex items-center flex-content-start">
               <div class="bus-seat-contain">
               <form action="" method="get">
                 <div class="row flex-content-between items-center">
@@ -48,25 +48,25 @@
                     <audio src="<?php echo $theme_url;?>assets/mp3/Bus_Horn_1.mp3" id="bus_horn"></audio>
                   </div>
                   <input type="checkbox" name="" id="seat1" hidden>
-                  <label for="seat1" class="seat"></label>
+                  <label for="seat1" class="seat">1</label>
                   <input type="checkbox" name="" id="seat2" hidden>
-                  <label for="seat2" class="seat"></label>
+                  <label for="seat2" class="seat female-seat">2</label>
                   <input type="checkbox" name="" id="seat3" hidden>
-                  <label for="seat3" class="seat"></label>
+                  <label for="seat3" class="seat occupied-seat">3</label>
                   <input type="checkbox" name="" id="seat4" hidden>
-                  <label for="seat4" class="seat"></label>
+                  <label for="seat4" class="seat">4</label>
                 </div>
                 <div class="row flex-content-between items-center">
                 <input type="checkbox" name="" id="seat5" hidden>
-                  <label for="seat5" class="seat"></label>
+                  <label for="seat5" class="seat">5</label>
                   <input type="checkbox" name="" id="seat6" hidden>
-                  <label for="seat6" class="seat"></label>
+                  <label for="seat6" class="seat">6</label>
                   <input type="checkbox" name="" id="seat7" hidden>
-                  <label for="seat7" class="seat"></label>
+                  <label for="seat7" class="seat">7</label>
                   <input type="checkbox" name="" id="seat8" hidden>
-                  <label for="seat8" class="seat"></label>
+                  <label for="seat8" class="seat">8</label>
                   <input type="checkbox" name="" id="seat9" hidden>
-                  <label for="seat9" class="seat"></label>
+                  <label for="seat9" class="seat">9</label>
                 </div>
                 </form>
               </div>
