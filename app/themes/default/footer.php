@@ -78,6 +78,7 @@
     </div>
 </footer>
 <script src="<?php echo $theme_url;?>assets/js/jquery.min.js"></script>
+<script src="<?php echo $theme_url;?>assets/js/app.js"></script>
 <script src="<?php echo $theme_url;?>assets/js/datepicker.js"></script>
 </body>
 </html>

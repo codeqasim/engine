@@ -20,7 +20,7 @@
       <input id="edit" type="checkbox" hidden>
       <div class="panel">
         <div class="contain">
-           <?php include $themeurl. 'views/modules/hotels/search.php';?>
+        <?php include $themeurl. 'views/modules/bus/search.php';?>
         </div>
       </div>
     </div>

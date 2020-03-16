@@ -5,12 +5,6 @@ class Accounts extends MX_Controller {
 
 	public function index()
 	{
-    
+        $this->theme->view('accounts/accounts');
 	}
-
-    public function login()
-	{
-        $this->theme->view('accounts/account');
-	}
-
 }

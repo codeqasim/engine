@@ -1,14 +1,17 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-// Main routes
+// main routes
 $route['default_controller'] ="home";
 $route['sitemap\.xml'] = "Sitemap";
 $route['404_override'] = 'home/error';
 $route['translate_uri_dashes'] = FALSE;
 
+// gitpull
+$route['pull'] = 'home/pull';
+
 $route['signup'] = "home/signup";
-$route['signin'] = "home/signin";
+$route['login'] = "accounts/accounts/login";
 $route['register_action'] = "home/register_action";
 
 $route[ADMINURL.'accounts/chagne_order'] = "admin/accounts/chagne_order";
@@ -21,7 +24,7 @@ $route[ADMINURL.'accounts/types([a-zA-Z0-9]*)'] = "admin/accounts/types$1";
 $route[ADMINURL.'accounts/(:any)'] = "admin/accounts/index/$1";
 $route[ADMINURL.'login'] = "admin/auth/login";
 
-// CMS
+// cms
 $route['contact'] = 'cms/contact';
 $route['about'] = 'cms/about';
 $route['policy'] = 'cms/policy';

@@ -43,7 +43,7 @@
       <?php for ($i = 1; $i <= 3; $i++) { ?>
       <div class="c4 offers">
         <a href="<?php echo base_url(); ?>offer">
-        <img src="<?php echo $theme_url;?>assets/img/offer.jpeg" alt="offer" />
+        <img src="<?php echo $theme_url;?>assets/img/offer.jpg" alt="offer" />
         </a>
       </div>
       <?php } ?>
@@ -104,7 +104,7 @@
     <div class="row">
       <?php for ($i = 1; $i <= 5; $i++) { ?>
       <div class="col-lg-5-2">
-        <div class="country-recommendation" style="background-image: url('<?php echo $theme_url;?>assets/img/dest.jpeg');">
+        <div class="country-recommendation" style="background-image: url('<?php echo $theme_url;?>assets/img/dest.jpg');">
           <h1 class="country-name">Mecca</h1>
         </div>
       </div>

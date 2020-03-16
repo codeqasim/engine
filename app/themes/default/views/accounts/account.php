@@ -5,11 +5,11 @@
       <div class="c7 rtl-align-right">
         <h1>Travel is now easier</h1>
         <ul class="list-info">
-          <li><i class="icon mdi mdi-check-all"></i> Ongoing Travel Offers</li>
-          <li>Fast Booking Experience</li>
-          <li>Rich Recommendations</li>
-          <li>Smart and Accurate Search</li>
-          <li>24/7 Friendly Customer Servcie</li>
+          <li><i class="mdi mdi-check-all"></i> Ongoing Travel Offers</li>
+          <li><i class="mdi mdi-check-all"></i> Fast Booking Experience</li>
+          <li><i class="mdi mdi-check-all"></i> Rich Recommendations</li>
+          <li><i class="mdi mdi-check-all"></i> Smart and Accurate Search</li>
+          <li><i class="mdi mdi-check-all"></i> 24/7 Friendly Customer Servcie</li>
         </ul>
         <div class="desc-img hide-m">
           <img src="assets/img/sign-bg.png" />
@@ -29,12 +29,12 @@
           </ul>
           <input type="radio" id="singin" name="account" hidden checked>
           <div class="login">
-            <h3 class="rtl-align-right">Continue with</h3>
+            <!--<h3 class="rtl-align-right">Continue with</h3>
             <center>
             <a href="" class="btn btn-facebook">Facebook</a>
             <a href="" class="btn btn-google">Google</a>
             </center>
-            <hr />
+            <hr />-->
             <h3 class="rtl-align-right">Log in to your account</h3>
             <form action="">
               <label class="pure-material-textfield-outlined mb-10">
@@ -64,12 +64,12 @@
           </div>
           <input type="radio" id="registar" name="account" hidden>
           <div class="signup">
-            <h3 class="rtl-align-right">Continue with</h3>
+            <!--<h3 class="rtl-align-right">Continue with</h3>
             <div class="text-center">
               <a href="" class="btn btn-facebook">Facebook</a>
               <a href="" class="btn btn-google">Google</a>
             </div>
-            <hr />
+            <hr />-->
             <h3 class="rtl-align-right">Create account with your email</h3>
             <form action="">
               <div class="row">
