@@ -1,5 +1,5 @@
 <div class="bus-detail-page">
-  <div class="extra-info mb-20">
+  <div class="modify mb-20">
     <div class="contain">
       <?php include $themeurl. 'views/modules/bus/search.php';?>
     </div>
