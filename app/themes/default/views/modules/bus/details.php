@@ -41,7 +41,7 @@
                 <div class="row flex-content-between items-center">
                   <div  class="seat driver-seat">
                     <img src="<?php echo $theme_url;?>assets/img/icons/driver.png" alt="" id="driver">
-                    <audio src="<?php echo $theme_url;?>assets/mp3/Dog-woof-single-sound.mp3" id="dog"></audio>
+                    <audio src="<?php echo $theme_url;?>assets/mp3/Bus_Horn_1.mp3" id="bus_horn"></audio>
                   </div>
                   <input type="checkbox" name="" id="seat1" hidden>
                   <label for="seat1" class="seat"></label>
@@ -80,15 +80,15 @@
             <label for="tab-trip-3" class="trip-detail-tab">Some Text</label>
           </div>
           <div class="tab-detail">
-            <h3>Trip detail</h3>
+            <h3 class="mb-10">Trip detail</h3>
             <hr>
-            <ul>
+            <ul class="mt-20">
               <li><i class="mdi mdi-flight-land mr-5"></i>Flight number: 552</li>
               <li><i class="mdi mdi-flight-land mr-5"></i>The time for doing is at <span>01:30</span>  am from Almaza on <span>17-03-2020</span></li>
               <li><i class="mdi mdi-flight-land mr-5"></i>The arrival time is 07:30 in the morning to Sharm El-Sheikh</li>
             </ul>
             <hr>
-            <ul>
+            <ul class="mt-20">
               <li><i class="mdi mdi-flight-land mr-5"></i>The trip is provided by East Delta Transport and Tourism Company</li>
             </ul>
             <div class="row no-gutters">
@@ -102,10 +102,10 @@
   </div>
 </div>
 <script>
-  let dog = document.getElementById('dog')
+  let _bushorn = document.getElementById('bus_horn')
   let driver = document.getElementById('driver')
   driver.addEventListener("click", function(){
-    dog.play()
+    _bushorn.play()
   });
   
 </script>
