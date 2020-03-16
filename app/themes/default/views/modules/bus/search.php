@@ -1,19 +1,5 @@
 <div class="tab fade">
 <form action="<?php echo base_url(); ?>bus/" method="GET">
-<div class="row">
-    <div class="c12">
-        <div class="options">
-            <label class="pure-material-switch">
-            <input type="checkbox">
-            <span>Direct</span>
-            </label>
-            <input type="radio" name="trip" checked id="one-way" hidden>
-            <label for="one-way" onclick="oneway()">One Way</label>
-            <input type="radio" name="trip" id="round-trip" hidden>
-            <label for="round-trip" onclick="returns()"> Round Trip</label>
-        </div>
-    </div>
-</div>
 <div class="row no-gutters row-rtl">
     <div class="c3 data-input">
         <div class="input-wrapper">

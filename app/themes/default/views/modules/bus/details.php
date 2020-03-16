@@ -37,6 +37,7 @@
             </div>
             <div class="c9">
               <div class="bus-seat-contain">
+              <form action="" method="get">
                 <div class="row flex-content-between items-center">
                   <div  class="seat driver-seat">
                     <img src="<?php echo $theme_url;?>assets/img/icons/driver.png" alt="" id="driver">
@@ -63,6 +64,7 @@
                   <input type="checkbox" name="" id="seat1" hidden>
                   <label for="seat1" class="seat"></label>
                 </div>
+                </form>
               </div>
             </div>
           </div>
