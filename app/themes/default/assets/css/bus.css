@@ -1,12 +1,12 @@
 .bus-detail-page{background-color: #f2f6fb;position: relative;}
 .bus-detail-page .extra-info{position:relative;border-radius: 4px; background-color: #fff; box-shadow: 0 2px 10px 0 rgba(0,0,0,0.07); padding: 20px;}
 .bus-detail-page .extra-info .tab{border: 1px solid #eee}
-.bus-detail-page .bus-seat-contain{border: 1px solid #dcdcdc; width: fit-content; padding: 10px 20px; transition: opacity 0.3s; border-radius: 16px; transform: rotate(270deg); position: absolute; left: 90px; margin-top: -7px; margin-right: 322px;}
-
+.bus-detail-page .bus-seat-contain{border: 1px solid #dcdcdc; width: fit-content; padding: 10px 20px; transition: opacity 0.3s; border-radius: 16px; transform: rotate(270deg); position: absolute; left: 90px; margin-top: 0px; margin-right: 322px;}
 .bus-detail-page .bus-seat-contain img{margin-top:6px;border-radius:100%;cursor:pointer;box-shadow:0 0 0 rgba(0, 0, 0, 0.8);animation:pulse2 2s infinite;}
 @-webkit-keyframes pulse2{0%{-webkit-box-shadow:0 0 0 rgba(0, 0, 0, 0.9);}70%{-webkit-box-shadow:0 0 0 10px rgba(0,0,0, 0);}100%{-webkit-box-shadow:0 0 0 0 rgba(0,0,0, 0);}}
 @keyframes pulse2{0%{-moz-box-shadow:0 0 0 rgba(0, 0, 0, 0.9);box-shadow:0 0 0 0 rgba(0,0,0, 0.4);}70%{-moz-box-shadow:0 0 0 10px rgba(0,0,0, 0);box-shadow:0 0 0 10px rgba(0,0,0, 0);}100%{-moz-box-shadow:0 0 0 0 rgba(0,0,0, 0);box-shadow:0 0 0 0 rgba(0,0,0, 0);}}
 .bus-detail-page .bus-seat-contain .seat{ position: relative; display:block;text-align: center; margin: 4px 3px; width: 37px; height: 37px; background: #F8991D; border-radius: 3px;cursor: pointer;color:#fff;line-height: 34px;transform: rotate(90deg);}
+.bus-detail-page .bus-seat-contain .seat.driver-seat{transform: rotate(0deg);}
 .bus-detail-page .bus-seat-contain .driver-seat{background: none;cursor: default;}
 .bus-detail-page .bus-seat-contain .reserved-seat{background-color: #4CB749; }
 .bus-detail-page .bus-seat-contain .female-seat{background-color: #FF1493 }
