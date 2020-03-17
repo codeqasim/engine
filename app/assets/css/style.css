@@ -1903,7 +1903,7 @@ canvas{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none}
 }.be-left-sidebar .sidebar-elements li.parent.open>a:before{content:'\f2f8'}
 .be-left-sidebar .sidebar-elements li.open>ul{display:block}
 @media(min-width:768px){.be-collapsible-sidebar-collapsed .be-left-sidebar .sidebar-elements .sub-menu.visible li.parent>a:before{display:block}
-}.be-left-sidebar:before{content:"";position:fixed;z-index:-1;width:inherit;top:0;left:0;bottom:0;background-color:inherit;border-right:1px solid #e3e3e3}
+}.be-left-sidebar:before{content:"";position:fixed;z-index:-1;width:inherit;top:0;left:0;bottom:0;background-color:inherit;border-right:1px solid #b8c0d3}
 @media(max-width:767px){.be-left-sidebar:before{display:none}
 }@media(max-width:767px){.be-left-sidebar{width:100%;background-color:#fafafa;border-bottom:1px solid #e3e3e3;border-right-width:0;position:relative;height: auto;}
 .be-left-sidebar .left-sidebar-wrapper,.be-left-sidebar .left-sidebar-spacer,.be-left-sidebar .left-sidebar-scroll,.be-left-sidebar .left-sidebar-content{display:block;position:relative;overflow:visible}
