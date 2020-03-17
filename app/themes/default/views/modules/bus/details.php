@@ -54,7 +54,7 @@
                   <input type="checkbox" name="" id="3" hidden>
                   <label for="3" class="seat empty-seat">3</label>
                   <input type="checkbox" name="" id="4" hidden>
-                  <label for="4" class="seat empty-seat">4</label>
+                  <label for="4" class="seat bus-door"></label>
                 </div>
                 <div class="row flex-content-between items-center">
                 <input type="checkbox" name="" id="5" hidden>
@@ -116,7 +116,7 @@
                   <label for="seat9" class="seat">26</label>
                   <label for="seat7" class="seat empty-seat"></label><input type="checkbox" name="" id="seat8" hidden>
                   <label for="seat5" class="seat empty-seat"></label><input type="checkbox" name="" id="seat6" hidden>
-                  <label for="seat6" class="seat empty-seat"></label><input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat6" class="seat bus-door"></label><input type="checkbox" name="" id="seat7" hidden>
                 </div>
 
                 <div class="row flex-content-between items-center">

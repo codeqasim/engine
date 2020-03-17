@@ -7,8 +7,8 @@
 .bus-detail-page .bus-seat-contain img{margin-top:6px;border-radius:100%;cursor:pointer;box-shadow:0 0 0 rgba(0, 0, 0, 0.8);animation:pulse2 2s infinite;}
 @-webkit-keyframes pulse2{0%{-webkit-box-shadow:0 0 0 rgba(0, 0, 0, 0.9);}70%{-webkit-box-shadow:0 0 0 10px rgba(0,0,0, 0);}100%{-webkit-box-shadow:0 0 0 0 rgba(0,0,0, 0);}}
 @keyframes pulse2{0%{-moz-box-shadow:0 0 0 rgba(0, 0, 0, 0.9);box-shadow:0 0 0 0 rgba(0,0,0, 0.4);}70%{-moz-box-shadow:0 0 0 10px rgba(0,0,0, 0);box-shadow:0 0 0 10px rgba(0,0,0, 0);}100%{-moz-box-shadow:0 0 0 0 rgba(0,0,0, 0);box-shadow:0 0 0 0 rgba(0,0,0, 0);}}
-.bus-detail-page .bus-seat-contain .seat{ font-size: 14px; position: relative; display:block;text-align: center; margin: 4px 3px; width: 32px; height: 32px; background: #F8991D; border-radius: 3px;cursor: pointer;color:#fff;line-height: 34px;transform: rotate(90deg);}
-.bus-detail-page .bus-seat-contain .seat.driver-seat{transform: rotate(0deg);}
+.bus-detail-page .bus-seat-contain .seat{ font-size: 14px; position: relative; display:block;text-align: center; margin: 4px 3px; width: 32px; height: 32px; background: #F8991D; border-radius: 3px;cursor: pointer;color:#fff;line-height: 34px;}
+.bus-detail-page .bus-seat-contain .seat.driver-seat,.bus-detail-page .bus-seat-contain .seat.bus-door{transform: rotate(0deg);}
 .bus-detail-page .bus-seat-contain .driver-seat{background: none;cursor: default;}
 .bus-detail-page .bus-seat-contain .reserved-seat{background-color: #4CB749; }
 .bus-detail-page .bus-seat-contain .female-seat{background-color: #FF1493 }
@@ -31,5 +31,7 @@
 .bus-detail-page .trip-detail .tab-detail h3{margin-top: 20px}
 .bus-detail-page .trip-detail .tab-detail ul li{margin-bottom: 20px}
 .bus-detail-page .trip-detail .tab-detail ul li span{color: #ea232a; font-size: 16px}
-@media screen and (min-width: 1200px){.bus-detail-page .bus-seat-contain {transform: rotate(270deg); position: absolute; left: 150px;}}
+@media screen and (min-width: 1200px){.bus-detail-page .bus-seat-contain {transform: rotate(270deg); position: absolute; left: 150px;}
+.bus-detail-page .bus-seat-contain .seat{transform: rotate(90deg)}
+}
 
