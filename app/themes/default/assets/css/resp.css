@@ -1,4 +1,9 @@
+@media screen and (min-width:235px){
+	.bus-detail-page .bus-seat-contain .seat{width: 32px;height: 32;font-size: 14px}
+	.bus-detail-page .bus-seat-contain{margin: 20px auto}
 
+}
+@media screen and (min-width: 786px){.bus-detail-page .bus-seat-contain{margin-top: 0;}}
 @media screen and (max-width:1000px){
 header nav {position: fixed; z-index: 10;top: 0;}
 header .bars {display: block !important;position: fixed; z-index: 90; left: -5px; top: 0px;z-index: 1;}

@@ -39,7 +39,7 @@
                 <a href="" class="btn-succes mt-20">1 Reserved</a>
               </div>
             </div>
-            <div class="c9 flex items-center flex-content-start">
+            <div class="c9 flex-md items-md-center flex-content-md-start">
               <div class="bus-seat-contain">
               <form action="" method="get">
                 <div class="row flex-content-between items-center">
