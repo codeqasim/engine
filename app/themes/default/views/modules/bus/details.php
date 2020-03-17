@@ -169,17 +169,12 @@
             </div>
           </div>
         </div>
-        <div class="extra-info trip-detail mb-20" >
+        <div class="extra-info trip-detail mb-20" style="min-height:500px">
           <h3>Changing station changed</h3>
           <div class="flex mt-20">
             <input type="radio" id="tab-trip-1"name="tab" hidden checked>
             <label for="tab-trip-1" class="trip-detail-tab">Some Text</label>
-            <input type="radio" id="tab-trip-2"name="tab" hidden>
-            <label for="tab-trip-2" class="trip-detail-tab">Some Text</label>
-            <input type="radio" id="tab-trip-3"name="tab" hidden>
-            <label for="tab-trip-3" class="trip-detail-tab">Some Text</label>
-          </div>
-          <div class="tab-detail">
+            <div class="tab-detail">
             <h3 class="mb-10">Trip detail</h3>
             <hr>
             <ul class="mt-20">
@@ -195,6 +190,11 @@
               <div class="c6">Phone number: 0100000000000</div>
               <div class="c6">Email: info@bus.com</div>
             </div>
+          </div>
+            <input type="radio" id="tab-trip-2"name="tab" hidden>
+            <label for="tab-trip-2" class="trip-detail-tab">Some Text</label>
+            <input type="radio" id="tab-trip-3"name="tab" hidden>
+            <label for="tab-trip-3" class="trip-detail-tab">Some Text</label>
           </div>
         </div>
       </div>
