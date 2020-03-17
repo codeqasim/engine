@@ -43,125 +43,125 @@
               <div class="bus-seat-contain">
               <form action="" method="get">
                 <div class="row flex-content-between items-center">
-                  <div  class="seat driver-seat">
+                  <div  class="driver-seat">
                     <img src="<?php echo $theme_url;?>assets/img/icons/driver.png" alt="" id="driver">
                     <audio src="<?php echo $theme_url;?>assets/mp3/Bus_Horn_1.mp3" id="bus_horn"></audio>
                   </div>
                   <input type="checkbox" name="" id="1" hidden>
-                  <label for="1" class="seat empty-seat">1</label>
+                  <label for="1" class="empty">1</label>
                   <input type="checkbox" name="" id="2" hidden>
-                  <label for="2" class="seat empty-seat">2</label>
+                  <label for="2" class="empty">2</label>
                   <input type="checkbox" name="" id="3" hidden>
-                  <label for="3" class="seat empty-seat">3</label>
+                  <label for="3" class="empty">3</label>
                   <input type="checkbox" name="" id="4" hidden>
-                  <label for="4" class="seat bus-door"></label>
+                  <label for="4" class="bus-door"></label>
                 </div>
                 <div class="row flex-content-between items-center">
                 <input type="checkbox" name="" id="5" hidden>
-                  <label for="5" class="seat">1</label><input type="checkbox" name="" id="6" hidden>
-                  <label for="6" class="seat">2</label><input type="checkbox" name="" id="7" hidden>
-                  <label for="7" class="seat empty-seat"></label><input type="checkbox" name="" id="8" hidden>
-                  <label for="8" class="seat">3</label><input type="checkbox" name="" id="9" hidden>
-                  <label for="9" class="seat">4</label>
+                  <label for="5" >1</label><input type="checkbox" name="" id="6" hidden>
+                  <label for="6" >2</label><input type="checkbox" name="" id="7" hidden>
+                  <label for="7" class="empty"></label><input type="checkbox" name="" id="8" hidden>
+                  <label for="8" >3</label><input type="checkbox" name="" id="9" hidden>
+                  <label for="9" >4</label>
                 </div>
 
                 <div class="row flex-content-between items-center">
                 <input type="checkbox" name="" id="10" hidden>
-                  <label for="10" class="seat">5</label><input type="checkbox" name="" id="11" hidden>
-                  <label for="11" class="seat">6</label><input type="checkbox" name="" id="12" hidden>
-                  <label for="12" class="seat empty-seat"></label><input type="checkbox" name="" id="13" hidden>
-                  <label for="13" class="seat">7</label><input type="checkbox" name="" id="14" hidden>
-                  <label for="14" class="seat">8</label>
+                  <label for="10" >5</label><input type="checkbox" name="" id="11" hidden>
+                  <label for="11" >6</label><input type="checkbox" name="" id="12" hidden>
+                  <label for="12" class="empty"></label><input type="checkbox" name="" id="13" hidden>
+                  <label for="13" >7</label><input type="checkbox" name="" id="14" hidden>
+                  <label for="14" >8</label>
                 </div>
 
                 <div class="row flex-content-between items-center">
                 <input type="checkbox" name="" id="15" hidden>
-                  <label for="15" class="seat">9</label><input type="checkbox" name="" id="16" hidden>
-                  <label for="16" class="seat">10</label><input type="checkbox" name="" id="17" hidden>
-                  <label for="17" class="seat empty-seat"></label><input type="checkbox" name="" id="18" hidden>
-                  <label for="18" class="seat">11</label><input type="checkbox" name="" id="19" hidden>
-                  <label for="19" class="seat">12</label>
+                  <label for="15" >9</label><input type="checkbox" name="" id="16" hidden>
+                  <label for="16" >10</label><input type="checkbox" name="" id="17" hidden>
+                  <label for="17" class="empty"></label><input type="checkbox" name="" id="18" hidden>
+                  <label for="18" >11</label><input type="checkbox" name="" id="19" hidden>
+                  <label for="19" >12</label>
                 </div>
 
                 <div class="row flex-content-between items-center">
                 <input type="checkbox" name="" id="20" hidden>
-                  <label for="20" class="seat">13</label><input type="checkbox" name="" id="21" hidden>
-                  <label for="21" class="seat">14</label><input type="checkbox" name="" id="22" hidden>
-                  <label for="22" class="seat empty-seat"></label><input type="checkbox" name="" id="23" hidden>
-                  <label for="23" class="seat">15</label><input type="checkbox" name="" id="24" hidden>
-                  <label for="24" class="seat">16</label>
+                  <label for="20" >13</label><input type="checkbox" name="" id="21" hidden>
+                  <label for="21" >14</label><input type="checkbox" name="" id="22" hidden>
+                  <label for="22" class="empty"></label><input type="checkbox" name="" id="23" hidden>
+                  <label for="23" >15</label><input type="checkbox" name="" id="24" hidden>
+                  <label for="24" >16</label>
                 </div>
 
                 <div class="row flex-content-between items-center">
                 <input type="checkbox" name="" id="seat5" hidden>
-                  <label for="seat5" class="seat">17</label><input type="checkbox" name="" id="seat6" hidden>
-                  <label for="seat6" class="seat">18</label><input type="checkbox" name="" id="seat7" hidden>
-                  <label for="seat7" class="seat empty-seat"></label><input type="checkbox" name="" id="seat8" hidden>
-                  <label for="seat8" class="seat">19</label><input type="checkbox" name="" id="seat9" hidden>
-                  <label for="seat9" class="seat">20</label>
+                  <label for="seat5" >17</label><input type="checkbox" name="" id="seat6" hidden>
+                  <label for="seat6" >18</label><input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat7" class="empty"></label><input type="checkbox" name="" id="seat8" hidden>
+                  <label for="seat8" >19</label><input type="checkbox" name="" id="seat9" hidden>
+                  <label for="seat9" >20</label>
                 </div>
 
                 <div class="row flex-content-between items-center">
                 <input type="checkbox" name="" id="seat5" hidden>
-                  <label for="seat5" class="seat">21</label><input type="checkbox" name="" id="seat6" hidden>
-                  <label for="seat6" class="seat">22</label><input type="checkbox" name="" id="seat7" hidden>
-                  <label for="seat7" class="seat empty-seat"></label><input type="checkbox" name="" id="seat8" hidden>
-                  <label for="seat8" class="seat">23</label><input type="checkbox" name="" id="seat9" hidden>
-                  <label for="seat9" class="seat">24</label>
+                  <label for="seat5" >21</label><input type="checkbox" name="" id="seat6" hidden>
+                  <label for="seat6" >22</label><input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat7" class="empty"></label><input type="checkbox" name="" id="seat8" hidden>
+                  <label for="seat8" >23</label><input type="checkbox" name="" id="seat9" hidden>
+                  <label for="seat9" >24</label>
                 </div>
 
                 <div class="row flex-content-between items-center">
                 <input type="checkbox" name="" id="seat5" hidden>
-                  <label for="seat8" class="seat">25</label><input type="checkbox" name="" id="seat9" hidden>
-                  <label for="seat9" class="seat">26</label>
-                  <label for="seat7" class="seat empty-seat"></label><input type="checkbox" name="" id="seat8" hidden>
-                  <label for="seat5" class="seat empty-seat"></label><input type="checkbox" name="" id="seat6" hidden>
-                  <label for="seat6" class="seat bus-door"></label><input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat8" >25</label><input type="checkbox" name="" id="seat9" hidden>
+                  <label for="seat9" >26</label>
+                  <label for="seat7" class="empty"></label><input type="checkbox" name="" id="seat8" hidden>
+                  <label for="seat5" class="empty"></label><input type="checkbox" name="" id="seat6" hidden>
+                  <label for="seat6" class="bus-door"></label><input type="checkbox" name="" id="seat7" hidden>
                 </div>
 
                 <div class="row flex-content-between items-center">
                 <input type="checkbox" name="" id="seat5" hidden>
-                  <label for="seat5" class="seat">27</label><input type="checkbox" name="" id="seat6" hidden>
-                  <label for="seat6" class="seat">28</label><input type="checkbox" name="" id="seat7" hidden>
-                  <label for="seat7" class="seat empty-seat"></label><input type="checkbox" name="" id="seat8" hidden>
-                  <label for="seat8" class="seat">29</label><input type="checkbox" name="" id="seat9" hidden>
-                  <label for="seat9" class="seat">30</label>
+                  <label for="seat5" >27</label><input type="checkbox" name="" id="seat6" hidden>
+                  <label for="seat6" >28</label><input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat7" class="empty"></label><input type="checkbox" name="" id="seat8" hidden>
+                  <label for="seat8" >29</label><input type="checkbox" name="" id="seat9" hidden>
+                  <label for="seat9" >30</label>
                 </div>
 
                 <div class="row flex-content-between items-center">
                 <input type="checkbox" name="" id="seat5" hidden>
-                  <label for="seat5" class="seat">31</label><input type="checkbox" name="" id="seat6" hidden>
-                  <label for="seat6" class="seat">32</label><input type="checkbox" name="" id="seat7" hidden>
-                  <label for="seat7" class="seat empty-seat"></label><input type="checkbox" name="" id="seat8" hidden>
-                  <label for="seat8" class="seat">33</label><input type="checkbox" name="" id="seat9" hidden>
-                  <label for="seat9" class="seat">34</label>
+                  <label for="seat5" >31</label><input type="checkbox" name="" id="seat6" hidden>
+                  <label for="seat6" >32</label><input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat7" class="empty"></label><input type="checkbox" name="" id="seat8" hidden>
+                  <label for="seat8" >33</label><input type="checkbox" name="" id="seat9" hidden>
+                  <label for="seat9" >34</label>
                 </div>
 
                 <div class="row flex-content-between items-center">
                 <input type="checkbox" name="" id="seat5" hidden>
-                  <label for="seat5" class="seat">34</label><input type="checkbox" name="" id="seat6" hidden>
-                  <label for="seat6" class="seat">35</label><input type="checkbox" name="" id="seat7" hidden>
-                  <label for="seat7" class="seat empty-seat"></label><input type="checkbox" name="" id="seat8" hidden>
-                  <label for="seat8" class="seat">37</label><input type="checkbox" name="" id="seat9" hidden>
-                  <label for="seat9" class="seat">38</label>
+                  <label for="seat5" >34</label><input type="checkbox" name="" id="seat6" hidden>
+                  <label for="seat6" >35</label><input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat7" class="empty"></label><input type="checkbox" name="" id="seat8" hidden>
+                  <label for="seat8" >37</label><input type="checkbox" name="" id="seat9" hidden>
+                  <label for="seat9" >38</label>
                 </div>
 
                 <div class="row flex-content-between items-center">
                 <input type="checkbox" name="" id="seat5" hidden>
-                  <label for="seat5" class="seat">39</label><input type="checkbox" name="" id="seat6" hidden>
-                  <label for="seat6" class="seat">40</label><input type="checkbox" name="" id="seat7" hidden>
-                  <label for="seat7" class="seat empty-seat"></label><input type="checkbox" name="" id="seat8" hidden>
-                  <label for="seat8" class="seat">41</label><input type="checkbox" name="" id="seat9" hidden>
-                  <label for="seat9" class="seat">42</label>
+                  <label for="seat5" >39</label><input type="checkbox" name="" id="seat6" hidden>
+                  <label for="seat6" >40</label><input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat7" class="empty"></label><input type="checkbox" name="" id="seat8" hidden>
+                  <label for="seat8" >41</label><input type="checkbox" name="" id="seat9" hidden>
+                  <label for="seat9" >42</label>
                 </div>
 
                 <div class="row flex-content-between items-center">
                 <input type="checkbox" name="" id="seat5" hidden>
-                  <label for="seat5" class="seat">43</label><input type="checkbox" name="" id="seat6" hidden>
-                  <label for="seat6" class="seat">44</label><input type="checkbox" name="" id="seat7" hidden>
-                  <label for="seat7" class="seat empty-seat"></label><input type="checkbox" name="" id="seat8" hidden>
-                  <label for="seat8" class="seat">45</label><input type="checkbox" name="" id="seat9" hidden>
-                  <label for="seat9" class="seat">46</label>
+                  <label for="seat5" >43</label><input type="checkbox" name="" id="seat6" hidden>
+                  <label for="seat6" >44</label><input type="checkbox" name="" id="seat7" hidden>
+                  <label for="seat7" class="empty"></label><input type="checkbox" name="" id="seat8" hidden>
+                  <label for="seat8" >45</label><input type="checkbox" name="" id="seat9" hidden>
+                  <label for="seat9" >46</label>
                 </div>
 
                 </form>

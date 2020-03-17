@@ -8,15 +8,15 @@
 .bus-detail-page .bus-seat-contain img{margin-top:6px;border-radius:100%;cursor:pointer;box-shadow:0 0 0 rgba(0, 0, 0, 0.8);animation:pulse2 2s infinite;}
 @-webkit-keyframes pulse2{0%{-webkit-box-shadow:0 0 0 rgba(0, 0, 0, 0.9);}70%{-webkit-box-shadow:0 0 0 10px rgba(0,0,0, 0);}100%{-webkit-box-shadow:0 0 0 0 rgba(0,0,0, 0);}}
 @keyframes pulse2{0%{-moz-box-shadow:0 0 0 rgba(0, 0, 0, 0.9);box-shadow:0 0 0 0 rgba(0,0,0, 0.4);}70%{-moz-box-shadow:0 0 0 10px rgba(0,0,0, 0);box-shadow:0 0 0 10px rgba(0,0,0, 0);}100%{-moz-box-shadow:0 0 0 0 rgba(0,0,0, 0);box-shadow:0 0 0 0 rgba(0,0,0, 0);}}
-.bus-detail-page .bus-seat-contain .seat{ font-size: 14px; position: relative; display:block;text-align: center; margin: 4px 3px; width: 32px; height: 32px; background: #F8991D; border-radius: 3px;cursor: pointer;color:#fff;line-height: 34px;}
-.bus-detail-page .bus-seat-contain .seat.driver-seat,.bus-detail-page .bus-seat-contain .seat.bus-door{transform: rotate(0deg);}
+.bus-detail-page .bus-seat-contain label,.bus-detail-page .bus-seat-contain .driver-seat{ font-size: 14px; position: relative; display:block;text-align: center; margin: 4px 3px; width: 32px; height: 32px; background: #F8991D; border-radius: 3px;cursor: pointer;color:#fff;line-height: 34px;}
+
 .bus-detail-page .bus-seat-contain .driver-seat{background: none;cursor: default;}
-.bus-detail-page .bus-seat-contain .reserved-seat{background-color: #4CB749; }
-.bus-detail-page .bus-seat-contain .female-seat{background-color: #FF1493 }
-.bus-detail-page .bus-seat-contain .empty-seat{background-color: #f0f0f0; color: #f0f0f0;border: 1px solid #d0cedb;cursor: no-drop;} 
-.bus-detail-page .bus-seat-contain .occupied-seat{background-color: #2E445A;} 
+.bus-detail-page .bus-seat-contain .reserved{background-color: #4CB749; }
+.bus-detail-page .bus-seat-contain .female{background-color: #FF1493 }
+.bus-detail-page .bus-seat-contain .empty{background-color: #f0f0f0; color: #f0f0f0;border: 1px solid #d0cedb;cursor: no-drop;} 
+.bus-detail-page .bus-seat-contain .occupied{background-color: #2E445A;} 
 .bus-detail-page .bus-seat-contain input:checked + label{background-color:#4CB749;}
-.bus-detail-page .bus-seat-contain .bus-door{background-color: #FF1493;border-right: 5px solid rgb(78, 78, 80);background: #f0f0f0; }
+.bus-detail-page .bus-seat-contain .bus-door{border-right: 5px solid rgb(78, 78, 80);background: #f0f0f0;cursor: no-drop; }
 .bus-detail-page .seats-map .seat-bage-1{display: inline-block; width: 25px; height: 25px; margin: 0 7px 0px 0; border-radius: 4px;background: #F8991D;}
 .bus-detail-page .seats-map .seat-bage-2{display: inline-block; width: 25px; height: 25px; margin: 0 7px 0px 0; border-radius: 4px;background: #4CB749;}
 .bus-detail-page .seats-map .seat-bage-3{display: inline-block; width: 25px; height: 25px; margin: 0 7px 0px 0; border-radius: 4px;background: #2E445A;}
@@ -27,12 +27,13 @@
 .bus-detail-page .trip-detail-tab{padding: 10px 25px; border-radius: 2px; color: #888DA0; font-size: 12px; background: #ECF6F8; font-weight: 500; margin-left: 6px; margin-bottom: 6px;cursor: pointer;}
 .bus-detail-page .trip-detail input:checked + .trip-detail-tab{background-color: #0d00bc;color:#fff;}
 .bus-detail-page .tab-detail{position:relative; padding: 20px; font-size: 12px}
-/*.bus-detail-page .trip-detail input:checked ~ .tab-detail{-webkit-transition: opacity .3s,padding .3s; -moz-transition: opacity .3s,padding .3s; transition: opacity .3s,padding .3s; visibility: visible; opacity: 1;}*/
+.bus-detail-page .trip-detail input:checked ~ .tab-detail{-webkit-transition: opacity .3s,padding .3s; -moz-transition: opacity .3s,padding .3s; transition: opacity .3s,padding .3s; visibility: visible; opacity: 1;}
 .bus-detail-page .trip-detail .tab-detail hr{width: 100%;margin: 20 0;border: .5px solid #eee;}
 .bus-detail-page .trip-detail .tab-detail h3{margin-top: 20px}
 .bus-detail-page .trip-detail .tab-detail ul li{margin-bottom: 20px}
 .bus-detail-page .trip-detail .tab-detail ul li span{color: #ea232a; font-size: 16px}
 @media screen and (min-width: 1200px){.bus-detail-page .bus-seat-contain {transform: rotate(270deg); position: absolute; left: 150px;}
-.bus-detail-page .bus-seat-contain .seat{transform: rotate(90deg)}
+.bus-detail-page .bus-seat-contain label{transform: rotate(90deg)}
+.bus-detail-page .bus-seat-contain .bus-door {transform: rotate(0deg)}
 }
 
