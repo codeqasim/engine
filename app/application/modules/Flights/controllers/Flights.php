@@ -3,8 +3,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Flights extends MX_Controller {
 
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('Admin/Modules_Model', 'mm');
+    }
+
 	public function index()
 	{
+	    $results = $this->mm->get_module_parent('Flights');
+	    dd($results);
 		$this->theme->view('modules/flights/list');
 	}
 

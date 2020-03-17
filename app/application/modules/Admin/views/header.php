@@ -309,16 +309,16 @@
                             <li>
                                 <div class="list">
                                     <div class="content">
-                                        <div class="row">
-                                            <?php  foreach($modules as $index=>$module) {
-                                                if($module->active) { ?>
-                                            <div class="col-xs-4"><a href="#" class="connection-item"><img
-                                                            src="<?php echo base_url(); ?>assets/img/favicon.png"
-                                                            alt="Github"><span><?=$module->name?></span></a></div>
-                                                <?php if( $index != 0 && $index % 3 == 0) {?>
-                                                    <br>
-                                            <?php } }} ?>
-                                        </div>
+<!--                                        <div class="row">-->
+<!--                                            --><?php // foreach($modules as $index=>$module) {
+//                                                if($module->active) { ?>
+<!--                                            <div class="col-xs-4"><a href="#" class="connection-item"><img-->
+<!--                                                            src="--><?php //echo base_url(); ?><!--assets/img/favicon.png"-->
+<!--                                                            alt="Github"><span>--><?//=$module->name?><!--</span></a></div>-->
+<!--                                                --><?php //if( $index != 0 && $index % 3 == 0) {?>
+<!--                                                    <br>-->
+<!--                                            --><?php //} }} ?>
+<!--                                        </div>-->
                                     </div>
                                 </div>
                                 <div class="footer"><a href="#">More</a></div>
@@ -363,14 +363,14 @@
                                     <li><a href="<?php echo base_url(ADMINURL); ?>menus">CMS Menus</a></li>
                                 </ul>
                             </li>
-                            <?php if($modules["blogs"]->active) { ?>
+                           
                             <li class="<?=add_active("blogs")?>"><a href="javascript:void(0)"><i class="icon mdi mdi-border-all"></i><span>Blogs</span></a>
                                 <ul class="sub-menu">
                                     <li><a href="<?php echo base_url(ADMINURL); ?>blogs"><!--<span class="label label-primary pull-right">New</span>-->Blogs</a></li>
                                     <li><a href="<?php echo base_url(ADMINURL); ?>blogs/categories">Blogs Categories</a></li>
                                 </ul>
                             </li>
-                            <?php } ?>
+                         
                             <li class="<?=add_active("pages")?>"><a href="javascript:void(0)"><i class="icon mdi mdi-layers"></i><span>Pages</span></a>
                                 <ul class="sub-menu">
                                     <li><a href="pages-blank.html">Blank Page</a>

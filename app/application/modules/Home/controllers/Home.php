@@ -8,9 +8,18 @@ class Home extends MX_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
         $this->load->model('Home_Model');
+        $this->load->model('Admin/Modules_Model', 'mm');
+
     }
     public function index()
     {
+        $modules = $this->mm->get_modules();
+        $columns = array_unique(array_column( $modules,'parent'));
+        $final_modules = array();
+        foreach ($columns as $item){
+            $final_modules [$item] = ArrayWhere($modules ,'parent',$item);
+        }
+        $data["modules"] = $final_modules;
      $this->theme->view('index');
     }
 

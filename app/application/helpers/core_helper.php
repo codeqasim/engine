@@ -15,4 +15,18 @@ if (!function_exists('isUserLogin')) {
         return false;
     }
 }
+if (!function_exists('ArrayWhere')) {
+
+    function ArrayWhere($array,$column,$value)
+    {
+        $return_value = [];
+        foreach ($array as $item){
+            $item = (array)$item;
+            if($item[$column] == $value){
+                array_push($return_value,$item);
+            }
+        }
+        return $return_value;
+    }
+}
 ?>
