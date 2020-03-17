@@ -81,6 +81,14 @@ class Settings extends MX_Controller
     public function modules()
     {
         $data = [];
+        $data['title'] = "Modules";
+        $modules = $this->mm->get_modules();
+        $columns = array_unique(array_column( $modules,'parent'));
+        $final_modules = array();
+        foreach ($columns as $item){
+            $final_modules [$item] = ArrayWhere($modules ,'parent',$item);
+        }
+        $data["modules"] = $final_modules;
         $data['main_content'] = 'Admin/modules';
         $this->load->view('Admin/template', $data);
     }
@@ -88,6 +96,33 @@ class Settings extends MX_Controller
     {
 
         echo $this->sm->activiate_modules($this->input->post());
+    }
+    public function update_modules(){
+        $results = json_decode(sendRequest('GET','http://localhost/engine/modules/config.json',array(),''),true);
+        $keys = array_keys($results);
+        foreach ($keys as $item){
+            foreach ($results[$item] as $subItem){
+                $object = array(
+                    "parent"=>$item,
+                    "name"=>$subItem["name"],
+                    "active"=>1
+                );
+                $this->mm->get_module_name($object);
+
+            }
+        }
+        redirect(base_url('admin/settings/modules'));
+    }
+    public function module_data(){
+        $id = $this->input->get('id');
+        $data = $this->mm->get_module_id($id);
+        echo json_encode($data);
+    }
+    public function update_credentials(){
+        $module_id = $this->input->post("module_id");
+        $credentials = $this->input->post();
+        unset($credentials["module_id"]);
+        $this->mm->save_credentials($module_id,$credentials);
     }
     public function delete_all()
     {

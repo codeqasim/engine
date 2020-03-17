@@ -1,8 +1,15 @@
 {
-  "modules": [
+  "Flights": [
     {
-      "name":"travelhope",
-      "type": "flights"
+      "name":"travelshope"
+    },
+    {
+      "name":"kiwi"
+    }
+  ],
+  "Hotels": [
+    {
+      "name":"hotelsbed"
     }
   ]
 }

@@ -42,6 +42,7 @@ class Modules_Model extends CI_Model
         return (object)array("role_title"=>$role_title,"result"=>$result);
 
     }
+
     public function insert_modules_types($modules,$type_id,$value)
     {
         if(empty($type_id))
@@ -156,9 +157,35 @@ class Modules_Model extends CI_Model
     }
     public function get_modules()
     {
-        return $this->db->get('modules')->result();
+        return $this->db->where("active",1)->get('modules')->result();
+    }
+    public function get_module_name($query_array){
+        $result =  $this->db
+            ->where('name',$query_array["name"])->where('parent',$query_array["parent"])
+            ->get('modules')->result();
+        if(empty($result)){
+            $this->db->insert('modules',$query_array);
+        }
+    }
+    public function get_module_parent($parent){
+        $result =  $this->db
+            ->where('active',1)->where('parent',$parent)
+            ->get('modules')->result();
+        return $result;
     }
 
+    public function get_module_id($id){
+        $result =  $this->db
+            ->where('id',$id)->get('modules')->row();
+        return $result;
+    }
+    public function save_credentials($module_id,$module_credentials){
+        $update_array = array(
+            "credentials"=>json_encode($module_credentials)
+        );
+        $this->db->where('id',$module_id);
+        $this->db->update('modules',$update_array);
+    }
 
 
 }
