@@ -55,6 +55,7 @@ header .nav .nav-right ul li:not(:last-child) a{border: 0!important}
 .flight-list-page aside{height: auto;overflow-y: hidden;padding: 0 0 !important;transition:transform 0.3s ease-out;transform:scaleY(0);height: 0}
 .flight-list-page .btn-filter{display: inline-block !important;}
 .flight-list-page input#filter:checked + aside{transform:scaleY(1); transform-origin:top;height: auto;transition:transform 0.3s ease-in}
+.bus-detail-page .tab{margin-top: 65px}
 }
 @media screen and (max-width:650px){
  .result-card .left-side-row:not(:last-of-type){border-bottom:none;}

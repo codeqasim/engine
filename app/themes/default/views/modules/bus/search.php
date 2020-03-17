@@ -1,7 +1,7 @@
 <div class="tab fade">
 <form action="<?php echo base_url(); ?>bus/" method="GET">
 <div class="row no-gutters row-rtl">
-    <div class="c3 data-input">
+    <div class="c3 c-sm-6 data-input">
         <div class="input-wrapper">
             <span class="input-label"><i class="mdi mdi-flight-takeoff"></i> From Origin</span>
             <div class="input-items">
@@ -9,7 +9,7 @@
             </div>
         </div>
     </div>
-    <div class="c3 data-input">
+    <div class="c3 c-sm-6 data-input">
         <div class="input-wrapper">
             <span class="input-label"><i class="mdi mdi-flight-land"></i> To Destination</span>
             <div class="input-items">
