@@ -9,7 +9,6 @@
 @-webkit-keyframes pulse2{0%{-webkit-box-shadow:0 0 0 rgba(0, 0, 0, 0.9);}70%{-webkit-box-shadow:0 0 0 10px rgba(0,0,0, 0);}100%{-webkit-box-shadow:0 0 0 0 rgba(0,0,0, 0);}}
 @keyframes pulse2{0%{-moz-box-shadow:0 0 0 rgba(0, 0, 0, 0.9);box-shadow:0 0 0 0 rgba(0,0,0, 0.4);}70%{-moz-box-shadow:0 0 0 10px rgba(0,0,0, 0);box-shadow:0 0 0 10px rgba(0,0,0, 0);}100%{-moz-box-shadow:0 0 0 0 rgba(0,0,0, 0);box-shadow:0 0 0 0 rgba(0,0,0, 0);}}
 .bus-detail-page .bus-seat-contain label,.bus-detail-page .bus-seat-contain .driver-seat{ font-size: 14px; position: relative; display:block;text-align: center; margin: 4px 3px; width: 32px; height: 32px; background: #F8991D; border-radius: 3px;cursor: pointer;color:#fff;line-height: 34px;}
-
 .bus-detail-page .bus-seat-contain .driver-seat{background: none;cursor: default;}
 .bus-detail-page .bus-seat-contain .reserved{background-color: #4CB749; }
 .bus-detail-page .bus-seat-contain .female{background-color: #FF1493 }
@@ -26,7 +25,7 @@
 .bus-detail-page .seats-map .total-price{color: #22B575; margin-top: 3px; margin-bottom: 15px; font-weight: bold; font-size: 18px}
 .bus-detail-page .trip-detail-tab{padding: 10px 25px; border-radius: 2px; color: #888DA0; font-size: 12px; background: #ECF6F8; font-weight: 500; margin-left: 6px; margin-bottom: 6px;cursor: pointer;}
 .bus-detail-page .trip-detail input:checked + .trip-detail-tab{background-color: #0d00bc;color:#fff;}
-.bus-detail-page .tab-detail{position:relative; padding: 20px; font-size: 12px}
+.bus-detail-page .tab-detail{position: absolute; padding: 20px; font-size: 12px;opacity: 0;visibility: hidden;top: 100px;width: 100%;left: 0;}
 .bus-detail-page .trip-detail input:checked ~ .tab-detail{-webkit-transition: opacity .3s,padding .3s; -moz-transition: opacity .3s,padding .3s; transition: opacity .3s,padding .3s; visibility: visible; opacity: 1;}
 .bus-detail-page .trip-detail .tab-detail hr{width: 100%;margin: 20 0;border: .5px solid #eee;}
 .bus-detail-page .trip-detail .tab-detail h3{margin-top: 20px}
