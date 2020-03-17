@@ -3,7 +3,7 @@
 <div class="">
 <h4><strong><?= $title; ?></strong></h4>
 <span class="panel-subtitle">
-<ol class="breadcrumb page-head-nav">
+<ol class="breadcrumb page-head-nav row">
 <li class=""><a href="<?php echo base_url(ADMINURL); ?>dashboard">Dashboard</a></li>
 <?php $url = ""; foreach($crumbdata as $index=>$c){ if($index != 0 ) {$url = $url."/".slugifyToString($c); } else{ $url = slugifyToString($c); } ?>
 <li class="<?php if(count($crumbdata) == $index+1) { echo  'active';} ?>">

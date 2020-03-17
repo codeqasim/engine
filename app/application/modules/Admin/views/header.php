@@ -232,12 +232,12 @@
                     </li>
                 </ul>
 
-                <div class="search-container">
+                <!--<div class="search-container">
                     <div class="input-group input-group-sm">
                         <input type="text" name="search" placeholder="Search..." class="form-control search-input"><span class="input-group-btn">
                         <button type="button" class="btn btn-primary">Search</button></span>
                     </div>
-                </div>
+                </div>-->
 
                 <ul class="nav navbar-nav navbar-right be-icons-nav">
                     <li class="dropdown"><a href="#" role="button" aria-expanded="false"
@@ -336,16 +336,16 @@
                     <div class="left-sidebar-content">
                         <ul class="sidebar-elements">
                             <li class="divider">Menu</li>
-                            <li class="<?=add_active("dashboard")?>"><a href="<?= base_url(ADMINURL); ?>dashboard"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a></li>
+                            <li class="<?=add_active("dashboard")?>"><a href="<?= base_url(ADMINURL); ?>dashboard" class="no_before"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a></li>
                             <li class="<?=add_active("settings")?>"><a href="javascript:void(0)"><i class="icon mdi mdi-settings"></i><span>Settings</span></a>
                                 <ul class="sub-menu">
                                     <li class=""><a href="<?= base_url(ADMINURL); ?>settings">Settings</a></li>
-                                    <li class=""><a href="<?= base_url(ADMINURL); ?>settings/modules">Modules</a></li>
                                     <li class=""><a href="<?= base_url(ADMINURL); ?>settings/currencies">Curencies</a></li>
                                     <li class=""><a href="<?= base_url(ADMINURL); ?>settings/payment_gateways">Payment Gateways</a></li>
                                     <li class=""><a href="<?= base_url(ADMINURL); ?>settings/social">Social Icons</a></li>
                                 </ul>
                             </li>
+                            <li class=""><a href="<?= base_url(ADMINURL); ?>settings/modules"><i class="icon mdi mdi-local-store"></i><span>Modules</span></a></li>
                             <li class="<?=add_active("accounts")?>"><a href="javascript:void(0)"><i class="icon mdi mdi-face"></i><span>Accounts</span></a>
                                 <ul class="sub-menu">
                                     <li><a href="<?= base_url(ADMINURL); ?>accounts">Accounts</a></li>
