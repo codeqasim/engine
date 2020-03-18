@@ -9,7 +9,7 @@ header nav {position: fixed; z-index: 10;top: 0;}
 header .bars {display: block !important;position: fixed; z-index: 90; left: -5px; top: 0px;z-index: 1;}
 header .c2{position: static !important;}
 header label{display: block;cursor: pointer;margin-top: 18px;}
-header .logo img{ position: absolute;top:20%;left: 50%;transform: translateX(-50%)}
+/*header .logo img{ position: absolute;top:20%;left: 50%;transform: translateX(-50%)}*/
 header .mobnav .menu a { display: block; line-height: 45px; font-size: 20px; }
 header .mobnav .nav-right li,header .mobnav .nav-right a { width: 100%; display: block; }
 header .bars input[type=checkbox]:checked+label+.mobnav {display: block !important;background: #fff; width: 65%; left: 0; position: fixed; height: 100vh; z-index: 10; top: 0;box-shadow:10px -5px 10px rgba(0, 0, 0, 0.2784313725490196);padding: 55px 15px !important;}
