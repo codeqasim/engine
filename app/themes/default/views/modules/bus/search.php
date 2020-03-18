@@ -5,7 +5,7 @@
         <div class="input-wrapper">
             <span class="input-label"><i class="mdi mdi-bus"></i> From Origin</span>
             <div class="input-items">
-                <input autocomplete="off" type="text" placeholder="Origin" />
+                <input autocomplete="off" type="text" placeholder="Lahore" />
             </div>
         </div>
     </div>
@@ -13,7 +13,7 @@
         <div class="input-wrapper">
             <span class="input-label"><i class="mdi mdi-bus"></i> To Destination</span>
             <div class="input-items">
-                <input autocomplete="off" type="text" placeholder="Destination" />
+                <input autocomplete="off" type="text" placeholder="Multan" />
             </div>
         </div>
     </div>

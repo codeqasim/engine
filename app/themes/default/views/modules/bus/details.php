@@ -189,42 +189,6 @@
               <div class="c6">Phone number: 0100000000000</div>
               <div class="c6">Email: info@bus.com</div>
             </div>
-            <div class="row no-gutters">
-              <div class="c6">Phone number: 0100000000000</div>
-              <div class="c6">Email: info@bus.com</div>
-            </div>
-            <div class="row no-gutters">
-              <div class="c6">Phone number: 0100000000000</div>
-              <div class="c6">Email: info@bus.com</div>
-            </div>
-            <div class="row no-gutters">
-              <div class="c6">Phone number: 0100000000000</div>
-              <div class="c6">Email: info@bus.com</div>
-            </div>
-            <div class="row no-gutters">
-              <div class="c6">Phone number: 0100000000000</div>
-              <div class="c6">Email: info@bus.com</div>
-            </div>
-            <div class="row no-gutters">
-              <div class="c6">Phone number: 0100000000000</div>
-              <div class="c6">Email: info@bus.com</div>
-            </div>
-            <div class="row no-gutters">
-              <div class="c6">Phone number: 0100000000000</div>
-              <div class="c6">Email: info@bus.com</div>
-            </div>
-            <div class="row no-gutters">
-              <div class="c6">Phone number: 0100000000000</div>
-              <div class="c6">Email: info@bus.com</div>
-            </div>
-            <div class="row no-gutters">
-              <div class="c6">Phone number: 0100000000000</div>
-              <div class="c6">Email: info@bus.com</div>
-            </div>
-            <div class="row no-gutters">
-              <div class="c6">Phone number: 0100000000000</div>
-              <div class="c6">Email: info@bus.com</div>
-            </div>
           </div>
             <input type="radio" id="tab-trip-2"name="tab" hidden>
             <label for="tab-trip-2" class="trip-detail-tab">Some Text</label>
