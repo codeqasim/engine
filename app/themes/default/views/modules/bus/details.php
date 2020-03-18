@@ -163,7 +163,6 @@
                   <label for="seat8" >45</label><input type="checkbox" name="" id="seat9" hidden>
                   <label for="seat9" >46</label>
                 </div>
-
                 </form>
               </div>
             </div>
