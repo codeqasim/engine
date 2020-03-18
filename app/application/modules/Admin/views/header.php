@@ -239,16 +239,15 @@
                     </div>
                 </div>-->
 
+
+
+
                 <ul class="nav navbar-nav navbar-right be-icons-nav">
-                    <li class="dropdown"><a href="#" role="button" aria-expanded="false"
-                                            class="be-toggle-right-sidebar"><span class="icon mdi mdi-settings"></span></a>
-                    </li>
-                    <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false"
-                                            class="dropdown-toggle"><span
-                                    class="icon mdi mdi-notifications"></span><span class="indicator"></span></a>
+                    <li class="dropdown"><a href="#" role="button" aria-expanded="false" class="be-toggle-right-sidebar"><span class="icon mdi mdi-settings"></span></a></li>
+                    <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><span class="icon mdi mdi-notifications"></span><span class="indicator"></span></a>
                         <ul class="dropdown-menu be-notifications">
                             <li>
-                                <div class="title">Notifications<span class="badge">3</span></div>
+                              <div class="title">Notifications<span class="badge">3</span></div>
                                 <div class="list">
                                     <div class="be-scroller">
                                         <div class="content">
@@ -326,6 +325,7 @@
                         </ul>
                     </li>
                 </ul>
+                <a href="<?php echo base_url(); ?>" target="_blank" class="btn btn-default" style="float: right; margin: 15px;">Preview Website</a>
             </div>
         </div>
     </nav>
