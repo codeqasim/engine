@@ -6,12 +6,12 @@
   </div>
   <div class="contain">
     <div class="row">
-      <div class="c4">
+      <div class="c4 o2-sm">
         <aside>
           <img src="<?php echo $theme_url;?>assets/img/add.jpg" alt="">
         </aside>
       </div>
-      <div class="c8">
+      <div class="c8 o1-sm">
         <div class="extra-info mb-20 p-10">
           <div class="row">
             <div class="c3">
