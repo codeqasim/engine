@@ -163,7 +163,6 @@
                   <label for="seat8" >45</label><input type="checkbox" name="" id="seat9" hidden>
                   <label for="seat9" >46</label>
                 </div>
-
                 </form>
               </div>
             </div>
@@ -190,11 +189,53 @@
               <div class="c6">Phone number: 0100000000000</div>
               <div class="c6">Email: info@bus.com</div>
             </div>
+            <div class="row no-gutters">
+              <div class="c6">Phone number: 0100000000000</div>
+              <div class="c6">Email: info@bus.com</div>
+            </div>
+            <div class="row no-gutters">
+              <div class="c6">Phone number: 0100000000000</div>
+              <div class="c6">Email: info@bus.com</div>
+            </div>
+            <div class="row no-gutters">
+              <div class="c6">Phone number: 0100000000000</div>
+              <div class="c6">Email: info@bus.com</div>
+            </div>
+            <div class="row no-gutters">
+              <div class="c6">Phone number: 0100000000000</div>
+              <div class="c6">Email: info@bus.com</div>
+            </div>
+            <div class="row no-gutters">
+              <div class="c6">Phone number: 0100000000000</div>
+              <div class="c6">Email: info@bus.com</div>
+            </div>
+            <div class="row no-gutters">
+              <div class="c6">Phone number: 0100000000000</div>
+              <div class="c6">Email: info@bus.com</div>
+            </div>
+            <div class="row no-gutters">
+              <div class="c6">Phone number: 0100000000000</div>
+              <div class="c6">Email: info@bus.com</div>
+            </div>
+            <div class="row no-gutters">
+              <div class="c6">Phone number: 0100000000000</div>
+              <div class="c6">Email: info@bus.com</div>
+            </div>
+            <div class="row no-gutters">
+              <div class="c6">Phone number: 0100000000000</div>
+              <div class="c6">Email: info@bus.com</div>
+            </div>
           </div>
             <input type="radio" id="tab-trip-2"name="tab" hidden>
             <label for="tab-trip-2" class="trip-detail-tab">Some Text</label>
+            <div class="tab-detail">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloribus deleniti natus. Earum quod nulla alias reiciendis blanditiis libero corporis? Sed accusamus harum velit necessitatibus, dolore ducimus iste nam nulla.
+            </div>
             <input type="radio" id="tab-trip-3"name="tab" hidden>
             <label for="tab-trip-3" class="trip-detail-tab">Some Text</label>
+            <div class="tab-detail">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloribus deleniti natus. Earum quod nulla alias reiciendis blanditiis libero corporis? Sed accusamus harum velit necessitatibus, dolore ducimus iste nam nulla.
+            </div>
           </div>
         </div>
       </div>
