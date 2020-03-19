@@ -141,10 +141,12 @@ ul{list-style-type: none; }
 .items-center{align-items:center}
 .items-start{align-items: flex-start;}
 @media screen and (max-width:768px){.o1-sm{order:1!important}
+.o1-sm{order:1!important}
 .o2-sm{order:2!important}
 }.f-left{float:left}
 .f-right{float:right}
 .clear{clear:both;display:block;width:100%}
+
 
 /*hide or show*/
 .show{display: block}

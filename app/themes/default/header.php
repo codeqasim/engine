@@ -22,21 +22,24 @@
 <header class="sticky">
     <nav>
         <div class="contain flex flex-content-between row-rtl">
-            <div class="c2 p0 rtl-align-right">
+            <div class="c2 c-sm-2 p0 rtl-align-right mx-auto">
                 <div class="logo">
                     <a href="<?php echo base_url(); ?>">
                     <img alt="logo" src="<?php echo base_url(); ?>uploads/main/logo.png" />
                     <strong>BOOK</strong>NOW
                     </a>
                 </div>
+             
                 <div class="bars show-m">
-                <input id="bars" type="checkbox" hidden>
-                <label for="bars">
-                 <div></div>
-                </label>
+    <input type="checkbox" id="menu-left" hidden />
+    <label for="menu-left">
+    <span></span>
+    </label>
+    <?php include 'menu.php'; ?>
+  </div>
 
-                    <?php include 'menu.php'; ?>
-                </div>
+                    
+            
             </div>
             <?php include 'menu.php'; ?>
         </div>

@@ -11,8 +11,8 @@ class Flights extends MX_Controller {
 
 	public function index()
 	{
-	    $results = $this->mm->get_module_parent('Flights');
-	    dd($results);
+//	    $results = $this->mm->get_module_parent('Flights');
+//	    dd($results);
 		$this->theme->view('modules/flights/list');
 	}
 
@@ -34,14 +34,4 @@ class Flights extends MX_Controller {
 
 	}
 
-	public function flight()
-	{	
-		$a = $this->input->get('a');
-		$b = $this->input->get('b');
-		$c = $this->input->get('c');
-		$d = $this->input->get('d');
-		$e = $this->input->get('e');
-		// print_r($a);
-		echo json_encode(['success'=>"order Update successfully."]);
-	}
 }

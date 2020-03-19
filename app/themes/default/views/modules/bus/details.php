@@ -6,12 +6,12 @@
   </div>
   <div class="contain">
     <div class="row">
-      <div class="c4">
+      <div class="c4 o2-sm">
         <aside>
           <img src="<?php echo $theme_url;?>assets/img/add.jpg" alt="">
         </aside>
       </div>
-      <div class="c8">
+      <div class="c8 o1-sm">
         <div class="extra-info mb-20 p-10">
           <div class="row">
             <div class="c3">
@@ -163,7 +163,6 @@
                   <label for="seat8" >45</label><input type="checkbox" name="" id="seat9" hidden>
                   <label for="seat9" >46</label>
                 </div>
-
                 </form>
               </div>
             </div>
@@ -193,8 +192,14 @@
           </div>
             <input type="radio" id="tab-trip-2"name="tab" hidden>
             <label for="tab-trip-2" class="trip-detail-tab">Some Text</label>
+            <div class="tab-detail">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloribus deleniti natus. Earum quod nulla alias reiciendis blanditiis libero corporis? Sed accusamus harum velit necessitatibus, dolore ducimus iste nam nulla.
+            </div>
             <input type="radio" id="tab-trip-3"name="tab" hidden>
             <label for="tab-trip-3" class="trip-detail-tab">Some Text</label>
+            <div class="tab-detail">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloribus deleniti natus. Earum quod nulla alias reiciendis blanditiis libero corporis? Sed accusamus harum velit necessitatibus, dolore ducimus iste nam nulla.
+            </div>
           </div>
         </div>
       </div>
