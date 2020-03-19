@@ -33,4 +33,10 @@ class Flights extends MX_Controller {
 		$this->theme->view('modules/flights/booking_pay');
 
 	}
+
+    public function voucher()
+	{
+		$this->theme->view('modules/flights/voucher');
+
+	}
 }
