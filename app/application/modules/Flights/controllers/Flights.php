@@ -11,8 +11,8 @@ class Flights extends MX_Controller {
 
 	public function index()
 	{
-	    $results = $this->mm->get_module_parent('Flights');
-	    dd($results);
+//	    $results = $this->mm->get_module_parent('Flights');
+//	    dd($results);
 		$this->theme->view('modules/flights/list');
 	}
 
