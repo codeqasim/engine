@@ -80,5 +80,148 @@
 <script src="<?php echo $theme_url;?>assets/js/jquery.min.js"></script>
 <script src="<?php echo $theme_url;?>assets/js/app.js"></script>
 <script src="<?php echo $theme_url;?>assets/js/datepicker.js"></script>
+<script>
+
+
+
+
+    $("#submit").click(function(){
+        var origin = $("#autocomplete").val();
+        var destination = $("#autocomplete2").val();
+        var cdeparture = $("#departure").val();
+        var returnn = $("#return").val();
+        var adult = $("#adult").text();
+        var children  = $("#children").text();
+
+            /*origin & destination validation*/
+        if(origin == ''){
+          alert('Please fill out origin');
+          $('#autocomplete').focus();
+        }else if(destination == ''){
+          alert('Please fill out destination');
+          $('#autocomplete2').focus();
+        }else{ 
+
+            /*(from origin) url settings*/
+        var origin_res1 = origin.split(" ",1);
+        var origin_res = origin.split(" ",1)+' - ';
+        var origin_ress = origin.split(""+origin_res+"");
+        var b =  "'" +origin_ress+ "'";
+        var c = b.replace(/,/g,"");
+        var d= c.replace(/\s/g,"");
+        var origin_res2= d.replace(/'/g,"");
+
+            /*(to destination) url settings*/
+        var destination_res1 = destination.split(" ",1);
+        var destination_res = destination.split(" ",1)+' - ';
+        var destination_ress = destination.split(""+destination_res+"");
+        var e =  "'" +destination_ress+ "'";
+        var f = e.replace(/,/g,"");
+        var g= f.replace(/\s/g,"");
+        var destination_res2= g.replace(/'/g,"");
+
+
+        /*cdeparture change data format (like 23/03/2020 to 23-03-2020)*/
+        var parts = cdeparture.split('/');
+        var departur = parts[0] + '-' + parts[1] + '-' + parts[2];
+
+         /*return change data format (like 23/03/2020 to 23-03-2020)*/
+        var partss = returnn.split('/');
+        var re_turn = partss[0] + '-' + partss[1] + '-' + partss[2];
+
+                    /* finally url*/
+        var url = "<?php echo base_url('Flights/flight/'.
+        strtolower(
+        str_replace(' ','-','"+origin_res1+"').'/'.
+        str_replace(' ','-','"+origin_res2+"').'/'.
+        str_replace(' ','-','"+destination_res1+"').'/'.
+        str_replace(' ','-','"+destination_res2+"').'/'.
+        str_replace(' ','-','"+departur+"').'/'.
+        str_replace(' ','-','"+re_turn+"').'/'.
+        str_replace(' ','-','"+adult+"').'/'.
+        str_replace(' ','-','"+children+"'))); ?>";
+        
+        alert(url);
+
+        // $.ajax({
+        // type: 'ajax',
+        // method: 'get',
+        // async: false,
+        // url: '<?php echo base_url() ?>Flights/flight',
+        // data:{
+        //     origin_res1:origin_res1,
+        //     origin_res2:origin_res2,
+        //     destination_res1:destination_res1,
+        //     destination_res2:destination_res2,
+        //     departur:departur,
+        //     re_turn:re_turn,
+        //     adult:adult,
+        //     children:children
+        // },
+        // dataType: 'json',
+        // success: function(response){
+        // alert('Status update successfully');
+        // },
+        // error: function(){
+        // alert('Status update Error');
+        // }
+        // });
+    }
+
+});
+
+    // var flight_type = 'oneway';
+    // function FlighType(value){
+    // flight_type = value;
+    // alert(flight_type);
+    // }
+
+
+    $(document).ready(function(){
+        $('#increase').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#adult').text());
+        // If is not undefined
+        $('#adult').text(quantity + 1);
+        // Increment
+        });
+
+        $('#decrease').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#adult').text());
+        // If is not undefined
+        // Increment
+        if(quantity>1){
+        $('#adult').text(quantity - 1);
+        }
+        });
+    });
+
+    $(document).ready(function(){
+        var quantitiy=0;
+        $('#increasee').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#children').text());
+        // If is not undefined
+        $('#children').text(quantity + 1);
+        });
+
+        $('#decreasee').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#children').text());
+        if(quantity>0){
+        $('#children').text(quantity - 1);
+        }
+        });
+    });
+</script>
 </body>
 </html>
