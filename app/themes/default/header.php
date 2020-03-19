@@ -29,14 +29,17 @@
                     <strong>BOOK</strong>NOW
                     </a>
                 </div>
+             
                 <div class="bars show-m">
-                <input id="bars" type="checkbox" hidden>
-                <label for="bars">
-                 <div></div>
-                </label>
+    <input type="checkbox" id="menu-left" hidden />
+    <label for="menu-left">
+    <span></span>
+    </label>
+    <?php include 'menu.php'; ?>
+  </div>
 
-                    <?php include 'menu.php'; ?>
-                </div>
+                    
+            
             </div>
             <?php include 'menu.php'; ?>
         </div>
