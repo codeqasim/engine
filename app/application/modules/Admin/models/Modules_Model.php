@@ -157,7 +157,7 @@ class Modules_Model extends CI_Model
     }
     public function get_modules()
     {
-        return $this->db->where("active",1)->get('modules')->result();
+        return $this->db->get('modules')->result();
     }
     public function get_module_name($query_array){
         $result =  $this->db

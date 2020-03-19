@@ -1,14 +1,15 @@
 <div class="tab fade">
-<form action="<?php echo base_url(); ?>flights/" method="GET">
+<!-- <form action="<?php echo base_url(); ?>flights/" method="GET"> -->
+<!-- <form action="#"> -->
 <div class="row">
     <div class="c12">
-        <div class="options">
+        <div class="options"> 
             <label class="pure-material-switch">
             <input type="checkbox">
             <span>Direct</span>
             </label>
             <input type="radio" name="trip" checked id="one-way" hidden>
-            <label for="one-way" onclick="busoneway()">One Way</label>
+            <label for="one-way" onclick="FlighType('oneway')">One Way</label>
             <input type="radio" name="trip" id="round-trip" hidden>
             <label for="round-trip" onclick="busreturns()"> Round Trip</label>
         </div>
@@ -19,7 +20,7 @@
         <div class="input-wrapper">
             <span class="input-label"><i class="mdi mdi-flight-takeoff"></i> From Origin</span>
             <div class="input-items">
-                <input autocomplete="off" type="text" placeholder="Origin" onfocus="this.value=''" name="from" id="autocomplete" class="autocomplete-airport" />
+                <input autocomplete="off" type="text" placeholder="Origin" onfocus="this.value=''" name="from" id="autocomplete" class="autocomplete-airport"/>
             </div>
         </div>
     </div>
@@ -38,11 +39,12 @@
                     <span class="input-label"><i class="mdi mdi-calendar"></i> Departure</span>
                     <div class="input-items">
                         <input
+                            id="departure"
                             name="depart"
                             class="depart"
                             type="text"
-                            placeholder=" "
-                            value="26/03/2020"
+                            placeholder="19/03/2020"
+                            value="19/03/2020"
                             />
                     </div>
                 </div>
@@ -55,8 +57,8 @@
                             class="returning"
                             id="return"
                             type="text"
-                            placeholder=" "
-                            value="28/03/2020"
+                            placeholder="20/03/2020"
+                            value="20/03/2020"
                             />
                     </div>
                 </div>
@@ -69,7 +71,7 @@
     <div class="input-wrapper travelers drophover">
         <span class="input-label"><i class="mdi mdi-directions-walk"></i> Travelers</span>
         <div class="input-items passenger-info rtl-align-right">
-        <input type="" value="1 Traveler, Economy" readonly />
+        <input type="" value="1 Traveler, Economy" id="travelers" readonly />
         </div>
     </div>
         </div>
@@ -83,9 +85,9 @@
                 <span class="text-muted ml-5"> ( +12 )</span>
             </div>
             <div class="passenger-dropdown-right">
-                <button class="decrease">-</button>
-                <span>1</span>
-                <button class="increase">+</button>
+                <button class="decrease" id="decrease">-</button>
+                <span id="adult">1</span>
+                <button class="increase" id="increase">+</button>
             </div>
         </div>
         <div class="flex room-row flex-content-between items-center row-rtl">
@@ -93,10 +95,10 @@
                 <span>Children</span>
                 <span class="text-muted ml-5">( 2y to 11y )</span>
             </div>
-            <div class="passenger-dropdown-right">
-                <button class="decrease">-</button>
-                <span>1</span>
-                <button class="increase">+</button>
+             <div class="passenger-dropdown-right">
+                <button class="decrease" id="decreasee">-</button>
+                <span id="children">1</span>
+                <button class="increase" id="increasee">+</button>
             </div>
         </div>
         <div class="class_type">
@@ -110,7 +112,7 @@
         <!-- <button class="add-room mt-20" type="button">Add room +</button> -->
     </div>
         <div class="searchbutton">
-            <button type="submit">
+            <button type="submit" id="submit">
             <span class="icon-search"><i class="mdi mdi-search"></i></span>
             </button>
         </div>

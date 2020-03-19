@@ -1,4 +1,6 @@
 <a href="<?=base_url('admin/settings/update_modules')?>" class="btn btn-success" style="margin-top:25px;">Update</a>
+<a class="btn btn-success abc" style="display: none; position: fixed; margin-top:25px; margin-left: 210px;"></a>
+<a class="btn btn-danger xyz" style="display: none; position: fixed; margin-top:25px; margin-left: 210px;"></a>
 <div class="row">
     <?php foreach (array_keys($modules) as $item) { ?>
         <div class="col-md-6 pull-left col-xs-12" style="margin-bottom:25px; margin-top:25px">
@@ -30,12 +32,12 @@
             <button class="btn btn-danger btn-sm pull-left" onclick="getSettings('<?=$subItem["id"]?>')" style="height:22px;line-height: 12px;margin-right: 5px;">
                 <i class="fa fa-cog"></i> Settings</button>
         
-                        <input value="1" data-modulename="Hotels" type="number" id="order_set"
+                        <input value="<?=$subItem["ordering"]?>" data-modulename="Hotels" type="number" id="<?=$subItem["id"]?>"
                                class="input-sm form-control pull-left Hotels"
                                style="width:60px;height:22px;margin-right: 5px;">
 
             <label class="control control--checkbox ellipsis pull-right">
-              <input type="checkbox" id="checkedbox" name="" value="1" data-value="Hotels" data-item="hotels">
+              <input class="check" type="checkbox" id="<?=$subItem["id"]?>" name="" value="<?=$subItem["active"]?>" data-value="Hotels" data-item="hotels">
               <div class="control__indicator"></div>
             </label>
           </span>
@@ -140,7 +142,7 @@
                 });
             }
 
-
+ 
 
         });
         $( "#form" ).submit(function( event ) {
@@ -158,5 +160,48 @@
         });
 
     }
+
+    $('.Hotels').click(function(){
+        var ids =  $(this).attr('id');
+        var orderid= $("#"+ids).val();
+                $.ajax({ 
+        type: 'ajax',
+        method: 'post',
+        async: false,
+        url: '<?php echo base_url() ?>admin/settings/updateorder',
+        data:{orderid:orderid,ids:ids},
+        dataType: 'json',
+        success: function(response){
+        $('.abc').html('order update successfully').fadeIn('slow');
+        $('.abc').html('order update successfully').fadeOut('slow');
+        },
+        error: function(){
+        $('.xyz').html('order update Error').fadeIn('slow');
+        $('.xyz').html('order update Error').fadeOut('slow');
+        }
+        });
+        // location.reload();
+    })
+
+    $('.check').click(function(){
+        var checkbox = $("input[type='checkbox']").val();
+        var id =  $(this).attr('id');
+        // alert(id);
+        // alert(checkbox);
+        $.ajax({ 
+        type: 'ajax',
+        method: 'post',
+        async: false,
+        url: '<?php echo base_url() ?>admin/settings/updatestatus',
+        data:{checkbox:checkbox,id:id},
+        dataType: 'json',
+        success: function(response){
+        alert('Status update successfully');
+        },
+        error: function(){
+        alert('Status update Error');
+        }
+        });
+    })
 </script>
 

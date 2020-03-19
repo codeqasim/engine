@@ -10,7 +10,7 @@ class Home extends MX_Controller {
         $this->load->model('Home_Model');
         $this->load->model('Admin/Modules_Model', 'mm');
 
-    }
+    } 
     public function index()
     {
         $modules = $this->mm->get_modules();

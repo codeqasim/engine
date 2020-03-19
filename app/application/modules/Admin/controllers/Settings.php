@@ -11,7 +11,7 @@ class Settings extends MX_Controller
         if(empty($result))
         {
             redirect(ADMINURL.'login');
-        }
+        } 
         $this->load->model('Modules_Model', 'mm');
         $this->load->model('Auth_Model', 'am');
         $data = getAllObjects();
@@ -192,6 +192,34 @@ class Settings extends MX_Controller
         $data['crumbdata'] = array('Settings','Social');
         $data['crumb'] = 'Admin/crumb';
         $this->load->view('Admin/template', $data);
+    }
+
+    /***********update Flights orders********/
+
+            public function updateorder()
+    {
+        $orderid = $this->input->post('orderid');
+        $id = $this->input->post('ids');
+        $this->db->set('ordering', $orderid); //value that used to update column  
+        $this->db->where('id',$id);
+        $this->db->update('modules');
+        echo json_encode(['success'=>"order Update successfully."]);
+    }
+        /***********update Flights status********/
+
+            public function updatestatus()
+    {
+        $checkbox = $this->input->post('checkbox');
+        if ($checkbox == 1) {
+           $checkbox = 0;
+        }else{
+            $checkbox = 1;
+        }
+        $id = $this->input->post('id');
+        $this->db->set('active', $checkbox); //value that used to update column  
+        $this->db->where('id',$id);
+        $this->db->update('modules');
+        echo json_encode(['success'=>"order Update successfully."]);
     }
 
 }
