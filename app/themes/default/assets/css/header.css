@@ -21,8 +21,8 @@ header label{position:relative;display:none}
 header .bars label span{z-index: 20;position: absolute; height: 3px; width: 32px; background-color: #000; top: 10px; left: 40px; -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -webkit-transition: .3s; transition: .3s;}
 header .bars label{display:block;width:32px;height:3px;position:relative}
 header .bars label span{position:relative;top:0.5rem}
-header .bars label span,label span:before,label span:after{display:block;background:#000;width:32px;height:3px;border-radius:.25rem}
-header .bars span:before,label span:after{content:'';position:absolute}
+header .bars label span,header .bars label span:before,header .bars label span:after{display:block;background:#000;width:32px;height:3px;border-radius:.25rem}
+header .bars span:before,header .bars label span:after{content:'';position:absolute}
 header .bars span:before{bottom:0.5rem}
 header .bars span:after{top:0.5rem}
 header .bars label span:before{-webkit-transform-origin: top left;transform-origin: top left;}
