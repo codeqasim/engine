@@ -58,20 +58,16 @@
         </div>
         <ul class="tabs flex flex-content-between row-rtl">
           <li>
-          <input type="radio" name="tab" id="hotel-tab" hidden checked> 
-          <label for="hotel-tab"><a href="#hotel">hotels</a></label>
+          <a href="#hotel">hotels</a>
          </li>
           <li>
-          <input type="radio" name="tab" id="available-room-tab" hidden>   
-          <label for="available-room-tab"><a href="#available-room">Available Rooms</a></label>
+         <a href="#available-room">Available Rooms</a>
         </li>
           <li>
-          <input type="radio" name="tab" id="guest-rating-tab" hidden> 
-            <label for="guest-rating-tab"><a href="#guest-rating">Guests Rating</a></label>
+            <a href="#guest-rating">Guests Rating</a>
           </li>
           <li>
-          <input type="radio" name="tab" id="hotel-detail-tab" hidden> 
-            <label for="hotel-detail-tab"><a href="#hotel-detail">hotel details</a></label></li>
+          <a href="#hotel-detail">hotel details</a></li>
         </ul>
       </div>
       <div class="row row-rtl" id="hotel">
