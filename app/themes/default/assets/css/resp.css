@@ -56,6 +56,9 @@ header .nav .nav-right ul li:not(:last-child) a{border: 0!important}
 .flight-list-page .btn-filter{display: inline-block !important;}
 .flight-list-page input#filter:checked + aside{transform:scaleY(1); transform-origin:top;height: auto;transition:transform 0.3s ease-in}
 .bus-detail-page .tab{margin-top: 65px}
+.hotels-detail-page .sticky{position: static;}
+.hotels-detail-page .tabs{position: fixed; top: 59px; left: 0; z-index: 1;}
+.data-input:last-child .input-wrapper{margin-bottom: 0}
 }
 @media screen and (max-width:650px){
  .result-card .left-side-row:not(:last-of-type){border-bottom:none;}
