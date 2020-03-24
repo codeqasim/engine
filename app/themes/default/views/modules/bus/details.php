@@ -209,7 +209,7 @@
 <script>
   let _bushorn = document.getElementById('bus_horn')
   let driver = document.getElementById('driver')
-  driver.addEventListener("mouseover", function(){
+  driver.addEventListener("click", function(){
     _bushorn.play()
   });
 </script>
