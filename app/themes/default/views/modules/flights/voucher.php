@@ -7,14 +7,16 @@
     <title>E-Vocher</title>
     <style>
     @media screen and (max-width:768px){
-        .voc-100{
-            width:100% !important
+        .vocher{
+            width:100% !important;
+            margin:40px !important;
+
         }
     }
     </style>
 </head>
 <body style="background-color:rgb(82, 86, 89);">
-    <div class="voc-100" style="width:955px;margin:20px auto;background-color:#fff;padding:20px 10px;">
+    <div class="vocher" style="width:955px;margin:20px auto;background-color:#fff;padding:20px 10px;">
     <div style="display:flex; justify-content:space-between;align-items:center">
     <h3>E-TICKET / ITINERARY</h3>
     <img alt="logo" src="<?php echo base_url(); ?>uploads/main/logo.png" width="35px" />
