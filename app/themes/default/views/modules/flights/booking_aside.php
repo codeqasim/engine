@@ -68,7 +68,7 @@
       <span class="taxes-label rtl-align-right">Taxes are included</span>
     </div>
   </div>
-  <div class="help-detail">
+  <div class="help-detail" style="background-image: url('<?php echo $theme_url;?>assets/img/help.svg');">
     <div class="text-center help-header">
       <h4>Need help ?</h4>
       <p>Our Team is available for help 24/7 </p>

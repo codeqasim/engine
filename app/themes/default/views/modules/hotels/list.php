@@ -29,7 +29,7 @@
     <div class="row row-rtl">
       <div class="c3">
         <aside>
-          <button id="show-map-data" class="map-view">
+          <button id="show-map-data" class="map-view" style="background-image:url('<?php echo $theme_url;?>assets/img/map-filter.png');">
           <span>Map View</span>
           </button>
           <div class="filter-section">

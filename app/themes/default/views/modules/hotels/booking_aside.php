@@ -70,7 +70,7 @@
       <div class="hint rtl-align-right">These prices are for GCC citizens</div>
     </div>
   </div>
-  <div class="help-detail mb-20">
+  <div class="help-detail mb-20" style="background-image: url('<?php echo $theme_url;?>assets/img/help.svg');">
     <div class="text-center help-header">
       <h4>Need help ?</h4>
       <p>Our Team is available for help 24/7 </p>

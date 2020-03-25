@@ -1,5 +1,5 @@
 <style>body{  background-color: #f2f6fb;}</style>
-<div class="booking-page mt-20">
+<div class="booking-page">
 <div class="wizard hide-m row-rtl">
       <div class="item active">
         <div class="item-hint">
