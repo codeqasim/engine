@@ -21,7 +21,7 @@ class FlightController extends Controller
         $Response = array();
         foreach ($flightSearch->Suppliers as $supplier ){
             $TempResponse = Http::post($this->base_url.$supplier["Name"]."/flights/search", $flightSearch->getPayload($supplier));
-            dd($TempResponse->json());
+            return $TempResponse->json();
             array_push($Response,$TempResponse);
         }
         dd($Response);
