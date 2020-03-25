@@ -2,3 +2,6 @@
 main/.editorconfig
 main/.gitattributes
 modules/.idea/misc.xml
+modules/.idea/modules.iml
+modules/.idea/vcs.xml
+modules/.idea/vcs.xml
