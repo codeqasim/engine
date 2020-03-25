@@ -1,0 +1,16 @@
+@media(max-width: 768px){
+.slick-prev,.slick-next{ display: none !important; }
+.footer_bg .mb-50 { display: none; }
+.footer_bg h3{ font-size: 18px; }
+.footer_bg p{ font-size: 10px; line-height: 14px; }
+.theme-mobile-app-btn>span { display: table; margin-top: 8px; font-weight: normal; font-size: 6px; line-height: 10px; text-align: left; font-size: 7px; }
+.theme-mobile-app-btn{  padding: 2px 8px; height: 39px;width: 100%;display: flex;justify-content: center; }
+.theme-mobile-app-btn-list li{margin-bottom: 10px !important;display: block;}
+.menu-horizontal-wrapper-02 .form-icon-left .form-control { height: 35px; }
+.menu-horizontal-wrapper-02 .select2-container .select2-choice>.select2-chosen { font-size: 12px; padding-top: 12px; }
+.menu-horizontal-wrapper-02 .select2-container .select2-choice>.select2-chosen .row.mb-15 > [class*=col] { padding-bottom: 10px; }
+.menu-horizontal-wrapper-02 .chosen-single  { height: 55px; background: #ffffff !important; line-height: 35px; font-size: 12px; }
+.menu-horizontal-wrapper-02 .form-icon-left .form-control { font-size: 12px;height: 55px; }
+.chosen-container-single .chosen-single div:after{content: " "}
+.theme-mobile-app-btn-list{text-align: center;}
+}

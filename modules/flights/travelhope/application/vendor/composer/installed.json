@@ -1,0 +1,127 @@
+[
+    {
+        "name": "ausi/slug-generator",
+        "version": "v1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ausi/slug-generator.git",
+            "reference": "59b641dfa764658e1fbf37f75312e702817cd319"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ausi/slug-generator/zipball/59b641dfa764658e1fbf37f75312e702817cd319",
+            "reference": "59b641dfa764658e1fbf37f75312e702817cd319",
+            "shasum": ""
+        },
+        "require": {
+            "ext-intl": "*",
+            "ext-mbstring": "*",
+            "ext-pcre": "*",
+            "lib-icu": ">=4.2.1",
+            "php": "^7.1"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^2.4",
+            "php-coveralls/php-coveralls": "^2.0",
+            "phpunit/phpunit": "^7.0"
+        },
+        "time": "2018-12-11T20:59:21+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Ausi\\SlugGenerator\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Martin Auswöger",
+                "email": "martin@auswoeger.com"
+            }
+        ],
+        "description": "Slug Generator",
+        "keywords": [
+            "ascii",
+            "cldr",
+            "pretty-url",
+            "slug",
+            "slug-generator",
+            "slugify",
+            "transliteration",
+            "unicode"
+        ]
+    },
+    {
+        "name": "phpmailer/phpmailer",
+        "version": "v6.0.3",
+        "version_normalized": "6.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/PHPMailer/PHPMailer.git",
+            "reference": "44d49bab5ab1fef721d3ee07e75dc0865ddf4cc6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/44d49bab5ab1fef721d3ee07e75dc0865ddf4cc6",
+            "reference": "44d49bab5ab1fef721d3ee07e75dc0865ddf4cc6",
+            "shasum": ""
+        },
+        "require": {
+            "ext-ctype": "*",
+            "ext-filter": "*",
+            "php": ">=5.5.0"
+        },
+        "require-dev": {
+            "doctrine/annotations": "1.2.*",
+            "friendsofphp/php-cs-fixer": "^2.2",
+            "phpdocumentor/phpdocumentor": "2.*",
+            "phpunit/phpunit": "^4.8 || ^5.7",
+            "zendframework/zend-eventmanager": "3.0.*",
+            "zendframework/zend-i18n": "2.7.3",
+            "zendframework/zend-serializer": "2.7.*"
+        },
+        "suggest": {
+            "ext-mbstring": "Needed to send email in multibyte encoding charset",
+            "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
+            "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
+            "psr/log": "For optional PSR-3 debug logging",
+            "stevenmaguire/oauth2-microsoft": "Needed for Microsoft XOAUTH2 authentication",
+            "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)"
+        },
+        "time": "2018-01-05T13:19:58+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PHPMailer\\PHPMailer\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-2.1"
+        ],
+        "authors": [
+            {
+                "name": "Jim Jagielski",
+                "email": "jimjag@gmail.com"
+            },
+            {
+                "name": "Marcus Bointon",
+                "email": "phpmailer@synchromedia.co.uk"
+            },
+            {
+                "name": "Andy Prevost",
+                "email": "codeworxtech@users.sourceforge.net"
+            },
+            {
+                "name": "Brent R. Matzelle"
+            }
+        ],
+        "description": "PHPMailer is a full-featured email creation and transfer class for PHP"
+    }
+]

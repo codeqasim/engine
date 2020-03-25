@@ -1,0 +1,425 @@
+{
+  "Segments": [
+    {
+      "BookingClass": {
+        "CabinClassCode": "C",
+        "Code": "D",
+        "OperatingCode": "D",
+        "Quantity": 8,
+        "StatusCode": "HK",
+        "Extensions": []
+      },
+      "TimeLimit": null,
+      "Ref": "-3931",
+      "AirlineDesignator": "3T",
+      "FlightInfo": {
+        "OriginAirportTerminal": null,
+        "DestinationAirportTerminal": null,
+        "FlightNumber": "113",
+        "OperatingAirlineDesignator": "3T",
+        "OperatingFlightNumber": "113",
+        "CodeShareAgreementTypeCode": "",
+        "EquipmentCode": "B737-300",
+        "EquipmentText": "B737-300",
+        "DurationMinutes": 150,
+        "DepartureDate": "2019-08-10T00:30:00",
+        "Stops": [],
+        "ArrivalDate": "2019-08-10T03:00:00",
+        "Remarks": null,
+        "Extensions": null
+      },
+      "OriginCode": "CAI",
+      "DestinationCode": "KRT",
+      "Extensions": null
+    }
+  ],
+  "Passengers": [
+    {
+      "Ref": "Traveler_Type_1_Index_0",
+      "RefClient": "PADT",
+      "PassengerQuantity": 1,
+      "PassengerTypeCode": "AD",
+      "NameElement": {
+        "CivilityCode": null,
+        "Firstname": null,
+        "Middlename": null,
+        "Surname": null,
+        "Extensions": null
+      },
+      "Extensions": []
+    }
+  ],
+  "SpecialServices": [
+    {
+      "Text": null,
+      "Data": null,
+      "Status": null,
+      "RefPassenger": "Traveler_Type_1_Index_0",
+      "RefSegment": null,
+      "Code": "CTCE",
+      "TechnicalType": null,
+      "Extensions": null
+    },
+    {
+      "Text": null,
+      "Data": null,
+      "Status": null,
+      "RefPassenger": "Traveler_Type_1_Index_0",
+      "RefSegment": null,
+      "Code": "CTCH",
+      "TechnicalType": null,
+      "Extensions": null
+    },
+    {
+      "Text": null,
+      "Data": null,
+      "Status": null,
+      "RefPassenger": "Traveler_Type_1_Index_0",
+      "RefSegment": null,
+      "Code": "CTCM",
+      "TechnicalType": null,
+      "Extensions": null
+    },
+    {
+      "Text": null,
+      "Data": {
+        "Doca": null,
+        "Doco": null,
+        "Docs": null,
+        "Foid": {
+          "DocumentTypeCode": null,
+          "DocumentNumber": null,
+          "Extensions": null
+        },
+        "Fqtv": null,
+        "Inft": null,
+        "Chld": null,
+        "Umnr": null,
+        "Adof": null,
+        "Seat": null,
+        "Pctc": null,
+        "Ectc": null,
+        "Extensions": null
+      },
+      "Status": null,
+      "RefPassenger": "Traveler_Type_1_Index_0",
+      "RefSegment": null,
+      "Code": "FOID",
+      "TechnicalType": null,
+      "Extensions": null
+    }
+  ],
+  "FareInfo": {
+    "EMDTicketFareOptions": [],
+    "EMDTicketFares": [],
+    "SaleCurrencyAmountTotal": {
+      "DiscountAmount": 0,
+      "BaseAmount": 170.73,
+      "TaxAmount": 1048.77,
+      "TotalAmount": 1219.5,
+      "MilesAmount": 0,
+      "Extensions": null
+    },
+    "Itineraries": [
+      {
+        "Ref": "IT_New",
+        "AirOriginDestinations": [
+          {
+            "OriginDestinationOrder": 1,
+            "RefFareRule": "IT_New_1",
+            "AirCoupons": [
+              {
+                "CouponOrder": 1,
+                "RefSegment": "-3931",
+                "BookingClassCode": "D",
+                "Extensions": null
+              }
+            ],
+            "Extensions": null
+          }
+        ],
+        "SaleCurrencyAmount": {
+          "DiscountAmount": 0,
+          "BaseAmount": 170.73,
+          "TaxAmount": 1048.77,
+          "TotalAmount": 1219.5,
+          "MilesAmount": 0,
+          "Extensions": null
+        },
+        "Extensions": null
+      }
+    ],
+    "FareRules": [
+      {
+        "Ref": "IT_New_1",
+        "VoluntaryChangeCode": "WithoutPenalties",
+        "VoluntaryRefundCode": "WithoutPenalties",
+        "Details": {
+          "ExchangePenalties": [],
+          "RefundPenalties": [],
+          "MinimumStay": 0,
+          "MaximumStay": 365,
+          "DayOffNightStay": false,
+          "AdvancePurchaseDays": 0,
+          "Extensions": null
+        },
+        "FareConditionText": {
+          "Text": "General terms and conditions of sale",
+          "Value": "One way",
+          "Children": [
+            {
+              "Text": "Fare basis code",
+              "Value": "C-Business Class",
+              "Children": [],
+              "Extensions": null
+            },
+            {
+              "Text": "Status",
+              "Value": "HK",
+              "Children": [],
+              "Extensions": null
+            },
+            {
+              "Text": "Available seat(s)",
+              "Value": "8",
+              "Children": [],
+              "Extensions": null
+            },
+            {
+              "Text": "One way",
+              "Value": "allowed",
+              "Children": [],
+              "Extensions": null
+            },
+            {
+              "Text": "Open ticket",
+              "Value": "not allowed",
+              "Children": [],
+              "Extensions": null
+            },
+            {
+              "Text": "The duration of the stay must be included between 0 and 365 days",
+              "Value": null,
+              "Children": [],
+              "Extensions": null
+            },
+            {
+              "Text": "Ticket",
+              "Value": "Modifiable without fee",
+              "Children": [],
+              "Extensions": null
+            },
+            {
+              "Text": "Ticket",
+              "Value": "Refundable without fee",
+              "Children": [],
+              "Extensions": null
+            },
+            {
+              "Text": "Bag allowance",
+              "Value": null,
+              "Children": [
+                {
+                  "Text": "AD",
+                  "Value": "40 Kg",
+                  "Children": [],
+                  "Extensions": null
+                }
+              ],
+              "Extensions": null
+            },
+            {
+              "Text": "(*) days are divided in increments of 24 hours and governed by the flight departure time",
+              "Value": null,
+              "Children": [],
+              "Extensions": null
+            }
+          ],
+          "Extensions": null
+        },
+        "Extensions": null
+      }
+    ],
+    "SaleCurrencyCode": "SAR",
+    "ETTicketFares": [
+      {
+        "Taxes": [
+          {
+            "CountryCode": "EG",
+            "Code": "XL",
+            "SaleCurrencyAmount": 2.57,
+            "Extensions": null
+          },
+          {
+            "CountryCode": "EG",
+            "Code": "XK",
+            "SaleCurrencyAmount": 35.04,
+            "Extensions": null
+          },
+          {
+            "CountryCode": "EG",
+            "Code": "JK",
+            "SaleCurrencyAmount": 11.68,
+            "Extensions": null
+          },
+          {
+            "CountryCode": "EG",
+            "Code": "EG",
+            "SaleCurrencyAmount": 35.04,
+            "Extensions": null
+          },
+          {
+            "CountryCode": "EG",
+            "Code": "QH",
+            "SaleCurrencyAmount": 116.8,
+            "Extensions": null
+          },
+          {
+            "CountryCode": "EG",
+            "Code": "EQ",
+            "SaleCurrencyAmount": 4.67,
+            "Extensions": null
+          },
+          {
+            "CountryCode": "EG",
+            "Code": "YR",
+            "SaleCurrencyAmount": 167.16,
+            "Extensions": null
+          },
+          {
+            "CountryCode": "EG",
+            "Code": "YQ",
+            "SaleCurrencyAmount": 675.81,
+            "Extensions": null
+          }
+        ],
+        "OriginDestinationFares": [
+          {
+            "OriginDestinationOrder": 1,
+            "RefWebClass": null,
+            "CouponFares": [
+              {
+                "CouponOrder": 1,
+                "RefSegment": "-3931",
+                "BookingClassCode": "D",
+                "Taxes": null,
+                "BagAllowances": [
+                  {
+                    "Quantity": null,
+                    "WeightMeasureQualifier": "Kg",
+                    "Weight": 40,
+                    "Extensions": null
+                  }
+                ],
+                "FareBasisCode": "CB",
+                "SaleCurrencyAmount": {
+                  "DiscountAmount": 0,
+                  "BaseAmount": 170.73,
+                  "TaxAmount": 1048.77,
+                  "TotalAmount": 1219.5,
+                  "MilesAmount": 0,
+                  "Extensions": null
+                },
+                "AmountDetails": null,
+                "Extensions": null
+              }
+            ],
+            "Extensions": null
+          }
+        ],
+        "RefPassenger": "Traveler_Type_1_Index_0",
+        "RefItinerary": "IT_New",
+        "Ref": "ET_0",
+        "CreatedDateGMT": null,
+        "SaleCurrencyAmount": {
+          "DiscountAmount": 0,
+          "BaseAmount": 170.73,
+          "TaxAmount": 1048.77,
+          "TotalAmount": 1219.5,
+          "MilesAmount": 0,
+          "Extensions": null
+        },
+        "AmountDetails": null,
+        "Extensions": null
+      }
+    ],
+    "Extensions": null
+  },
+  "OptionalSpecialServices": [
+    {
+      "Text": null,
+      "Data": {
+        "Doca": null,
+        "Doco": null,
+        "Docs": null,
+        "Foid": null,
+        "Fqtv": null,
+        "Inft": null,
+        "Chld": null,
+        "Umnr": null,
+        "Adof": {
+          "DateOfBirth": "0001-01-01T00:00:00",
+          "RefPassengerWithSeat": null,
+          "Extensions": null
+        },
+        "Seat": null,
+        "Pctc": null,
+        "Ectc": null,
+        "Extensions": null
+      },
+      "Status": null,
+      "RefPassenger": "Traveler_Type_1_Index_0",
+      "RefSegment": null,
+      "Code": "EXT-ADOB",
+      "TechnicalType": null,
+      "Extensions": null
+    },
+    {
+      "Text": null,
+      "Data": {
+        "Doca": null,
+        "Doco": null,
+        "Docs": null,
+        "Foid": null,
+        "Fqtv": {
+          "AirlineDesignator": null,
+          "FrequentFlyerNumber": null,
+          "Extensions": null
+        },
+        "Inft": null,
+        "Chld": null,
+        "Umnr": null,
+        "Adof": null,
+        "Seat": null,
+        "Pctc": null,
+        "Ectc": null,
+        "Extensions": null
+      },
+      "Status": null,
+      "RefPassenger": "Traveler_Type_1_Index_0",
+      "RefSegment": null,
+      "Code": "FQTV",
+      "TechnicalType": null,
+      "Extensions": null
+    },
+    {
+      "Text": null,
+      "Data": null,
+      "Status": null,
+      "RefPassenger": null,
+      "RefSegment": null,
+      "Code": "OTHS",
+      "TechnicalType": null,
+      "Extensions": null
+    }
+  ],
+  "SeatMaps": [],
+  "ResponseInfo": {
+    "EchoToken": null,
+    "Error": null,
+    "Warnings": null,
+    "ProcessingMs": 2000,
+    "Extensions": null
+  },
+  "Extensions": null
+}
