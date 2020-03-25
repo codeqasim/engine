@@ -171,7 +171,7 @@
         <div style="width:100px; height:2px;background-color:#000;margin:5px auto"></div>
         <small>You can also reach us by Whatsapp on <span style="color:#09b6c7;">(+966) 554400000</span></small>
       </div>
-      <div style="background-color:#ddd;padding:10px;display:flex;justify-content:space-between;flex-wrap:wrap;margin-top:10px">
+      <div style="background-color:#ddd;padding:10px;display:flex;justify-content:space-between;flex-wrap:wrap;margin-top:10px;direction:ltr">
         <strong style="font-size:12px">PHPTRAVELS Tourism and Travel Company</strong>
         <strong style="font-size:12px"><a href="https://www.phptravels.com">www.phptravels.com</a></strong>
       </div>
