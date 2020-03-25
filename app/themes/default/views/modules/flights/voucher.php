@@ -12,11 +12,11 @@
       }
       }
       .rtl-vocher{direction:rtl}
-      .rtl .rtl-scale{transform:scale(-1)}
-      .rtl .rtl-ml-0{margin-left:0 !important}
-      .rtl .rtl-mr-0{margin-right:0 !important}
-      .rtl .rtl-ml-10{margin-left:10px !important}
-      .rtl .rtl-mr-40{margin-right:40px !important}
+      .rtl-vocher .rtl-scale{transform:scale(-1)}
+      .rtl-vocher .rtl-ml-0{margin-left:0 !important}
+      .rtl-vocher .rtl-mr-0{margin-right:0 !important}
+      .rtl-vocher .rtl-ml-10{margin-left:10px !important}
+      .rtl-vocher .rtl-mr-40{margin-right:40px !important}
     </style>
   </head>
   <body style="background-color:rgb(82, 86, 89);">
