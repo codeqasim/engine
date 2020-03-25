@@ -9,15 +9,13 @@
     @media screen and (max-width:768px){
         .vocher{
             width:100% !important;
-            margin:40px !important;
-
         }
     }
     
     </style>
 </head>
 <body style="background-color:rgb(82, 86, 89);">
-    <div class="vocher" style="width:800px;margin:20px auto;background-color:#fff;padding:25px 20px;">
+    <div class="vocher" style="width:800px;margin:40px auto;background-color:#fff;padding:25px 20px;">
     <div style="display:flex; justify-content:space-between;align-items:center">
     <h3>E-TICKET / ITINERARY</h3>
     <img alt="logo" src="<?php echo base_url(); ?>uploads/main/logo.png" width="35px" />
@@ -27,6 +25,7 @@
     <h3 style="margin:10px 0">Flight Detail</h3>
     <hr>
     <div><span style="font-size: 25px; transform: translate(2px, 4px); display: inline-block;margin-right:10px" >&#9992;</span > Alexandria to Riyadh on <strong>(Jan 28 2020)</strong></div>
+    <div style="overflow-x:auto">
     <table width="100%;"style="border-bottom:2px solid #ddd;padding-bottom:15px">
     <tbody>
     <tr>
@@ -81,7 +80,9 @@
     </tr>
     </tbody>
     </table>
+    </div>
     <h3 style="padding-top:10px"><span>&#9817;</span>Traveller details</h3>
+    <div style="overflow-x:auto">
     <table width="100%" style="border-bottom:2px solid #ddd;padding-bottom:15px">
     <tbody>
     <td style="vertical-align: top;padding-right:15px">
@@ -140,6 +141,7 @@
     </td>
     </tbody>
     </table>
+    </div>
     <small style="display:inline-block;margin-top:15px;font-style:italic;font-size:10px">Please be advised that you are required to produce various travel documents depending on your journey, destination and purpose of travel. The
        documents required may include the following:</small>
        <ul style="font-size:10px;font-style:italic;list-style:disc;margin-left:40px;margin-top:10px;height:600px">
@@ -164,7 +166,7 @@
     <strong style="font-size:12px"><a href="https://www.phptravels.com">www.phptravels.com</a></strong>
     </div>
     </div>
-    <div class="voc-100" style="width: 800px; margin:30px auto; background-color:#fff;padding: 10px;border-radius:3px;box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.28);">
+    <div class="vocher" style="width: 800px; margin:30px auto; background-color:#fff;padding: 10px;border-radius:3px;box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.28);">
     <a href="#" style="width:100%" class="btn prime"> Download PDF</a>
 </div>
 </body>
