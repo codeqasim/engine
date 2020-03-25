@@ -11,7 +11,7 @@
       width:100% !important;
       }
       }
-      .rtl{direction:rtl}
+      .rtl-vocher{direction:rtl}
       .rtl .rtl-scale{transform:scale(-1)}
       .rtl .rtl-ml-0{margin-left:0 !important}
       .rtl .rtl-mr-0{margin-right:0 !important}
@@ -20,7 +20,7 @@
     </style>
   </head>
   <body style="background-color:rgb(82, 86, 89);">
-    <div class="vocher rtl" style="width:800px;margin:40px auto;background-color:#fff;padding:25px 20px;">
+    <div class="vocher rtl-vocher" style="width:800px;margin:40px auto;background-color:#fff;padding:25px 20px;">
       <div style="display:flex; justify-content:space-between;align-items:center">
         <h3>E-TICKET / ITINERARY</h3>
         <img alt="logo" src="<?php echo base_url(); ?>uploads/main/logo.png" width="35px" />
