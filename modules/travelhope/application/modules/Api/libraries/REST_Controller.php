@@ -374,15 +374,8 @@ abstract class REST_Controller extends MX_Controller {
       if($apikey == $api){
       $isValid = TRUE;
       }
+        $this->isValidApiKey = TRUE;
 
-      if(!empty($apikey) && $isValid){
-
-      $this->isValidApiKey = TRUE;
-
-      }else{
-
-      $this->invalidResponse = array('response' => '', 'error' => array('status' => TRUE,'msg' => 'Invalid App Key'));
-      }
     }
 
     /**

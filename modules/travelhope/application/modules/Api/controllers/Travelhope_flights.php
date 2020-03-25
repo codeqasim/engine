@@ -38,14 +38,23 @@ class Travelhope_flights extends REST_Controller {
         $searchForm->test = $test;
         $searchForm->currency = $this->Hotels_lib->currencycode;
 
-        $searchForm->from_code = $this->post('from_code');
-        $searchForm->to_code = $this->post('to_code');
-        $searchForm->date_from = $this->post('date_from');
-        $searchForm->return_from = $this->post('return_from');
-        $searchForm->adults = $this->post('adults');
-        $searchForm->children = $this->post('children');
-        $searchForm->infants = $this->post('infants');
-        $searchForm->flight_type = $this->post('flight_type');
+        $this->input->raw_input_stream;
+
+        $input_data = $this->input->raw_input_stream;
+
+        $post_data = json_decode(trim(file_get_contents('php://input')), true);
+
+
+        $Credentials = $post_data['Credentials'];
+
+        $searchForm->from_code = $post_data['Origin'];
+        $searchForm->to_code = $post_data['Destination'];
+        $searchForm->date_from = $post_data['DepartureDate'];
+        $searchForm->return_from = $post_data['ArrivalDate'];
+        $searchForm->adults = $post_data['Adults'];
+        $searchForm->children = $post_data['Children'];
+        $searchForm->infants = $post_data['Infants'];
+        $searchForm->flight_type = $post_data['FlightType'];
         $thfBooking->setSearchRequest(json_encode($searchForm));
         $thfBooking->setOrigin($searchForm->from_code);
         $thfBooking->setDestination($searchForm->to_code);
@@ -57,35 +66,72 @@ class Travelhope_flights extends REST_Controller {
         $thope = new ApiClient($this->config);
         $response = json_decode($thope->sendRequest('GET', 'search', $searchForm));
 
+//        echo  json_encode($response);die;
+
         $main_object = array();
+        $FlightInfo_Outbound = array();
         foreach ($response->data as $item){
             $FlightInfo = array(
                 "Departure"=>$item->from_code,
                 "Arrival"=>$item->to_code,
-                "Price"=>$item->flight_price,
+                "DepartureTime"=>$item->departure_time,
+                "ArrivalTime"=>$item->departure_time,
                 "Duration"=>$item->flight_duration,
                 "Stops"=>$item->stops,
                 "BagLimit"=>$item->baglimit,
                 "Supplier"=>"TravelHope",
-                "BookingCode"=>(object)array(
-                    "flight_id"=>$item->flight_id
-            ),
             );
-            $Segments = array();
+            $Segments_Inbound = array();
+            $Segments_Outbound = array();
             foreach ($item->route as $route){
                 $Segment = array(
                   "DepartureCity"=>$route->city_from,
-                  "DepartureCode"=>$route->city_to,
-                  "ArrivalCode"=>$route->to_code,
+                  "ArrivalCity"=>$route->city_to,
+                  "DepartureCityCode"=>$route->from_code,
+                  "ArrivalCityCode"=>$route->to_code,
                   "DepartureTime"=>$route->departure_time,
                   "ArrivalTime"=>$route->arrival_time,
                   "FlightNo"=>$route->flight_no,
                   "AirLineCode"=>$route->airline,
                   "AirLineType"=>$route->airline_type,
                 );
-                array_push($Segments,$Segment);
+                if($route->return == 0 )
+                {
+                    array_push($Segments_Inbound,$Segment);
+                }
+                if($route->return == 1)
+                {
+                    array_push($Segments_Outbound,$Segment);
+                }
             }
-            array_push($main_object,(object)array("FlightInfo"=>$FlightInfo,"Segments"=>$Segments));
+            $FlightInfo["DepartureCity"] =  $Segments_Inbound[0]["DepartureCity"];
+            $FlightInfo["ArrivalCity"] =  $Segments_Inbound[count($Segments_Inbound)-1]["ArrivalCity"];
+            $FlightInfo["Segments"] = $Segments_Inbound;
+
+
+            if(!empty($Segments_Outbound)){
+                $FlightInfo_Outbound = array(
+                    "Departure"=>$Segments_Outbound[0]["DepartureCityCode"],
+                    "DepartureCity"=>$Segments_Outbound[0]["DepartureCity"],
+                    "Arrival"=>$Segments_Outbound[count($Segments_Outbound)-1]["ArrivalCityCode"],
+                    "ArrivalCity"=>$Segments_Outbound[count($Segments_Outbound)-1]["ArrivalCity"],
+                    "Duration"=>"00:00",
+                    "Stops"=>count($Segments_Outbound),
+                    "BagLimit"=>array(),
+                );
+                $FlightInfo_Outbound["segments"]= $Segments_Outbound;
+            }
+
+                array_push($main_object,(object)array(
+                "InBoundSegments"=>$FlightInfo,
+                "OutBoundSegments"=>$FlightInfo_Outbound,
+                "Price"=>$item->flight_price,
+                "Supplier"=>"TravelHope",
+                 "BookingCode"=>(object)array(
+                        "flight_id"=>$item->flight_id
+                    )
+
+            ));
 
         }
 

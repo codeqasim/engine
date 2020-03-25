@@ -13,6 +13,10 @@ class FlightSearch
     public $Suppliers = "";
     public $FlightType = "";
     public $FlightClass = "";
+    public $Adults = "1";
+    public $Children = "";
+    public $Infants = "";
+
 
     public function __construct($FlightData)
     {
@@ -52,5 +56,14 @@ class FlightSearch
         $payload["Credentials"] = $supplier["Credentials"];
         unset($payload["Suppliers"]);
         return $payload;
+    }
+    public function getAdults(){
+        return $this->Adults;
+    }
+    public function getChildren(){
+        return $this->Children;
+    }
+    public function getInfants(){
+        return $this->Infants;
     }
 }
