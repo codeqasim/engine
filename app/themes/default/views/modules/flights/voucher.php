@@ -11,10 +11,16 @@
       width:100% !important;
       }
       }
+      .rtl{direction:rtl}
+      .rtl .rtl-scale{transform:scale(-1)}
+      .rtl .rtl-ml-0{margin-left:0 !important}
+      .rtl .rtl-mr-0{margin-right:0 !important}
+      .rtl .rtl-ml-10{margin-left:10px !important}
+      .rtl .rtl-mr-40{margin-right:40px !important}
     </style>
   </head>
   <body style="background-color:rgb(82, 86, 89);">
-    <div class="vocher" style="width:800px;margin:40px auto;background-color:#fff;padding:25px 20px;">
+    <div class="vocher rtl" style="width:800px;margin:40px auto;background-color:#fff;padding:25px 20px;">
       <div style="display:flex; justify-content:space-between;align-items:center">
         <h3>E-TICKET / ITINERARY</h3>
         <img alt="logo" src="<?php echo base_url(); ?>uploads/main/logo.png" width="35px" />
@@ -23,7 +29,10 @@
       <hr>
       <h3 style="margin:10px 0">Flight Detail</h3>
       <hr>
-      <div><span style="font-size: 25px; transform: translate(2px, 4px); display: inline-block;margin-right:10px" >&#9992;</span > Alexandria to Riyadh on <strong>(Jan 28 2020)</strong></div>
+      <div style="display:flex;align-items:center">
+      <span class="rtl-scale rtl-ml-10 rtl-mr-0" style="font-size: 25px; display: inline-block;margin-right:10px" >&#9992;</span > 
+      <span>Alexandria to Riyadh on</span>
+      <strong>(Jan 28 2020)</strong></div>
       <div style="overflow-x:auto">
         <table width="100%;"style="border-bottom:2px solid #ddd;padding-bottom:15px">
           <tbody>
@@ -31,7 +40,7 @@
               <td style="vertical-align: top;width:15%">
                 <small style="color:#09b6c7;font-size:10px">Airline/Flight</small>
                 <div style="display:flex;align-items:center;margin:5px 0">
-                  <img src="<?php echo $theme_url;?>assets/img/WY.png" alt="" width="20px">
+                  <img src="<?php echo $theme_url;?>assets/img/WY.png" class="rtl-ml-10" alt="" width="20px">
                   <strong style="font-size:13px;margin-left:5px">WY-333</strong>
                 </div>
                 <small style="font-weight:bold;font-size:10px">Oman Air</small>
@@ -55,7 +64,7 @@
               <td style="width:25%;text-align:center;padding-right:10px">
                 <div style='display:flex;align-items:center'>
                   <span style="border-top:1px dotted #000;flex:2;"></span>
-                  <span style="font-size: 25px;">&#9992;</span >
+                  <span class="rtl-scale" style="font-size: 25px;">&#9992;</span >
                 </div>
                 <div style="">
                   <span >&#9991;</span>
@@ -143,7 +152,7 @@
       </div>
       <small style="display:inline-block;margin-top:15px;font-style:italic;font-size:10px">Please be advised that you are required to produce various travel documents depending on your journey, destination and purpose of travel. The
       documents required may include the following:</small>
-      <ul style="font-size:10px;font-style:italic;list-style:disc;margin-left:40px;margin-top:10px;height:600px">
+      <ul class="rtl-ml-0 rtl-mr-40" style="font-size:10px;font-style:italic;list-style:disc;margin-left:40px;margin-top:10px;height:600px">
         <li >FBA- Free Baggage Allowance, can vary depending on your class/fare purchased. You are requested to reconfirm.</li>
         <li>A passport with a minimum validity of 6 months is required, with sufficient empty pages in the back.</li>
         <li>A valid visa for the country you are visiting. Also check if a transit visa is required if you are transiting between other countries during your journey.</li>
