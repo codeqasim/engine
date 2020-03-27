@@ -58,16 +58,23 @@
         </div>
         <ul class="tabs flex flex-content-between row-rtl">
           <li>
-          <a href="#hotel">hotels</a>
+          <a href="#hotel">
+          <button>hotels</button>
+          </a>
          </li>
           <li>
-         <a href="#available-room">Available Rooms</a>
+         <a href="#available-room">
+         <button>Available Rooms</button></a>
         </li>
           <li>
-            <a href="#guest-rating">Guests Rating</a>
+            <a href="#guest-rating">
+            <button>Guests Rating</button>
+            </a>
           </li>
           <li>
-          <a href="#hotel-detail">hotel details</a></li>
+          <a href="#hotel-detail">
+          <button>hotel details</button>
+          </a></li>
         </ul>
       </div>
       <div class="row row-rtl" id="hotel">
