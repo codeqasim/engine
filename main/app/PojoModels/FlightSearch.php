@@ -53,7 +53,7 @@ class FlightSearch
     }
     public function getPayload($supplier){
         $payload = $this->toArray();
-        $payload["Credentials"] = $supplier["Credentials"];
+        $payload["Credentials"] = $payload["Suppliers"]["credentials"];
         unset($payload["Suppliers"]);
         return $payload;
     }

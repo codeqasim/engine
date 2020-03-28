@@ -70,7 +70,7 @@
                 <img alt="" width="100px" src="<?php echo base_url(); ?>assets/img/logo.png">
                 </a>
                 <p class="coy_right">
-                    <span>© 2020 b2b.com.</span>
+                    <span>ï¿½ 2020 b2b.com.</span>
                     <span class="reserved">  All rights reserved.</span>
                 </p>
             </div>
@@ -80,10 +80,13 @@
 <script src="<?php echo $theme_url;?>assets/js/jquery.min.js"></script>
 <script src="<?php echo $theme_url;?>assets/js/app.js"></script>
 <script src="<?php echo $theme_url;?>assets/js/datepicker.js"></script>
+<script src="<?php echo base_url();?>assets/js/app.js"></script>
+
 <script>
 
+    initVue();
 
-
+    var flight_type = 'oneway';
 
     $("#submit").click(function(){
         var origin = $("#autocomplete").val();
@@ -103,22 +106,12 @@
         }else{ 
 
             /*(from origin) url settings*/
-        var origin_res1 = origin.split(" ",1);
-        var origin_res = origin.split(" ",1)+' - ';
-        var origin_ress = origin.split(""+origin_res+"");
-        var b =  "'" +origin_ress+ "'";
-        var c = b.replace(/,/g,"");
-        var d= c.replace(/\s/g,"");
-        var origin_res2= d.replace(/'/g,"");
+        var origin_res1 = origin.split(" ",1)[0];
+
 
             /*(to destination) url settings*/
-        var destination_res1 = destination.split(" ",1);
-        var destination_res = destination.split(" ",1)+' - ';
-        var destination_ress = destination.split(""+destination_res+"");
-        var e =  "'" +destination_ress+ "'";
-        var f = e.replace(/,/g,"");
-        var g= f.replace(/\s/g,"");
-        var destination_res2= g.replace(/'/g,"");
+        var destination_res1 = destination.split(" ",1)[0];
+
 
 
         /*cdeparture change data format (like 23/03/2020 to 23-03-2020)*/
@@ -130,18 +123,12 @@
         var re_turn = partss[0] + '-' + partss[1] + '-' + partss[2];
 
                     /* finally url*/
-        var url = "<?php echo base_url('Flights/flight/'.
-        strtolower(
-        str_replace(' ','-','"+origin_res1+"').'/'.
-        str_replace(' ','-','"+origin_res2+"').'/'.
-        str_replace(' ','-','"+destination_res1+"').'/'.
-        str_replace(' ','-','"+destination_res2+"').'/'.
-        str_replace(' ','-','"+departur+"').'/'.
-        str_replace(' ','-','"+re_turn+"').'/'.
-        str_replace(' ','-','"+adult+"').'/'.
-        str_replace(' ','-','"+children+"'))); ?>";
-        
-        alert(url);
+        var base_url = "<?php echo base_url() ?>";
+
+        var url = base_url+"flights/"+origin_res1.toLowerCase()+"/"+destination_res1.toLowerCase()+"/"+flight_type+"/"
+            +departur+"/"+re_turn+"/"+adult+"/"+children;
+
+        window.location.href = url;
 
         // $.ajax({
         // type: 'ajax',
@@ -170,11 +157,9 @@
 
 });
 
-    // var flight_type = 'oneway';
-    // function FlighType(value){
-    // flight_type = value;
-    // alert(flight_type);
-    // }
+    function FlighType(value){
+    flight_type = value;
+    }
 
 
     $(document).ready(function(){

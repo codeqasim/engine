@@ -75,7 +75,7 @@ class Travelhope_flights extends REST_Controller {
                 "Departure"=>$item->from_code,
                 "Arrival"=>$item->to_code,
                 "DepartureTime"=>$item->departure_time,
-                "ArrivalTime"=>$item->departure_time,
+                "ArrivalTime"=>$item->arrival_time,
                 "Duration"=>$item->flight_duration,
                 "Stops"=>$item->stops,
                 "BagLimit"=>$item->baglimit,
@@ -142,7 +142,7 @@ class Travelhope_flights extends REST_Controller {
 
 
         if (!empty ($response)) {
-            $this->response(array('response' => $main_object, 'error' => array('status' => FALSE,'msg' => 'Record not found')), 200);
+            $this->response(array('response' => $main_object, 'error' => array('status' => true,'msg' => 'Record not found')), 200);
 
         }else{
 
