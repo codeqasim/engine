@@ -98,8 +98,9 @@ aside .help-detail .info a{font-size: 22px; font-weight: 500; color: #fff;}
 .hotels-detail-page .list-wrapper .book-room{background-color:#0d00bc;color:#fff;cursor:pointer;border:none;padding:10px 14px;box-sizing:border-box;border-radius:4px;margin-bottom:8px;font-size:14px;display:inline-block;font-weight:500}
 .hotels-detail-page .tabs{width:100%;z-index:10;border-radius:4px;background-color:#fff;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);list-style:none;padding:0;margin:0 0 20px;overflow:hidden}
 .hotels-detail-page .tabs li{border-right:1px solid #e1e2e6;width:100%}
-.hotels-detail-page .tabs li a{display: block;position:relative;padding:24.5px 0;display:block;color:#000;font-size:15px;font-weight:600;text-align:center;text-transform:capitalize;cursor:pointer;border-bottom:2px solid transparent;height:100%;letter-spacing:.3px}
-.hotels-detail-page .tabs li a:focus{background-color: #0d00bc;color:#fff;}
+.hotels-detail-page .tabs li a{display: block;position:relative;}
+.hotels-detail-page .tabs li a button{padding:24.5px 0;display:block;color:#000;font-size:15px;font-weight:600;text-align:center;text-transform:capitalize;cursor:pointer;border-bottom:2px solid transparent;height:100%;letter-spacing:.3px;width: 100%}
+.hotels-detail-page .tabs li a button:focus{background-color: #0d00bc!important ;color:#fff;outline: none}
 .hotels-detail-page .grid-img{border-radius:4px;background-color:#fff;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);padding:10px;margin-bottom:20px}
 .hotels-detail-page .grid-img .main-img{height:268px;object-fit:cover;width:100%}
 .hotels-detail-page .grid-img .other-img img{height:132px;width:100%;object-fit:cover}
