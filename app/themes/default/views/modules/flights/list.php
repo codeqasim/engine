@@ -369,9 +369,10 @@
                                         <h5 class="airline-info__type"> departure </h5>
                                         <div class="flex flex-column items-center">
                                             <div class="airline-info__logo">
-                                                <span class="logo-container"><span class="fit-alignment"></span><img id="WY.png-0-0" src="<?php echo $theme_url;?>assets/img/WY.png"></span>
+                                                <span class="logo-container"><span class="fit-alignment"></span>
+                                                    <img  v-bind:src="''+GetAirLineImage(item.InBoundSegments.Carrier.Code)"></span>
                                             </div>
-                                            <h3 class="airline-info__logoName">Oman Air (S.A.O.C.)</h3>
+                                            <h3 class="airline-info__logoName">{{item.InBoundSegments.Carrier.Name}}</h3>
                                             <h5 class="airline-info__class"><span>economy</span></h5>
                                         </div>
                                     </div>
@@ -380,12 +381,12 @@
                                         <div class="direction-info__row flex items-center">
                                             <span class="text-right"> {{GetTime(item.InBoundSegments.DepartureTime)}} <span class="location">{{item.InBoundSegments.Departure}}</span></span>
                                             <div class="direction-line">
-                                                <h6 >6h 10m</h6>
-                                                <div class="direction-line__points">
-                                                    <div class="airpoint"><span class="airpoint__mark" placement="top"></span><span class="airpoint__name">(MCT)</span></div>
-                                                    <div class="airpoint"><span class="airpoint__mark" placement="top"></span><span class="airpoint__name">(MCT)</span></div>
-                                                    <div class="airpoint"><span class="airpoint__mark" placement="top"></span><span class="airpoint__name">(MCT)</span></div>
-                                                </div>
+                                                <h6 >{{item.InBoundSegments.Duration}}</h6>
+<!--                                                <div class="direction-line__points">-->
+<!--                                                    <div class="airpoint"><span class="airpoint__mark" placement="top"></span><span class="airpoint__name">(MCT)</span></div>-->
+<!--                                                    <div class="airpoint"><span class="airpoint__mark" placement="top"></span><span class="airpoint__name">(MCT)</span></div>-->
+<!--                                                    <div class="airpoint"><span class="airpoint__mark" placement="top"></span><span class="airpoint__name">(MCT)</span></div>-->
+<!--                                                </div>-->
                                             </div>
                                             <span ><span >{{GetTime(item.InBoundSegments.ArrivalTime)}}</span>
               <span class="diff-days">+1</span><span class="location"> {{item.InBoundSegments.Arrival}} </span></span>
@@ -393,21 +394,21 @@
                                     </div>
                                 </div>
                                 <div class="bottom-options flex flex-content-between items-center">
-                                    <label v-bind:for="'flight-detail-'+index" class="showDetails"> details <i class="icon-arrow-down"></i></label>
+                                    <label v-bind:for="'flight-detail-InBound'+index" class="showDetails"> details <i class="icon-arrow-down"></i></label>
                                 </div>
-                                <input type="checkbox" name="flight-detail" v-bind:id="'flight-detail-'+index" hidden>
-                                <div class="flight-detail-card">
-                                    <div class="flight-details">
+                                <input type="checkbox" name="flight-detail" v-bind:id="'flight-detail-InBound'+index" hidden>
+                                <div  class="flight-detail-card">
+                                    <div v-for="(Inbound,InBoundIndex) in item.InBoundSegments.Segments" class="flight-details">
                                         <div class="flight-detail-header flex flex-content-between row-rtl items-center">
                                             <h5>
                                                 <i class="icon-location">&#9906;</i>
-                                                <strong>{{item.InBoundSegments.DepartureCity}} - {{item.InBoundSegments.ArrivalCity}}</strong>
-                                                <span class="time">{{GetTime(item.InBoundSegments.DepartureTime)}}</span>
+                                                <strong>{{Inbound.DepartureCity}} - {{Inbound.ArrivalCity}}</strong>
+                                                <span class="time">{{Inbound.Duration}}</span>
                                             </h5>
                                             <div class="flight-detail-header-right flex flex-content-end row-rtl">
-                                                <img src="<?php echo $theme_url;?>assets/img/WY.png" alt="">
+                                                <img v-bind:src="''+GetAirLineImage(Inbound.Carrier.Code)" alt="">
                                                 <ul class="rtl-align-right ">
-                                                    <li>Pakistan International Airlines - 214 </li>
+                                                    <li>{{Inbound.Carrier.Name}}</li>
                                                     <li>economy (AIRBUS)</li>
                                                 </ul>
                                             </div>
@@ -415,24 +416,24 @@
                                         <div class="timeline-group">
                                             <div class="timeline-group__details departure">
                                                 <ul class="list-unstyled">
-                                                    <li><i class="icon-location"></i><span>Dubai</span></li>
-                                                    <li><i class="icon-calender"></i><span>Thursday 20 Feb 2020 at 00:45 AM</span></li>
+                                                    <li><i class="icon-location"></i><span>{{Inbound.DepartureCity}}</span></li>
+                                                    <li><i class="icon-calender"></i><span>{{GetDate(Inbound.DepartureTime)}} at {{GetTime(Inbound.ArrivalTime)}}</span></li>
                                                     <li>
                                                         <i class="icon-airport"></i>
                                                         <span>
-                    <span>Dubai Intl Airport</span>
+                    <span>{{Inbound.DepartureCityCode}}</span>
                     </span>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div class="timeline-group__details stop">
                                                 <ul class="list-unstyled">
-                                                    <li><i class="icon-location"></i><span>Karachi</span></li>
-                                                    <li><i class="icon-calender"></i><span>Thursday 20 Feb 2020 at 03:45 AM</span></li>
+                                                    <li><i class="icon-location"></i><span>{{Inbound.ArrivalCity}}</span></li>
+                                                    <li><i class="icon-calender"></i><span>{{GetDate(Inbound.ArrivalTime)}} at {{GetTime(Inbound.ArrivalTime)}}</span></li>
                                                     <li>
                                                         <i class="icon-airport"></i>
                                                         <span>
-                    <span>Quaid E Azam International</span>
+                    <span>{{Inbound.ArrivalCityCode}}</span>
                     </span>
                                                     </li>
                                                 </ul>
@@ -448,59 +449,59 @@
                                             </div>
                                         </div>
                                         <div class="timeline-seperator flex items-center flex-content-center">
-                                            <h3> stop: <span class="wait-time">13h0m</span>
-                                                <span class=airport>Seeb Intl</span>
+                                            <h3> Flight# <span class="wait-time">{{Inbound.FlightNo}}</span>
                                             </h3>
                                         </div>
                                     </div>
                                     <div class="details-footer"></div>
                                 </div>
                             </div>
-                            <div class="left-side-row has-stops">
+                            <div v-if="item.OutBoundSegments.length != 0" class="left-side-row has-stops">
                                 <div class="row left-side-row-info row-rtl no-gutters">
                                     <div class="c3 c-sm-3 airline-info pr-0">
                                         <h5 class="airline-info__type"> Return </h5>
                                         <div class="flex flex-column items-center">
                                             <div class="airline-info__logo">
-                                                <span class="logo-container"><span class="fit-alignment"></span><img id="WY.png-0-0" src="<?php echo $theme_url;?>assets/img/WY.png"></span>
+                                                <span class="logo-container"><span class="fit-alignment"></span>
+                                                    <img  v-bind:src="''+GetAirLineImage(item.OutBoundSegments.Carrier.Code)"></span>
                                             </div>
-                                            <h3 class="airline-info__logoName">Oman Air (S.A.O.C.)</h3>
+                                            <h3 class="airline-info__logoName">{{item.OutBoundSegments.Carrier.Name}}</h3>
                                             <h5 class="airline-info__class"><span>economy</span></h5>
                                         </div>
                                     </div>
                                     <div class="c9 c-sm-9 direction-info flex flex-column items-start">
-                                        <h5 ><i class="icon-calender"></i> Thursday 20 Feb 2020 </h5>
+                                        <h5 ><i class="icon-calender"></i> {{ GetDate(item.OutBoundSegments.DepartureTime) }} </h5>
                                         <div class="direction-info__row flex items-center">
-                                            <span class="text-right"> 23:15 <span class="location">DXB</span></span>
+                                            <span class="text-right"> {{GetTime(item.OutBoundSegments.DepartureTime)}} <span class="location">{{item.OutBoundSegments.Departure}}</span></span>
                                             <div class="direction-line">
-                                                <h6 >6h 10m</h6>
-                                                <div class="direction-line__points">
-                                                    <div class="airpoint"><span class="airpoint__mark" placement="top"></span><span class="airpoint__name">(MCT)</span></div>
-                                                    <div class="airpoint"><span class="airpoint__mark" placement="top"></span><span class="airpoint__name">(MCT)</span></div>
-                                                    <div class="airpoint"><span class="airpoint__mark" placement="top"></span><span class="airpoint__name">(MCT)</span></div>
-                                                </div>
+                                                <h6 >{{item.OutBoundSegments.Duration}}</h6>
+<!--                                                <div class="direction-line__points">-->
+<!--                                                    <div class="airpoint"><span class="airpoint__mark" placement="top"></span><span class="airpoint__name">(MCT)</span></div>-->
+<!--                                                    <div class="airpoint"><span class="airpoint__mark" placement="top"></span><span class="airpoint__name">(MCT)</span></div>-->
+<!--                                                    <div class="airpoint"><span class="airpoint__mark" placement="top"></span><span class="airpoint__name">(MCT)</span></div>-->
+<!--                                                </div>-->
                                             </div>
-                                            <span ><span >06:25</span>
-              <span class="diff-days">+1</span><span class="location"> LHE </span></span>
+                                            <span ><span >{{GetTime(item.OutBoundSegments.ArrivalTime)}}</span>
+              <span class="diff-days">+1</span><span class="location"> {{item.OutBoundSegments.Arrival}} </span></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="bottom-options flex flex-content-between items-center">
-                                    <label v-bind:for="'flight-detail-'+index" class="showDetails"> details <i class="icon-arrow-down"></i></label>
+                                    <label v-bind:for="'flight-detail-OutBound'+index" class="showDetails"> details <i class="icon-arrow-down"></i></label>
                                 </div>
-                                <input type="checkbox" name="flight-detail" v-bind:id="'flight-detail-'+index" hidden>
-                                <div class="flight-detail-card">
-                                    <div class="flight-details">
+                                <input type="checkbox" name="flight-detail" v-bind:id="'flight-detail-OutBound'+index" hidden>
+                                <div  class="flight-detail-card">
+                                    <div v-for="(Outbound,OutBoundIndex) in item.OutBoundSegments.Segments" class="flight-details">
                                         <div class="flight-detail-header flex flex-content-between row-rtl items-center">
                                             <h5>
                                                 <i class="icon-location">&#9906;</i>
-                                                <strong>Dubai - Karachi</strong>
-                                                <span class="time">2h 0m</span>
+                                                <strong>{{Outbound.DepartureCity}} - {{Outbound.ArrivalCity}}</strong>
+                                                <span class="time">{{Outbound.Duration}}</span>
                                             </h5>
                                             <div class="flight-detail-header-right flex flex-content-end row-rtl">
-                                                <img src="assets/img/WY.png" alt="">
+                                                <img v-bind:src="''+GetAirLineImage(Outbound.Carrier.Code)" alt="">
                                                 <ul class="rtl-align-right ">
-                                                    <li>Pakistan International Airlines - 214 </li>
+                                                    <li>{{Outbound.Carrier.Name}}</li>
                                                     <li>economy (AIRBUS)</li>
                                                 </ul>
                                             </div>
@@ -508,24 +509,24 @@
                                         <div class="timeline-group">
                                             <div class="timeline-group__details departure">
                                                 <ul class="list-unstyled">
-                                                    <li><i class="icon-location"></i><span>Dubai</span></li>
-                                                    <li><i class="icon-calender"></i><span>Thursday 20 Feb 2020 at 00:45 AM</span></li>
+                                                    <li><i class="icon-location"></i><span>{{Outbound.DepartureCity}}</span></li>
+                                                    <li><i class="icon-calender"></i><span>{{GetDate(Outbound.DepartureTime)}} at {{GetTime(Outbound.ArrivalTime)}}</span></li>
                                                     <li>
                                                         <i class="icon-airport"></i>
                                                         <span>
-                    <span>Dubai Intl Airport</span>
+                    <span>{{Outbound.DepartureCityCode}}</span>
                     </span>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div class="timeline-group__details stop">
                                                 <ul class="list-unstyled">
-                                                    <li><i class="icon-location"></i><span>Karachi</span></li>
-                                                    <li><i class="icon-calender"></i><span>Thursday 20 Feb 2020 at 03:45 AM</span></li>
+                                                    <li><i class="icon-location"></i><span>{{Outbound.ArrivalCity}}</span></li>
+                                                    <li><i class="icon-calender"></i><span>{{GetDate(Outbound.ArrivalTime)}} at {{GetTime(Outbound.ArrivalTime)}}</span></li>
                                                     <li>
                                                         <i class="icon-airport"></i>
                                                         <span>
-                    <span>Quaid E Azam International</span>
+                    <span>{{Outbound.ArrivalCityCode}}</span>
                     </span>
                                                     </li>
                                                 </ul>
@@ -541,8 +542,7 @@
                                             </div>
                                         </div>
                                         <div class="timeline-seperator flex items-center flex-content-center">
-                                            <h3> stop: <span class="wait-time">13h0m</span>
-                                                <span class=airport>Seeb Intl</span>
+                                            <h3> Flight# <span class="wait-time">{{Outbound.FlightNo}}</span>
                                             </h3>
                                         </div>
                                     </div>

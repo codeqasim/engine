@@ -11,7 +11,7 @@
  * @link            https://github.com/chriskacerguis/codeigniter-restserver
  * @version         3.0.0
  */
-abstract class REST_Controller extends MX_Controller {
+abstract class REST_Controller extends CI_Controller {
 
     // Note: Only the widely used HTTP status codes are documented
 
@@ -368,12 +368,7 @@ abstract class REST_Controller extends MX_Controller {
     {
       $apikey = $this->input->get('appKey');
       $isValid = FALSE;
-      $mobile = mobileSettings("apiKey");
-      $api = $mobile->apiKey;
 
-      if($apikey == $api){
-      $isValid = TRUE;
-      }
         $this->isValidApiKey = TRUE;
 
     }

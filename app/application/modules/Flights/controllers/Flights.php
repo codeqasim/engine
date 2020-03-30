@@ -8,7 +8,7 @@ class Flights extends MX_Controller {
         parent::__construct();
         $this->load->model('Admin/Modules_Model', 'mm');
 //        $this->load->library('ur');
-        $this->search_url = 'http://localhost/engine/main/public/api/flights/search';
+        $this->search_url = 'http://localhost/engine/modules/flights/travelhope/search';
     }
 
 	public function index()
@@ -42,7 +42,7 @@ class Flights extends MX_Controller {
         $post_data["ArrivalDate"] = str_replace("-","/",$post_data["ArrivalDate"]);
         $post_data["DepartureDate"] = str_replace("-","/",$post_data["DepartureDate"]);
         $request = json_decode($this->sendRequest('POST',$this->search_url,json_encode($post_data),array('Content-Type:application/json')));
-        if($request->error->status){
+        if(($request->error->status) && !empty($request->response)){
             echo  json_encode(array('status'=>true,'response'=>$request->response));
         }else{
             echo  json_encode(array('status'=>false,'response'=>array()));
@@ -71,7 +71,7 @@ class Flights extends MX_Controller {
         $this->theme->view('modules/flights/voucher');
 
     }
-    public function sendRequest($req_method = 'GET', $url = '', $payload = [], $_headers = [])
+    public function sendRequest($req_method = 'POST', $url = '', $payload = [], $_headers = [])
     {
 
         $curl = curl_init();
