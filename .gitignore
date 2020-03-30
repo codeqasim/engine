@@ -2,3 +2,4 @@
 main/.editorconfig
 main/.gitattributes
 modules/.idea/misc.xml
+app/config.php
