@@ -8,7 +8,7 @@ class Flights extends MX_Controller {
         parent::__construct();
         $this->load->model('Admin/Modules_Model', 'mm');
 //        $this->load->library('ur');
-        $this->search_url = 'http://localhost/engine/modules/flights/travelhope/search';
+        $this->search_url = 'https://booknow.co/main/public/api/flights/search';
     }
 
 	public function index()

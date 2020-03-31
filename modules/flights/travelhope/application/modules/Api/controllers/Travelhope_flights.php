@@ -16,7 +16,7 @@ class Travelhope_flights extends REST_Controller {
         $this->load->library('TravelhopeFlights/Model/SearchForm');
         $this->load->model('TravelhopeFlights/BookinngEngineBookings');
         $this->load->model('Apiflights_model','fm');
-        $this->end_point = 'http://localhost/api/api/flight/';
+        $this->end_point = 'http://bookingengine.co/api/flight/';
         $this->output->set_content_type('application/json');
     }
 
