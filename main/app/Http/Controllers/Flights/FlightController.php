@@ -19,11 +19,11 @@ class FlightController extends Controller
     {
         $flightSearch = new FlightSearch($request->all());
         $Response = array();
-        foreach ($flightSearch->Suppliers as $supplier ){
-            $TempResponse = Http::post($this->base_url.$supplier["Name"]."/flights/search", $flightSearch->getPayload($supplier));
+//        foreach ($flightSearch->Suppliers as $supplier ){
+            $TempResponse = Http::post($this->base_url."flights/".$flightSearch->getSuppliers()["name"]."/search", $flightSearch->getPayload($flightSearch->getSuppliers()["name"]));
             return $TempResponse->json();
-            array_push($Response,$TempResponse);
-        }
+//            array_push($Response,$TempResponse);
+//        }
         dd($Response);
 
     }

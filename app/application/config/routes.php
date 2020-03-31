@@ -11,6 +11,9 @@ $route['translate_uri_dashes'] = FALSE;
 $route['pull'] = 'home/pull';
 
 $route['signup'] = "home/signup";
+$route['flights/search'] = "Flights/searchFlight";
+
+$route['flights(.*)'] = "Flights/index/$1";
 $route['login'] = "accounts/accounts/login";
 $route['register_action'] = "home/register_action";
 

@@ -4,20 +4,19 @@ header('Access-Control-Allow-Origin: *');
 require APPPATH . 'modules/Api/libraries/REST_Controller.php';
 class Travelhope_flights extends REST_Controller {
     const Module = "TravelhopeFlights";
-    private $config = [];
+    public $end_point= "";
     function __construct() {
         // Construct our parent class
         parent :: __construct();
 
-        if(!$this->isValidApiKey){
-            $this->response($this->invalidResponse, 400);
-        }
         /*Load Library and Model*/
+
         $this->load->library('TravelhopeFlights/ApiClient');
+
         $this->load->library('TravelhopeFlights/Model/SearchForm');
-        $this->load->library('Hotels/Hotels_lib');
         $this->load->model('TravelhopeFlights/BookinngEngineBookings');
-        $this->config = $this->App->service('ModuleService')->get(self::Module)->apiConfig;
+        $this->load->model('Apiflights_model','fm');
+        $this->end_point = 'http://localhost/api/api/flight/';
         $this->output->set_content_type('application/json');
     }
 
@@ -25,27 +24,23 @@ class Travelhope_flights extends REST_Controller {
     public function search_post()
     {
 
-        if ($this->config->api_environment == 'sandbox') {
-            $test = 1;
-        }else{
-            $test = 0;
-        }
+        $test = 1;
+
         $thfBooking = new BookinngEngineBookings();
         $milliseconds = round(microtime(true) * 1000);
         $thfBooking->setSessionKey($milliseconds);
         $searchForm = new SearchForm();
-        $searchForm->ota_id = $this->config->ota_id;
         $searchForm->test = $test;
-        $searchForm->currency = $this->Hotels_lib->currencycode;
+        $searchForm->currency = "USD";
 
-        $this->input->raw_input_stream;
-
-        $input_data = $this->input->raw_input_stream;
 
         $post_data = json_decode(trim(file_get_contents('php://input')), true);
 
 
-        $Credentials = $post_data['Credentials'];
+        $Credentials = $post_data['Suppliers']["credentials"]["ota_id"];
+
+
+        $searchForm->ota_id = $Credentials;
 
         $searchForm->from_code = $post_data['Origin'];
         $searchForm->to_code = $post_data['Destination'];
@@ -63,20 +58,22 @@ class Travelhope_flights extends REST_Controller {
         $thfBooking->setAdults($searchForm->adults);
         $thfBooking->setChildren($searchForm->children);
         $thfBooking->setInfants($searchForm->infants);
-        $thope = new ApiClient($this->config);
+        $config = array('ota_id'=>$Credentials,'apiEndpoint'=>$this->end_point);
+        $thope = new ApiClient((object)$config);
         $response = json_decode($thope->sendRequest('GET', 'search', $searchForm));
 
-//        echo  json_encode($response);die;
 
         $main_object = array();
         $FlightInfo_Outbound = array();
         foreach ($response->data as $item){
+            $airline = $this->fm->get_airline_name($item->airline);
             $FlightInfo = array(
                 "Departure"=>$item->from_code,
                 "Arrival"=>$item->to_code,
                 "DepartureTime"=>$item->departure_time,
-                "ArrivalTime"=>$item->departure_time,
+                "ArrivalTime"=>$item->arrival_time,
                 "Duration"=>$item->flight_duration,
+                "Carrier"=>(object)array("Name"=>$airline->name,"Code"=>$item->airline),
                 "Stops"=>$item->stops,
                 "BagLimit"=>$item->baglimit,
                 "Supplier"=>"TravelHope",
@@ -84,6 +81,8 @@ class Travelhope_flights extends REST_Controller {
             $Segments_Inbound = array();
             $Segments_Outbound = array();
             foreach ($item->route as $route){
+                $airline = $this->fm->get_airline_name($route->airline);
+
                 $Segment = array(
                   "DepartureCity"=>$route->city_from,
                   "ArrivalCity"=>$route->city_to,
@@ -91,6 +90,7 @@ class Travelhope_flights extends REST_Controller {
                   "ArrivalCityCode"=>$route->to_code,
                   "DepartureTime"=>$route->departure_time,
                   "ArrivalTime"=>$route->arrival_time,
+                   "Carrier"=>(object)array("Name"=>$airline->name,"Code"=>$route->airline),
                   "FlightNo"=>$route->flight_no,
                   "AirLineCode"=>$route->airline,
                   "AirLineType"=>$route->airline_type,
@@ -110,16 +110,21 @@ class Travelhope_flights extends REST_Controller {
 
 
             if(!empty($Segments_Outbound)){
+                $airline = $this->fm->get_airline_name($Segments_Outbound[0]["Carrier"]->Code);
+
                 $FlightInfo_Outbound = array(
                     "Departure"=>$Segments_Outbound[0]["DepartureCityCode"],
                     "DepartureCity"=>$Segments_Outbound[0]["DepartureCity"],
                     "Arrival"=>$Segments_Outbound[count($Segments_Outbound)-1]["ArrivalCityCode"],
                     "ArrivalCity"=>$Segments_Outbound[count($Segments_Outbound)-1]["ArrivalCity"],
+                    "DepartureTime"=>$Segments_Outbound[count($Segments_Outbound)-1]["DepartureTime"],
+                    "ArrivalTime"=>$Segments_Outbound[count($Segments_Outbound)-1]["ArrivalTime"],
+                    "Carrier"=>(object)array("Name"=>$airline->name,"Code"=>$Segments_Outbound[0]["Carrier"]->Code),
                     "Duration"=>"00:00",
                     "Stops"=>count($Segments_Outbound),
                     "BagLimit"=>array(),
                 );
-                $FlightInfo_Outbound["segments"]= $Segments_Outbound;
+                $FlightInfo_Outbound["Segments"]= $Segments_Outbound;
             }
 
                 array_push($main_object,(object)array(
@@ -142,11 +147,11 @@ class Travelhope_flights extends REST_Controller {
 
 
         if (!empty ($response)) {
-            $this->response(array('response' => $main_object, 'error' => array('status' => FALSE,'msg' => 'Record not found')), 200);
+            $this->response(array('response' => $main_object, 'error' => array('status' => true,'msg' => '')), 200);
 
         }else{
 
-            $this->response(array('response' => '', 'error' => array('status' => FALSE,'msg' => 'Record not found')), 200);
+            $this->response(array('response' => '', 'error' => array('status' => false,'msg' => 'Record not found')), 200);
 
         }
     }

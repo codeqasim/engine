@@ -58,13 +58,14 @@
         </div>
         <ul class="tabs flex flex-content-between row-rtl">
           <li>
-          <a href="#hotel">hotels</a>
+          <a href="#hotel" class="active">hotels</a>
          </li>
           <li>
          <a href="#available-room">Available Rooms</a>
         </li>
           <li>
-            <a href="#guest-rating">Guests Rating</a>
+            <a href="#guest-rating">Guests Rating
+            </a>
           </li>
           <li>
           <a href="#hotel-detail">hotel details</a></li>
@@ -374,3 +375,16 @@
     </div>
   </div>
 </div>
+<script>
+var tabs = document.getElementsByClassName("tabs")[0];
+tabs.addEventListener('click',function(e){
+  let activeTab = document.querySelectorAll(".active");
+  for (var i = 0; i < activeTab.length; i++) {
+    activeTab[i].classList.remove("active");
+  }
+  e.target.classList.add("active");
+
+})
+
+
+</script>

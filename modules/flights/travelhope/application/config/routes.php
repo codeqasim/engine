@@ -5,7 +5,7 @@ $route['phpinfo'] = "home/phpinfo";
 $route['default_controller'] = "home";
 $route['404_override'] = 'home';
 
-$route["flights/search"] = 'api/travelhope_flights/search';
+$route["search"] = 'api/travelhope_flights/search';
 
 $route['m-(.*)'] = 'home'; // for new menu
 $route['responsive'] = 'home/responsive'; // responsive check

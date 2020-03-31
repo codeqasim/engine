@@ -12,8 +12,11 @@ class ApiClient
 
     public function __construct($config)
     {
-        $this->otaId = $config->ota_id;
-        $this->apiEndpoint = trim($config->api_endpoint, '/') . '/';
+        if(!empty($config->ota_id)){
+            $this->otaId = $config->ota_id;
+            $this->apiEndpoint = trim($config->apiEndpoint, '/') . '/';
+        }
+
     }
 
     /**

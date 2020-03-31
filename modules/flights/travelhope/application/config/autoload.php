@@ -52,7 +52,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('database', 'session','form_validation','theme','pagination','ptmodules');
+$autoload['libraries'] = array('database');
 
 /*
 | -------------------------------------------------------------------
@@ -63,7 +63,7 @@ $autoload['libraries'] = array('database', 'session','form_validation','theme','
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url', 'file','language','translation','menu','misc','string', 'travelport', 'core');
+$autoload['helper'] = array('url', 'file','language','translation','menu','string', 'core');
 
 /*
 | -------------------------------------------------------------------
@@ -105,7 +105,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array('Admin/Settings_model','Helpers_models/Translation_model');
+$autoload['model'] = array();
 
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */

@@ -11,7 +11,7 @@
             <input type="radio" name="trip" checked id="one-way" hidden>
             <label for="one-way" onclick="FlighType('oneway')">One Way</label>
             <input type="radio" name="trip" id="round-trip" hidden>
-            <label for="round-trip" onclick="busreturns()"> Round Trip</label>
+            <label for="round-trip" onclick="FlighType('return')"> Round Trip</label>
         </div>
     </div>
 </div>
