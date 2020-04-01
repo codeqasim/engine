@@ -463,7 +463,7 @@
                                         <div class="flex flex-column items-center">
                                             <div class="airline-info__logo">
                                                 <span class="logo-container"><span class="fit-alignment"></span>
-                                                    <img  v-bind:src="''+GetAirLineImage(item.OutBoundSegments.Carrier.Code)"></span>
+                                                    <img  v-bind:src="'' + GetAirLineImage(item.OutBoundSegments.Carrier.Code)"></span>
                                             </div>
                                             <h3 class="airline-info__logoName">{{item.OutBoundSegments.Carrier.Name}}</h3>
                                             <h5 class="airline-info__class"><span>economy</span></h5>
