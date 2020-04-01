@@ -61,6 +61,7 @@ class Travelhope_flights extends REST_Controller {
         $config = array('ota_id'=>$Credentials,'apiEndpoint'=>$this->end_point);
         $thope = new ApiClient((object)$config);
         $response = json_decode($thope->sendRequest('GET', 'search', $searchForm));
+        dd($response);
 
 
         $main_object = array();
