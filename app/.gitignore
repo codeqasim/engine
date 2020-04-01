@@ -3,3 +3,4 @@ system/cache/*
 **/.DS_Store
 application/logs
 application/cache/*
+node_modules/*
