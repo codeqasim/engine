@@ -73,6 +73,12 @@ window.app = new Vue({
         /**
          * @return {string}
          */
+        GetAirLineImage(code){
+            return baseurl+"assets/img/flights/airlines/"+code+".png";
+        },
+        /**
+         * @return {string}
+         */
         GetDate(TimeStamp){
            return  moment.unix(TimeStamp).format("dddd DD MMM YYYY");
         },
@@ -81,13 +87,8 @@ window.app = new Vue({
          */
         GetTime(TimeStamp){
            return  moment.unix(TimeStamp).format("h:mm A");
-        },
-        /**
-         * @return {string}
-         */
-        GetAirLineImage(code){
-            return baseurl+"assets/img/flights/airlines/"+code+".png";
         }
+
     }
 });
 

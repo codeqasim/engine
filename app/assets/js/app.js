@@ -34535,6 +34535,13 @@ window.app = new Vue({
     /**
      * @return {string}
      */
+    GetAirLineImage: function GetAirLineImage(code) {
+      return baseurl + "assets/img/flights/airlines/" + code + ".png";
+    },
+
+    /**
+     * @return {string}
+     */
     GetDate: function GetDate(TimeStamp) {
       return moment.unix(TimeStamp).format("dddd DD MMM YYYY");
     },
@@ -34544,13 +34551,6 @@ window.app = new Vue({
      */
     GetTime: function GetTime(TimeStamp) {
       return moment.unix(TimeStamp).format("h:mm A");
-    },
-
-    /**
-     * @return {string}
-     */
-    GetAirLineImage: function GetAirLineImage(code) {
-      return baseurl + "assets/img/flights/airlines/" + code + ".png";
     }
   }
 });
