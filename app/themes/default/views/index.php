@@ -63,6 +63,7 @@
     <div class="row">
       <?php for ($i = 1; $i <= 3; $i++) { ?>
       <div class="c4">
+      <a href="<?php echo base_url(); ?>hotels/details">
         <div class="hotels-feature-items">
           <figure class="item-image">
             <div
@@ -87,6 +88,7 @@
             </div>
           </div>
         </div>
+       </a>
       </div>
       <?php } ?>
     </div>
