@@ -182,7 +182,7 @@ aside .help-detail .info a{font-size: 22px; font-weight: 500; color: #fff;}
 .top-airlines{background-color: #f2f6fb;padding-top: 80px;padding-bottom: 80px;}
 .top-airlines .airline-card{position:relative;border: none;margin-bottom: 10px;box-shadow: 0 2px 10px 0 rgba(0,0,0,.07);background-color: #fff;}
 .top-airlines .airline-card .card-header{background-color: transparent;padding: 6px 10px;text-align: center;cursor: pointer;}
-.airline-card .airline_img{height: 53px;text-align: left;width: 130px;padding: 0 3px 3px;}
+.airline-card .airline_img{height: 53px;text-align: left;width: 100px;padding: 0 3px 3px;}
 .airline-card .airline-name{ font-size: 16px;color: #363636;font-weight: 500;}
 .airline-card-body .itenary{padding: 20px 15px;position: relative;cursor: pointer;}
 .airline-card-body .itenary:hover{background:#f2f3f8}
