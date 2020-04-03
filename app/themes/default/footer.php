@@ -20,7 +20,7 @@
         <div class="contain">
             <div class="row row-rtl">
                 <div class="c6">
-                    <h3><strong>B2B</strong> Booking Engine</h3>
+                    <h3><strong>Booknow</strong>.co</h3>
                     <div class="row links row-rtl">
                         <div class="c4">
                             <ul>
