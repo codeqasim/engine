@@ -1,6 +1,7 @@
 <style>body{  background-color: #f2f6fb;}</style>
 <div class="booking-page">
-<div class="wizard hide-m row-rtl">
+<div class="bg-white">
+<div class="wizard hide-m row-rtl contain">
       <div class="item active">
         <div class="item-hint">
           1
@@ -30,6 +31,7 @@
         <span class="item-title">Conformation</span>
         <div class="clear"></div>
       </div>
+    </div>
     </div>
   <div class="contain">
     <div class="row row-rtl">

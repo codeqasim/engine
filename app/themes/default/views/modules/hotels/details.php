@@ -383,8 +383,8 @@ tabs.addEventListener('click',function(e){
     activeTab[i].classList.remove("active");
   }
   e.target.classList.add("active");
-
+  
+  
 })
-
 
 </script>

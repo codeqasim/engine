@@ -19,51 +19,50 @@
     <div class="row row-rtl">
       <div class="c3">
         <aside>
-          <ul>
+          <ul class="tabs">
             <li class="active">
-              <a href="#0"><i></i><span>Privacy Policy</span></a>
+              <a href="#0">Privacy Policy</a>
             </li>
             <li>
               <a href="#1"
-                ><i></i><span>Personal identification information</span></a
+                >Personal identification information</a
                 >
             </li>
             <li>
               <a href="#2"
-                ><i></i
-                ><span>Non-personal identification information</span></a
+                >Non-personal identification information</a
                 >
             </li>
             <li>
-              <a href="#3"><i></i><span>Web browser cookies</span></a>
+              <a href="#3">Web browser cookies</a>
             </li>
             <li>
               <a href="#4"
-                ><i></i><span>How we use collected information</span></a
+                >How we use collected information</a
                 >
             </li>
             <li>
               <a href="#5"
-                ><i></i><span>How we protect your information</span></a
+                >How we protect your information</a
                 >
             </li>
             <li>
               <a href="#6"
-                ><i></i><span>Sharing your personal information</span></a
+                >Sharing your personal information</a
                 >
             </li>
             <li>
-              <a href="#7"
-                ><i></i><span>Changes to this privacy policy</span></a
+              <a href="#7">
+                Changes to this privacy policy</a
                 >
             </li>
             <li>
               <a href="#8"
-                ><i></i><span>Your acceptance of these terms</span></a
+                >Your acceptance of these terms</a
                 >
             </li>
             <li>
-              <a href="#9"><i></i><span>Contacting us</span></a>
+              <a href="#9">Contacting us</a>
             </li>
           </ul>
         </aside>
@@ -231,3 +230,17 @@
     </div>
   </div>
 </div>
+<script>
+var tabs = document.querySelectorAll(".tabs > li");
+tabs.forEach(tab =>{
+  tab.addEventListener('click',function(){
+    let activeTab = document.querySelectorAll(".active");
+  for (var i = 0; i < activeTab.length; i++) {
+    activeTab[i].classList.remove("active");
+  }
+  this.classList.add("active");
+  
+  })
+})
+
+</script>

@@ -131,3 +131,16 @@
     </div>
   </div>
 </div>
+<script>
+var tabs = document.querySelectorAll(".tabs-btn > li > label");
+tabs.forEach(tab =>{
+  tab.addEventListener('click',function(){
+    let activeTab = document.querySelectorAll(".active");
+  for (var i = 0; i < activeTab.length; i++) {
+    activeTab[i].classList.remove("active");
+  }
+  this.classList.add("active");
+  
+  })
+})
+</script>
