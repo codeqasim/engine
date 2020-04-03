@@ -176,6 +176,7 @@ ul{list-style-type: none; }
 .btn-succes{text-align: center;white-space: nowrap;vertical-align: middle;user-select: none;border: 1px solid transparent;line-height: 1.5;display: inline-block; background-color: #4ea05a; color: #fff; text-transform: capitalize; font-size: 14px; font-weight: 500; padding: 7px 32px;  border-radius: 4px;}
 .outline-btn{color: #3c91e0; border: none; font-size: 16px; text-transform: lowercase;outline: none;font-weight: bold;cursor: pointer;}
 .btn-primary{display:inline-block;color: #fff;  height: 35px; line-height: 35px; padding: 0 15px; border: none; border-radius: 4px; font-size: 14px; outline: 0; cursor: pointer; text-transform: capitalize; font-weight: 500; background: #3c91e0;}
+
 /*form*/
 .form-group{margin-bottom: 1rem;}
 
@@ -391,7 +392,7 @@ input[type="radio"]:checked::after{border-radius:15px;content:"\02714";color:whi
 .btn::-moz-focus-inner{border:0}
 .btn::before{content:"";position:absolute;left:0;right:0;top:0;bottom:0;background-color:currentColor;opacity:0;transition:opacity .2s}
 .btn::after{content:"";position:absolute;left:50%;top:50%;border-radius:50%;padding:50%;width:32px;height:32px;background-color:currentColor;opacity:0;transform:translate(-50%,-50%) scale(1);transition:opacity 1s,transform .5s}
-.btn:hover::before{opacity:.04}
+.btn:hover::before{opacity:.1}
 .btn:focus::before{opacity:.12}
 .btn:hover:focus::before{opacity:.16}
 .btn:active::after{opacity:.16;transform:translate(-50%,-50%) scale(0);transition:transform 0s}
@@ -399,10 +400,10 @@ input[type="radio"]:checked::after{border-radius:15px;content:"\02714";color:whi
 .btn:disabled::before{opacity:0}
 .btn:disabled::after{opacity:0}
 
-.prime-outline { border-color: #005aff; color: #005aff; }
-.prime { background: #005aff; color: #fff; }
+.btn.prime { background: #005aff; color: #fff; } .btn.prime-o { border-color: #005aff; color: #005aff; } 
+.btn.success { background: #4ea05a; color: #fff; } .btn.success-o { border-color: #4ea05a; color: #4ea05a; } 
+.btn.danger { border-color: #ff002d; color: #fff; } .danger-o { border-color: #ff002d; color: #ff002d; }
 
-.danger-outline { border-color: #ff002d; color: #ff002d; }
 .breadcrumb-bg{ margin-bottom: 20px;  width: 100%; box-shadow: 0 2px 10px 0 rgba(0,0,0,.07); background-color: #fff; height: 50px; }
 .breadcrumb-bg ul{display: flex; align-items: center;height: 100%;}
 .breadcrumb-bg ul li{color: #005aff;text-transform: capitalize;font-size: 14px}
@@ -460,3 +461,70 @@ input[type="radio"]:checked::after{border-radius:15px;content:"\02714";color:whi
 .about-us .offering{background: #fff;padding-bottom: 66px;}
 .about-us .offering .img-container{height: 97px; display: inline-flex; align-items: center; margin-bottom: 14px;}
 .about-us .offering  p{font-size: 18px; color: #363636; font-weight: 600;}
+
+.policy .title{text-transform: capitalize; font-size: 18px; font-weight: 500; color: #363636; border-left: 4px solid #363636; padding-left: 10px; margin-bottom: 20px;}
+.policy aside ul{display:flex;flex-direction:column;border-radius:8px;background-color:#fff;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);overflow:hidden}
+.policy aside ul li a{display:flex;align-items:center;margin:0 20px;padding:20px 0;font-size:16px;font-weight:500;color:#56666f;cursor:pointer}
+.policy aside ul li.active{background-color:#4ea05a}
+.policy aside ul li.active a{color:#fff}
+.policy .tab-content{border-radius:8px;background-color:#fff;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);overflow:hidden;padding:20px;margin-bottom:20px}
+.policy .tab-content .policy-content{border-bottom:1px solid #e6ebfa;margin-bottom:20px;padding-top:10px}
+.policy .tab-content .policy-content h3{font-size:15px;font-weight:700;color:#56666f;margin-bottom:10px;text-transform:capitalize}
+.policy .tab-content .policy-content p{font-size:13px;color:#56666f;line-height:25px;margin-bottom:20px}
+.policy .tab-content .policy-content p a{color:#0031bc}
+.policy .tab-content .policy-content ul{margin-left:18px;margin-bottom:20px}
+.policy .tab-content .policy-content li{font-size:13px;color:#56666f;line-height:25px;list-style-type:disc}
+
+.faq .title{text-transform: capitalize; font-size: 18px; font-weight: 500; color: #363636; border-left: 4px solid #363636; padding-left: 10px; margin-bottom: 20px;}
+.faq .faq-tabs{display:flex;justify-content:center;align-items:center;margin-bottom:25px}
+.faq .faq-tabs li{border-radius:24px;background-color:#fff;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);text-transform:capitalize;font-size:16px;color:#424242;min-width:143px;padding:8px 0;text-align:center}
+.faq .faq-tabs li.active{background-color:#3c91e0}
+.faq .faq-tabs li.active a{color:#fff}
+.faq .faq-tabs li + li{margin-left:10px}
+.faq .faq-card{position:relative;border-radius:8px;background-color:#fff;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);overflow:hidden;padding:20px;margin-bottom:20px}
+.faq .faq-card .faq-card-title{font-size:16px;font-weight:600;color:#56666f;display:block;cursor:pointer}
+.faq .faq-card .answer{background-color:rgba(78,161,226,0.06);padding:20px;margin-top:20px;display:none}
+.faq .faq-card input#abroad:checked + .answer{display:block}
+.faq .faq-card input#confirmed:checked + .answer{display:block}
+.faq .faq-card input#booking-through:checked + .answer{display:block}
+.faq .faq-card .answer p{font-size:14px;color:#56666f;line-height:20px;margin-bottom:0}
+
+.contact-us .title{text-transform: capitalize; font-size: 18px; font-weight: 500; color: #363636; border-left: 4px solid #363636; padding-left: 10px; margin-bottom: 20px;}
+.contact-us .page-section{padding:20px;margin:20px 0;background-color:#fff;border-radius:8px;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07)}
+.contact-us .page-section .contact{float: right;width: 65%;}
+.contact-us .page-section .page-section-title{font-size:16px;color:#363636;margin-bottom:10px;text-transform:capitalize}
+.contact-us .page-section .page-section-info{font-size:14px;color:#56666f;line-height:20px}
+.contact-us .page-section select{color:rgba(0,0,0,0.6);cursor:default;font-size:16px;outline:0;overflow:hidden;position:relative;width:100%;background:#fff;border:thin solid #000;height:58px}
+
+.career .title{text-transform: capitalize; font-size: 18px; font-weight: 500; color: #363636; border-left: 4px solid #363636; padding-left: 10px; margin-bottom: 20px;}
+.career .card{padding:20px;border-radius:8px 8px 0 0;word-wrap:break-word;background-color:#fff;background-clip:border-box;position:relative;margin-bottom:100px;display: flex; flex-wrap: wrap;}
+.career .card.row{flex-wrap:nowrap}
+.card .card-block{padding-left:20px;width:60%}
+.card .card-block .card-title{font-size:26px;color:#363636;font-weight:500;margin-bottom:18px;width:90%}
+.card .card-block .card-text{font-size:14px;color:#949494;line-height:22px;width:85%;display:inline-block}
+.card .card-block .mail{font-size:15px;color:#3c91e0;font-weight:500;display:inline-block;margin-bottom:45px}
+.card .card-block .good_luck{font-size:22px;color:#363636;font-weight:500}
+
+/* accounts */
+.account{padding-top:100px;padding-bottom:132px}
+.account h1{font-size:45px;font-weight:700;margin-bottom:24px;color:#2b2a58}
+.account .list-info li{font-size:16px;position:relative;line-height:25px;padding:5px 0 5px 5px;font-weight:600;display:flex;align-items:center;}
+.account .list-info li i {font-size:23px;color:#005aff;margin-right:16px}
+.account .desc-img{margin-top:63px}
+.account .account-tab{width:437px;margin:0 auto;border-radius:4px;background-color:#fff;padding:30px}
+.account .account-tab .tabs-btn li{width:128px;text-align:center}
+.account .account-tab .tabs-btn li label{display:block;width:100%;text-align:center;border-radius:4px;background-color:#f1efef;color:#424242;font-size:16px;font-weight:400;padding:10px 0;cursor: pointer;}
+.account .account-tab .tabs-btn li:first-child label{border-top-right-radius:0;border-bottom-right-radius:0}
+.account .account-tab .tabs-btn li:last-child label{border-top-left-radius:0;border-bottom-left-radius:0}
+.account .account-tab .tabs-btn li label.active{background-color:#005aff;transition:all .5s;-webkit-transition:.5s;-moz-transition:.5s;-o-transition:.5s;color:#fff}
+.account .account-tab h3{font-size:14px;color:#363636;margin-bottom:20px}
+.account .account-tab .btn-facebook{background-color:#507cc0;margin-right:5px;border:none;color:#fff;line-height:35px}
+.account .account-tab .btn-google{background-color:#fff;border:1px solid rgba(151,151,151,0.37);color:#000;margin-left:5px}
+.account .account-tab hr{box-sizing:content-box;height:0;overflow:visible;margin-top:2rem;margin-bottom:2rem;border:0;border-top:1px solid rgba(0,0,0,0.1)}
+.account .account-tab .login{display: none}
+.account .account-tab .signup{display: none;}
+.account .account-tab input:checked + .login{display: block;}
+.account .account-tab input:checked + .signup{display: block;}
+.account .account-tab .login .remember-sec{display:flex;justify-content:space-between;margin-top:15px;align-items:center}
+.account .account-tab .login .remember-sec label{font-size:15px;color:#000}
+.account .account-tab .login .remember-sec .forgetPassword{text-decoration:underline;font-size:15px;color:#005aff}

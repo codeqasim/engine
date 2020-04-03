@@ -7,11 +7,9 @@
       <h6 class="title flex row-rtl">
         <a target="_blank" href="#">Holiday Inn Citystars</a>
         <div class="rating ml-10">
-          <span>✭</span>
-          <span>✭</span>
-          <span>✭</span>
-          <span>✭</span>
-          <span>✭</span>
+          <span><i class="mdi mdi-star"></i></span>
+          <span><i class="mdi mdi-star"></i></span>
+          <span><i class="mdi mdi-star"></i></span>
         </div>
       </h6>
       <div class="date-summary">

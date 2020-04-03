@@ -58,11 +58,11 @@
                     <small class="text-muted rtl-f-right">Ali Rashed St.,Heliopolis</small>
                     <div class="clear"></div>
                     <ul>
-                      <li><i class="mr-10">✓</i>Air conditioning</li>
-                      <li><i class="mr-10">✓</i>ifts</li>
-                      <li><i class="mr-10">✓</i>Outdoor pool</li>
-                      <li><i class="mr-10">✓</i>TV</li>
-                      <li><i class="mr-10">✓</i>Barber/Beauty Salon</li>
+                      <li><i class="mr-10"><i class="mdi mdi-check"></i></i>Air conditioning</li>
+                      <li><i class="mr-10"><i class="mdi mdi-check"></i></i>ifts</li>
+                      <li><i class="mr-10"><i class="mdi mdi-check"></i></i>Outdoor pool</li>
+                      <li><i class="mr-10"><i class="mdi mdi-check"></i></i>TV</li>
+                      <li><i class="mr-10"><i class="mdi mdi-check"></i></i>Barber/Beauty Salon</li>
                     </ul>
                   </div>
                 </div>
