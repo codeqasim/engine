@@ -210,15 +210,14 @@
                         </div>
                         <div class="c3">
                           <div class="price-sec">
-                            <h6 >total stay for <span><span> 1 </span>nights </span>
-                            </h6>
-                            <small><h4 class="price-before-discount"><span>433</span><span class="currency"> SAR</span></h4></small>
+                            <h6 >Total stay for <span><span> 1 </span>nights </span></h6>
+                            <!--<small><h4 class="price-before-discount"><span>433</span><span class="currency"> SAR</span></h4></small>-->
                             <h3  class="price">
-                              <span>390</span>
-                              <span  class="currency">SAR</span>
+                              <span>200</span>
+                              <span  class="currency">USD</span>
                             </h3>
-                            <h6 class="text-success mt-10">(incl.tax)</h6>
-                            <a  class="btn-succes" href="<?php echo base_url(); ?>hotels/booking">Book now</a>
+                            <!--<h6 class="text-success mt-10">(incl.tax)</h6>-->
+                            <a  class="btn success" href="<?php echo base_url(); ?>hotels/booking">Book now</a>
                           </div>
                         </div>
                       </div>

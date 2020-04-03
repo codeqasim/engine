@@ -9,8 +9,8 @@
                 </div>
                 <div class="c9 o1-sm">
                     <div class="section-info mt-50 rtl-align-right">
-                        <h2>Download almatar App &amp; Get the latest offers</h2>
-                        <h3>Download almatar app now for easier hotel &amp; flights bookings. Enjoy the best booking experience.</h3>
+                        <h2>Download App &amp; Get the latest offers</h2>
+                        <h3>Download app now for easier hotel &amp; flights bookings. Enjoy the best booking experience.</h3>
                     </div>
                 </div>
             </div>
@@ -20,7 +20,7 @@
         <div class="contain">
             <div class="row row-rtl">
                 <div class="c6">
-                    <h3><strong>B2B</strong> Booking Engine</h3>
+                    <h3><strong>Booknow</strong>.co</h3>
                     <div class="row links row-rtl">
                         <div class="c4">
                             <ul>
@@ -70,7 +70,7 @@
                 <img alt="" width="100px" src="<?php echo base_url(); ?>assets/img/logo.png">
                 </a>
                 <p class="coy_right">
-                    <span>� 2020 b2b.com.</span>
+                    <span>&copy; 2020 Booknow.co</span>
                     <span class="reserved">  All rights reserved.</span>
                 </p>
             </div>

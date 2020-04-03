@@ -3,8 +3,8 @@ class Config {
 
 // *** Datavase Credentials *** //
 public static $hostname = "localhost";
-public static $username = "root";
-public static $password = "";
+public static $username = "booknow_db";
+public static $password = "booknow_db";
 public static $name = "booknow_db";
 
 // *** API Layer Credentials *** //

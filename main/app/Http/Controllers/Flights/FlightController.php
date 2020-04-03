@@ -13,14 +13,14 @@ class FlightController extends Controller
     public $base_url = "";
     public function __construct()
     {
-        $this->base_url = "http://localhost/engine/modules/";
+        $this->base_url = "https://booknow.co/modules/";
     }
     public function getFlightResults(Request $request)
     {
-        $flightSearch = new FlightSearch($request->all());
+        $payload = $request->all();
         $Response = array();
 //        foreach ($flightSearch->Suppliers as $supplier ){
-            $TempResponse = Http::post($this->base_url."flights/".$flightSearch->getSuppliers()["name"]."/search", $flightSearch->getPayload($flightSearch->getSuppliers()["name"]));
+            $TempResponse = Http::post($this->base_url."flights/".$payload["Suppliers"]["name"]."/search", $payload);
             return $TempResponse->json();
 //            array_push($Response,$TempResponse);
 //        }

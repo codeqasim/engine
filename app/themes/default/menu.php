@@ -28,7 +28,7 @@
             </li>
             <li><a href="<?php echo base_url(); ?>login"><i class="icon mdi mdi-face"></i> <strong>Login</strong></a></li>
         </ul>
-        <a href="<?php echo base_url(); ?>login#signup" class="btn danger-outline f-left">sign up</a>
+        <a href="<?php echo base_url(); ?>login#signup" class="btn danger-o f-left">sign up</a>
         <ul>
          <li><a href="<?php echo base_url(); ?>agents"><strong>AGENTS</strong></a></li>
         </ul>

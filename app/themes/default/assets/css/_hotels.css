@@ -28,9 +28,19 @@ aside .help-detail .help-header{padding-bottom: 40px;position: relative; top:20p
 aside .help-detail .help-header h4{font-size: 22px; font-weight: 500; color: #fff; margin-bottom: 0; padding-bottom: 10px;}
 aside .help-detail .help-header p{font-size: 18px; width: 70%; margin: auto; color: #fff; line-height: 1.2; font-weight: 500;}
 aside .help-detail .info a{font-size: 22px; font-weight: 500; color: #fff;}
+
 /*listing*/
 .list-page{background-color:#f2f6fb}
-.list-page aside{position:-webkit-sticky;position:sticky;top:0;height: 100vh;overflow-y: scroll;padding: 0 10px}
+
+.list-page aside{width:300px;position:relative}
+.list-page aside section{width:100%;height:100vh;overflow-y:scroll;padding: 0 6px}
+.list-page aside section::-webkit-scrollbar{width:.4em;}
+.list-page aside section::-webkit-scrollbar,.list-page aside section::-webkit-scrollbar-thumb{overflow:visible;border-radius:4px}
+.list-page aside section::-webkit-scrollbar-thumb{background:rgba(0,0,0,.6)}
+.cover-bar{position:absolute;background:#f2f6fb;height:100%;top:0;right:0;width:.8em;-webkit-transition:all .5s;opacity:1}
+.list-page aside:hover .cover-bar{opacity:0;-webkit-transition:all .6s}
+.list-page aside{position:-webkit-sticky;position:sticky;top:0;height: 100vh;padding: 0 4px; width: 100%;}
+
 .list-page .edit-search{background:#fff;width:100%;padding:25px 0;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);margin-bottom:31px}
 .list-page .edit-search .input-wrapper{background:#f2f6fb;}
 .list-page .left-side-info span{display:inline-block;font-size:20px;font-weight:500;margin-bottom:10px;color:#363636}
@@ -47,7 +57,8 @@ aside .help-detail .info a{font-size: 22px; font-weight: 500; color: #fff;}
 .list-page aside .filter-section span{display:inline-block;font-size:14px}
 .list-page aside .filter-section button{color:#4ea1e2;background:0 0;border:none;font-size:14px;outline:none;cursor:pointer}
 .list-page aside input[type="text"]{font-size:12px;font-weight:700;border:1px solid #d9d9d9;border-radius:4px;box-shadow:0 2px 10px 0 rgba(0,0,0,0.08);color:#6e6e6e;height:44px;padding:1.1rem 3.5rem .85rem .75rem;width:100%;outline:none}
-.list-page aside .filter-section label{font-size:14px}
+.list-page aside .filter-section label{font-size:14px;width: 100%; line-height: 34px;}
+.list-page aside .filter-section label strong{float: right}
 .list-page aside .star-rating label span{color:#ffc100;font-size:20px}
 .list-page aside .more{margin-bottom:18px;display:block;color:#4ea1e2;cursor:pointer;margin-top:18px}
 .list-page .sortby{position:relative}
@@ -56,13 +67,13 @@ aside .help-detail .info a{font-size: 22px; font-weight: 500; color: #fff;}
 .list-page .sortby-dropdown ul li{padding:12px;font-size:16px;text-transform:capitalize;margin-bottom:1px}
 .list-page .sortby-dropdown ul li:last-child{margin-bottom:0}
 .list-page .sortby-dropdown ul li:hover{background-color:#3c91e0;color:#fff}
-.list-page .list-wrapper{background-color:#fff;border-radius:5px;width:100%;padding:0 10px;margin-bottom:20px;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);-webkit-box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);-ms-box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);-moz-box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);-o-box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);overflow: hidden;}
-.list-page .list-wrapper .main-img{margin-bottom:11px;width:100%;height:140px;border-radius:4px;object-fit:cover}
+.list-page .list-wrapper{background-color:#fff;border-radius:5px;width:100%;padding:0 10px;margin-bottom:15px;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);-webkit-box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);-ms-box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);-moz-box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);-o-box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);overflow: hidden;}
+.list-page .list-wrapper .main-img{width:100%;height:140px;border-radius:4px;object-fit:cover}
 .list-page .list-wrapper .gallery{display:flex}
 .list-page .list-wrapper .gallery .gallery_img{width:59px;height:49px;padding:0}
 .list-page .list-wrapper .gallery .gallery_img img{border-radius:4px}
 .list-page .list-wrapper .detail{min-height:150px;position:relative}
-.list-page .list-wrapper .detail:after{content:"";position:absolute;width:102%;bottom:0;background:#e1e2e6;height:1px;right:-10px}
+/*.list-page .list-wrapper .detail:after{content:"";position:absolute;width:102%;bottom:0;background:#e1e2e6;height:1px;right:-10px}*/
 .list-page .list-wrapper .detail .title a{color:#000}
 .list-page .list-wrapper .detail .title{padding-top:20px;font-size:18px;color:#000;margin-bottom:10px}
 .list-page .list-wrapper .detail .rating span{color:#ffc100;font-size:18px}
@@ -71,7 +82,7 @@ aside .help-detail .info a{font-size: 22px; font-weight: 500; color: #fff;}
 .list-page .list-wrapper .trust-you p{width:33.6px;height:25px;border-top-left-radius:8px;background-color:#4ea05a;border-bottom-right-radius:8px;line-height:25px;text-align:center;font-size:16px;margin-bottom:0;color:#fff;font-weight:400;margin-right:10px}
 .list-page .list-wrapper .trust-you .vrified{font-size:16px;font-weight:500;color:#56666f;text-transform:capitalize}
 .list-page .list-wrapper .discount-precentage{border-radius:13px 0 0 13px;background-image:linear-gradient(-127deg,#f38196 0,#e44a5d 100%);color:#fff;position:absolute;right:0;padding:5px 10px;top:40px}
-.list-page .list-wrapper .total-price{margin-top:60px;text-align:center;margin-top:60px;text-align:center}
+.list-page .list-wrapper .total-price{margin-top:45px;text-align:center;margin-top:5px;text-align:left}
 .list-page .list-wrapper .total-price span{color:#949494;font-size:12px;display:inline-block;margin-bottom:3px}
 .list-page .list-wrapper .total-price .total-price-value{color:#363636;font-size:22px;font-weight:500}
 .list-page .list-wrapper .total-price .total-price-value span{font-size:14px;color:inherit}
@@ -95,11 +106,11 @@ aside .help-detail .info a{font-size: 22px; font-weight: 500; color: #fff;}
 .hotels-detail-page .list-wrapper .total-price span:nth-child(1){font-size:15px;text-transform:capitalize;color:#363636;display:block}
 .hotels-detail-page .list-wrapper .total-price span:nth-child(2){font-size:22px;font-weight:400}
 .hotels-detail-page .list-wrapper .total-price span:nth-child(3){font-size:14px}
-.hotels-detail-page .list-wrapper .book-room{background-color:#0d00bc;color:#fff;cursor:pointer;border:none;padding:10px 14px;box-sizing:border-box;border-radius:4px;margin-bottom:8px;font-size:14px;display:inline-block;font-weight:500}
+.hotels-detail-page .list-wrapper .book-room{background-color:#005aff;color:#fff;cursor:pointer;border:none;padding:10px 14px;box-sizing:border-box;border-radius:4px;margin-bottom:8px;font-size:14px;display:inline-block;font-weight:500}
 .hotels-detail-page .tabs{width:100%;z-index:10;border-radius:4px;background-color:#fff;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);list-style:none;padding:0;margin:0 0 20px;overflow:hidden}
 .hotels-detail-page .tabs li{border-right:1px solid #e1e2e6;width:100%}
 .hotels-detail-page .tabs li a{display: block;position:relative;padding:24.5px 0;display:block;color:#000;font-size:15px;font-weight:600;text-align:center;text-transform:capitalize;cursor:pointer;border-bottom:2px solid transparent;height:100%;letter-spacing:.3px}
-.hotels-detail-page .tabs li a.active{background-color: #0d00bc;color:#fff;}
+.hotels-detail-page .tabs li a.active{background-color: #005aff;color:#fff;}
 .hotels-detail-page .grid-img{border-radius:4px;background-color:#fff;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);padding:10px;margin-bottom:20px}
 .hotels-detail-page .grid-img .main-img{height:268px;object-fit:cover;width:100%}
 .hotels-detail-page .grid-img .other-img img{height:132px;width:100%;object-fit:cover}
@@ -112,7 +123,7 @@ aside .help-detail .info a{font-size: 22px; font-weight: 500; color: #fff;}
 .hotels-detail-page .content-section .room-wrapper .filter-section .service-title{font-size:16px;font-weight:600;color:#363636;text-transform:capitalize;padding-bottom:15px}
 .hotels-detail-page .content-section .room-wrapper .filter-section label{color:#363636;margin-bottom:15px;display:block}
 .hotels-detail-page .content-section .room-wrapper .room-cart{background-color:#fff;border:1px solid #e1e1e1;border-radius:4px;margin-bottom:32px;position:relative}
-.hotels-detail-page .content-section .room-wrapper .room-cart .room-header{background-color:#0d00bc;border-top-right-radius:4px;border-top-left-radius:4px}
+.hotels-detail-page .content-section .room-wrapper .room-cart .room-header{background-color:#005aff;border-top-right-radius:4px;border-top-left-radius:4px}
 .hotels-detail-page .content-section .room-wrapper .room-cart .room-header h3{color:#fff;text-transform:uppercase;font-size:16px;padding:10px 20px;margin-bottom:0;display:inline-block}
 .hotels-detail-page .content-section .room-wrapper .room-cart .room-header span{font-size:12px;color:#fff;text-transform:capitalize;font-weight:400}
 .hotels-detail-page .content-section .room-wrapper-inner{padding:15px;position:relative}
@@ -163,7 +174,7 @@ aside .help-detail .info a{font-size: 22px; font-weight: 500; color: #fff;}
 .hotels-detail-page .content-section aside .rank{position:relative;cursor:pointer;display:inline-block;width:100%;width:calc(100% - 26px);margin-bottom:10px;min-height:45px}
 .hotels-detail-page .content-section aside .rank:after{content:"";clear:unset;display:inline-block}
 .hotels-detail-page .content-section aside .rank .rank-value{color:#333;text-transform:capitalize;text-align:left;font-size:.9em;font-weight:500;padding:2px 0 2px 7px;width:100%;width:calc(100% - 40px);margin-left:30px;position:absolute;line-height:14px}
-.hotels-detail-page .content-section aside .rank .rank-value strong{color:#0d00bc;text-transform:uppercase}
+.hotels-detail-page .content-section aside .rank .rank-value strong{color:#005aff;text-transform:uppercase}
 .hotels-detail-page .content-section aside.rank .rank-value .ranking-percentage{display:block;color:#aaa;font-weight:400;margin-top:3px}
 .hotels-detail-page .content-section aside .gtk{padding-bottom:5px;margin-top:20px}
 .hotels-detail-page .content-section aside .gtk ul li h2{word-break:break-word;-moz-hyphens:auto;-ms-hyphens:auto;-webkit-hyphens:auto;hyphens:auto;font-size:.8em;display:block;font-weight:400;margin-bottom:10px}
@@ -188,7 +199,7 @@ aside .help-detail .info a{font-size: 22px; font-weight: 500; color: #fff;}
 .booking-page .list-wrapper { position: relative; background-color: #fff; border-radius: 5px; width: 100%; padding: 0 10px; box-shadow: 0 2px 10px 0 rgba(0,0,0,0.07); }
 .booking-page .list-wrapper .detail ul {margin-top: 15px}
 .booking-page .list-wrapper .detail ul:after{content: '';display: block;clear: both;width: 100%}
-.booking-page .list-wrapper .detail ul li{width: 50%;float: left;margin-bottom: 10px}
+.booking-page .list-wrapper .detail ul li{width: 50%;float: left;margin-bottom: 5px}
 .booking-page .wrapper-shared {border-radius: 5px; width: 100%; margin-bottom: 20px; box-shadow: 0 2px 10px 0 rgba(0,0,0,.07); -webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,.07); -ms-box-shadow: 0 2px 10px 0 rgba(0,0,0,.07); -moz-box-shadow: 0 2px 10px 0 rgba(0,0,0,.07); -o-box-shadow: 0 2px 10px 0 rgba(0,0,0,.07); background-color: #fff;padding: 20px;}
 .booking-page .wrapper-shared + .wrapper-shared {border-bottom-right-radius: 0;border-bottom-left-radius: 0;margin-bottom: 0}
 .booking-page .wrapper-shared label.label-title{font-size: 14px; color: #363636; margin: 0; text-transform: capitalize; position: relative; line-height: 3;}

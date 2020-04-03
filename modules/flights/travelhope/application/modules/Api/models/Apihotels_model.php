@@ -529,6 +529,8 @@ class Apihotels_model extends CI_Model {
 
 
 
+
+
 		function hotel_book($hotelid, $checkin, $checkout) {
 
 				$result = array();

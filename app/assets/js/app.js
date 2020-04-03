@@ -34503,11 +34503,13 @@ window.app = new Vue({
         keys: [],
         payload: []
       },
-      Response: []
+      Response: [],
+      BaseUrl: ""
     };
   },
   created: function created() {
     console.log(this.RequestPayload);
+    this.BaseUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/1200px-Flag_of_Pakistan.svg.png";
   },
   mounted: function mounted() {},
   methods: {
@@ -34533,9 +34535,20 @@ window.app = new Vue({
     /**
      * @return {string}
      */
+    GetAirLineImage: function GetAirLineImage(code) {
+      return baseurl + "assets/img/flights/airlines/" + code + ".png";
+    },
+
+    /**
+     * @return {string}
+     */
     GetDate: function GetDate(TimeStamp) {
       return moment.unix(TimeStamp).format("dddd DD MMM YYYY");
     },
+
+    /**
+     * @return {string}
+     */
     GetTime: function GetTime(TimeStamp) {
       return moment.unix(TimeStamp).format("h:mm A");
     }

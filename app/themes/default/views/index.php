@@ -63,6 +63,7 @@
     <div class="row">
       <?php for ($i = 1; $i <= 3; $i++) { ?>
       <div class="c4">
+      <a href="<?php echo base_url(); ?>hotels/details">
         <div class="hotels-feature-items">
           <figure class="item-image">
             <div
@@ -83,10 +84,11 @@
             </div>
             <div class="item-location my-10">
               <i class="icon-location"></i>
-              <p>Dubai</p>
+              <p>Dubai, United Arab Emarates</p>
             </div>
           </div>
         </div>
+       </a>
       </div>
       <?php } ?>
     </div>
@@ -119,7 +121,7 @@
   </div>
   <div class="contain">
     <div class="row">
-      <?php for ($i = 1; $i <= 12; $i++) { ?>
+      <?php for ($i = 1; $i <= 3; $i++) { ?>
       <div class="c4">
         <div class="airline-card">
           <a href="#saudi">

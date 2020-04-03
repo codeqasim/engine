@@ -29,14 +29,14 @@
             <div class="contact">
             <h3>Need help ?</h3>
             <ul>
-                <li><span class="phone_number">( +123 ) 1122 33 4444</span></li>
-                <li><a class="footer-email" href="">support@travel.com</a></li>
+                <li><span class="phone_number" style="color:#000">( +123 ) 1122 33 4444</span></li>
+                <li><a class="footer-email" href="#" style="color:#000">support@travel.com</a></li>
             </ul>
             <ul>
-                <li><a href="">F</a></li>
-                <li><a href="">T</a></li>
-                <li><a href="">L</a></li>
-                <li><a href="">Y</a></li>
+                <li><a href="">FB</a></li>
+                <li><a href="">TW</a></li>
+                <li><a href="">LI</a></li>
+                <li><a href="">YT</a></li>
             </ul>
         </div>
         </div>
@@ -50,28 +50,16 @@
         <div class="row">
           <div class="c10 ml-auto rtl-mr-auto">
             <div class="row row-rtl">
-              <div class="c3 mb-20">
-                <select name="" id="">
-                  <option value="">Hotels</option>
-                </select>
-              </div>
-            </div>
-            <div class="row row-rtl">
-              <div class="c3">
-                <select name="" id="" style="margin-top: 6px;">
-                  <option value="">92</option>
-                </select>
-              </div>
               <div class="c3">
                 <label class="pure-material-textfield-outlined mb-10">
                   <input placeholder=" " />
-                  <span>Phone Number</span>
+                  <span>Your Name</span>
                 </label>
               </div>
               <div class="c3">
                 <label class="pure-material-textfield-outlined mb-10">
                   <input placeholder=" " />
-                  <span>Your Name</span>
+                  <span>Phone Number</span>
                 </label>
               </div>
               <div class="c3">
@@ -97,7 +85,7 @@
             </div>
             <div class="row">
               <div class="c12 rtl-align-right">
-                <button class="btn-succes">Send</button>
+                <button class="btn w100">Send</button>
               </div>
             </div>
           </div>
