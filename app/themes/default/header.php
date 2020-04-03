@@ -20,9 +20,8 @@
 <meta property="og:image" content="">
 </head>
 <body onload="oneway()">
-
 <header class="sticky">
-    <nav >
+    <nav>
         <div class="contain flex flex-content-between row-rtl" >
             <div class="c2 c-sm-2 p0 rtl-align-right mx-auto">
                 <div class="logo">
