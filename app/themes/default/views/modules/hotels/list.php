@@ -252,7 +252,7 @@
                         </h5>
                       </div>
                       <div class="text-center mt-10">
-                        <a class="btn prime-outline hide-m w100" href="<?php echo base_url(); ?>hotels/details">Details </a>
+                        <a class="btn prime-o hide-m w100" href="<?php echo base_url(); ?>hotels/details">Details </a>
                       </div>
                     </div>
                   </div>

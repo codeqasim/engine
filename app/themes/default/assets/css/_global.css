@@ -171,12 +171,6 @@ ul{list-style-type: none; }
 /*borders*/
 .border-right{border-right:1px solid #eee;}
 
-/*.btns*/
-.btn-default{border-radius: 4px;border: 1px solid #484848;font-size: 14px;font-weight: 500;color: #484848;padding: 11px 47px;background: #fff;margin-top: 3px;outline: 0;cursor: pointer;}
-.btn-succes{text-align: center;white-space: nowrap;vertical-align: middle;user-select: none;border: 1px solid transparent;line-height: 1.5;display: inline-block; background-color: #4ea05a; color: #fff; text-transform: capitalize; font-size: 14px; font-weight: 500; padding: 7px 32px;  border-radius: 4px;}
-.outline-btn{color: #3c91e0; border: none; font-size: 16px; text-transform: lowercase;outline: none;font-weight: bold;cursor: pointer;}
-.btn-primary{display:inline-block;color: #fff;  height: 35px; line-height: 35px; padding: 0 15px; border: none; border-radius: 4px; font-size: 14px; outline: 0; cursor: pointer; text-transform: capitalize; font-weight: 500; background: #3c91e0;}
-
 /*form*/
 .form-group{margin-bottom: 1rem;}
 
