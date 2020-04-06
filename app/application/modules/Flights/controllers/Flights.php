@@ -41,7 +41,7 @@ class Flights extends MX_Controller {
         $post_data["Suppliers"]->credentials = json_decode($post_data["Suppliers"]->credentials);
         $post_data["ArrivalDate"] = str_replace("-","/",$post_data["ArrivalDate"]);
         $post_data["DepartureDate"] = str_replace("-","/",$post_data["DepartureDate"]);
-        dd(json_encode($post_data));
+
         $request = json_decode($this->sendRequest('POST',$this->search_url,json_encode($post_data),array('Content-Type:application/json')));
         dd($request);
         if(($request->error->status) && !empty($request->response)){
