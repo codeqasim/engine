@@ -579,7 +579,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
 
-<script src="<?=base_url('resources/js/app.js')?>"></script>
+<script src="<?=base_url('assets/js/app.js')?>"></script>
 
 <script>
     function initVue(){
