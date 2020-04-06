@@ -5,3 +5,5 @@ modules/.idea/misc.xml
 app/config.php
 app/node_modules/.cache/babel-loader/d18f3046ca23b37469776650544f7846.json.gz
 app/node_modules/.cache/babel-loader/d18f3046ca23b37469776650544f7846.json.gz
+modules/travelhope/.DS_Store
+modules/travelhope/themes/.DS_Store

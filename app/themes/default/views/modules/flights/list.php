@@ -575,9 +575,15 @@
     </div>
   </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+
+<script src="<?=base_url('resources/js/app.js')?>"></script>
 
 <script>
     function initVue(){
+
         app.RequestPayload.keys = JSON.parse('<?=json_encode($apis)?>');
         app.RequestPayload.payload = JSON.parse('<?=$payload?>');
         app.load_data();

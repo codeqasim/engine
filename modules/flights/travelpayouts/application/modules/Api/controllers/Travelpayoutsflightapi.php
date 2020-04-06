@@ -82,7 +82,7 @@ class Travelpayoutsflightapi extends REST_Controller {
             "segments"         =>$segments,
         );
 
-        $data_string = json_encode($data_array);
+
         $ch = curl_init( $this->config->api_endpoint.'v1/flight_search');
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
         curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
@@ -94,6 +94,7 @@ class Travelpayoutsflightapi extends REST_Controller {
 
         $result = curl_exec($ch);
         $data1 = json_decode($result);
+
         if(!empty($data1)){
             $curl = curl_init();
             curl_setopt_array($curl, array(
@@ -112,6 +113,8 @@ class Travelpayoutsflightapi extends REST_Controller {
 
         }
         $main_array = json_decode($data);
+        file_put_contents(FCPATH."/response/oneway_response.json",json_encode($main_array));
+
         $this->load->model('FlightTarco/TrFlights_model', 'tm');
         $this->load->library('Hotels/Hotels_lib');
         foreach ($main_array as $item) {
