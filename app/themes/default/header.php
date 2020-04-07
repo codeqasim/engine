@@ -9,7 +9,6 @@
 <!--<link rel="stylesheet" href="<?php echo $theme_url;?>assets/css/_rtl.css" />-->
 <script> var baseurl = "<?php echo base_url(); ?>"; </script>
 <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/img/logo.png">
-    <link href="<?=base_url('assets/css/app.css')?>" rel="stylesheet">
 
     <meta property="og:type" content="website">
 <meta property="og:url" content="<?php echo base_url(); ?>">
