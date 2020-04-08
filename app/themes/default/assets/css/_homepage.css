@@ -3,14 +3,14 @@
 .hero .hero-content { text-align: center; top: -45px; color: #fff; letter-spacing: 1px; text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.84); }
 
 /* hero search */
-.hero .search {background-color: rgba(33, 37, 41, 0.48); padding: 15px 10px 5px 10px;position:relative;/*border-radius:4px 0 4px 4px*/}
+.hero .search {/*background-color: rgba(33, 37, 41, 0.48);*/ padding: 20px 0px 0px 0px;position:relative;/*border-radius:4px 0 4px 4px*/}
 .hero .search  ul { display: flex;margin-bottom: 10px;}
-.hero .search  li label{cursor: pointer; background-color:transparent;padding:7px 20px;color:#fff;border-radius:4px;font-size:18px;font-weight:500;color:#fff;text-transform:capitalize;border:none;text-align:center}
+.hero .search  li label{cursor: pointer; background-color:transparent;padding:10px 20px;color:#fff;border-radius:4px;font-size:18px;font-weight:500;text-transform:capitalize;border:none;text-align:center}
 .hero .search  li label:hover{ background: rgba(0, 0, 0, 0.51); }
 .hero .search  li:not(:last-child){margin-right:10px}
 .hero .search .fade{top: 37px;}
 .hero .search .input-items input::first-letter { color: #fff }
-.hero .search .input-items input { border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:4px;border-bottom-left-radius:4px; background: rgba(26, 57, 96, 0.10196078431372549); width: 100%; border: none; outline: 0; color: #363636; font-size: 15px; font-weight: 500; padding: 10px; height: 40px; }
+.hero .search .input-items input { border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:4px;border-bottom-left-radius:4px; background: rgba(26, 57, 96, 0.10196078431372549); width: 100%; border: none; outline: 0; color: #363636; font-size: 18px; font-weight: 500; padding: 15px; height: 55px; }
 .hero .search .input-items:hover input { background: rgba(26, 57, 96, 0.15) }
 .hero .search .input-items input:focus { background: rgba(26, 57, 96, 0.25) }
 .hero .search .input-items input:disabled { color: transparent; }
@@ -18,7 +18,7 @@
 .hero .search .input-items .checkout,.hero .search .input-items .returning,.hero .search .input-items .busreturning{border-top-left-radius:0px;border-bottom-left-radius: 0px; }
 .passenger-dropdown {opacity:0;visibility:hidden;-webkit-transition: all 0.1s ease-out; -moz-transition: all 0.1s ease-out; -o-transition: all 0.1s ease-out; transition: all 0.1s ease-out; box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);}
 .dropshow:hover + .passenger-dropdown { -webkit-transition: opacity .3s,padding .3s; -moz-transition: opacity .3s,padding .3s; transition: opacity .3s,padding .3s; visibility: visible; opacity: 1; }
-.search li input[type=radio]:checked+label {background-color:#005aff }
+.search li input[type=radio]:checked+label {background-color:#fff;color:#000;border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; }
 .search li input[type=radio]:checked+label+.tab { -webkit-transition: opacity .3s,padding .3s; -moz-transition: opacity .3s,padding .3s; transition: opacity .3s,padding .3s; visibility: visible; opacity: 1; }
 .search li input[type=date]::-webkit-inner-spin-button{ -webkit-appearance: none; display: none; }
 .passenger-dropdown:hover { display: block !important;opacity: 1;visibility: visible; }
@@ -40,7 +40,7 @@ input[type="date"]::-webkit-inner-spin-button { z-index: 1; }
 
 #flights .dashed{left: -22px;}
 .hotel-search-item{position: relative;}
-.passenger-dropdown{border: 1px solid #ccc; border: 0px solid rgba(0,0,0,.15); border-radius: 0; position: absolute;top: 100%;background: #fff;width: 345px;border: 1px solid #e6e6e6;border-radius: 4px;z-index: 100;right: 62px;}
+.passenger-dropdown{border: 1px solid #ccc; border: 0px solid rgba(0,0,0,.15); border-radius: 0; position: absolute;top: 100px;background: #fff;width: 345px;border: 1px solid #e6e6e6;border-radius: 4px;z-index: 100;right: 62px;}
 .passenger-dropdown-head{padding: 11px 17px;background-color: #f3f3f3;}
 .passenger-dropdown .room-row{padding: 10px 20px;width: 100%;}
 .passenger-dropdown .room-row span{font-size: 14px}

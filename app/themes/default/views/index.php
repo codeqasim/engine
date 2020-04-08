@@ -1,6 +1,6 @@
 <section class="hero" style="background-image: url('<?php echo base_url(); ?>uploads/slider/1.jpg')">
   <div class="contain">
-    <div class="row hide-m">
+    <div class="row hide-m" style="height:15px">
       <div class="c8 mx-auto hero-content">
         <h2 class="hero-title-h2">
           Your new travel mate
