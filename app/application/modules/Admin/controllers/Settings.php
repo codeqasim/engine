@@ -207,7 +207,7 @@ class Settings extends MX_Controller
     }
         /***********update Flights status********/
 
-            public function updatestatus()
+     public function updatestatus()
     {
         $checkbox = $this->input->post('checkbox');
         if ($checkbox == 1) {
