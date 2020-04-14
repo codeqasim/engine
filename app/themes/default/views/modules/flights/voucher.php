@@ -149,7 +149,7 @@
       </div>
       <small style="display:inline-block;margin-top:15px;font-style:italic;font-size:10px">Please be advised that you are required to produce various travel documents depending on your journey, destination and purpose of travel. The
       documents required may include the following:</small>
-      <ul class="rtl-ml-0 rtl-mr-40" style="font-size:10px;font-style:italic;list-style:disc;margin-left:40px;margin-top:10px;height:600px">
+      <ul class="rtl-ml-0 rtl-mr-40" style="font-size:10px;font-style:italic;list-style:disc;margin-left:40px;margin-top:10px;min-height:200px">
         <li >FBA- Free Baggage Allowance, can vary depending on your class/fare purchased. You are requested to reconfirm.</li>
         <li>A passport with a minimum validity of 6 months is required, with sufficient empty pages in the back.</li>
         <li>A valid visa for the country you are visiting. Also check if a transit visa is required if you are transiting between other countries during your journey.</li>

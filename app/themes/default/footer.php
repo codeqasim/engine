@@ -70,7 +70,7 @@
                 <img alt="" width="100px" src="<?php echo base_url(); ?>assets/img/logo.png">
                 </a>
                 <p class="coy_right">
-                    <span>� 2020 b2b.com.</span>
+                    <span>&copy; 2020 Appname</span>
                     <span class="reserved">  All rights reserved.</span>
                 </p>
             </div>
