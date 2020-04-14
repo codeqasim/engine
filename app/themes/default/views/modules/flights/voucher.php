@@ -5,19 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>E-Vocher</title>
-    <style>
+    <!--<style>
       @media screen and (max-width:768px){
-      .vocher{
-      width:100% !important;
-      }
-      }
+      .vocher{ width:100% !important; } }
       .rtl-vocher{direction:rtl}
       .rtl-vocher .rtl-scale{transform:scale(-1)}
       .rtl-vocher .rtl-ml-0{margin-left:0 !important}
       .rtl-vocher .rtl-mr-0{margin-right:0 !important}
       .rtl-vocher .rtl-ml-10{margin-left:10px !important}
       .rtl-vocher .rtl-mr-40{margin-right:40px !important}
-    </style>
+    </style>-->
   </head>
   <body style="background-color:rgb(82, 86, 89);">
     <div class="vocher rtl-vocher" style="width:800px;margin:40px auto;background-color:#fff;padding:25px 20px;">
