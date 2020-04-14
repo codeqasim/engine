@@ -10,7 +10,7 @@
 <script> var baseurl = "<?php echo base_url(); ?>"; </script>
 <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/img/logo.png">
 
-    <meta property="og:type" content="website">
+<meta property="og:type" content="website">
 <meta property="og:url" content="<?php echo base_url(); ?>">
 <meta property="og:description" content="">
 <meta property="fb:app_id" content="">
