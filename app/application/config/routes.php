@@ -12,6 +12,7 @@ $route['pull'] = 'home/pull';
 
 $route['signup'] = "home/signup";
 $route['flights/search'] = "Flights/searchFlight";
+$route['flights/voucher'] = "Flights/voucher";
 
 $route['flights(.*)'] = "Flights/index/$1";
 $route['login'] = "accounts/accounts/login";
