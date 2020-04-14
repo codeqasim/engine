@@ -9,7 +9,6 @@
 <!--<link rel="stylesheet" href="<?php echo $theme_url;?>assets/css/_rtl.css" />-->
 <script> var baseurl = "<?php echo base_url(); ?>"; </script>
 <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/img/logo.png">
-
 <meta property="og:type" content="website">
 <meta property="og:url" content="<?php echo base_url(); ?>">
 <meta property="og:description" content="">
@@ -20,9 +19,8 @@
 <meta property="og:image" content="">
 </head>
 <body onload="oneway()" >
-
 <header class="sticky">
-    <nav >
+    <nav>
         <div class="contain flex flex-content-between row-rtl" >
             <div class="c2 c-sm-2 p0 rtl-align-right mx-auto">
                 <div class="logo">
@@ -31,20 +29,15 @@
                     <strong>BOOK</strong>NOW
                     </a>
                 </div>
-
-                <div class="bars show-m">
-    <input type="checkbox" id="menu-left" hidden />
-    <label for="menu-left">
-    <span></span>
-    </label>
-    <?php include 'menu.php'; ?>
-  </div>
-
-
-
+              <div class="bars show-m">
+            <input type="checkbox" id="menu-left" hidden />
+            <label for="menu-left">
+            <span></span>
+            </label>
+            <?php include 'menu.php'; ?>
+            </div>
             </div>
             <?php include 'menu.php'; ?>
         </div>
     </nav>
 </header>
-
