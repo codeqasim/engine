@@ -1,6 +1,6 @@
-<section class="hero" style="background-image: url('<?php echo base_url(); ?>uploads/slider/1.jpg')">
-  <div class="contain">
-    <div class="row hide-m" style="height:15px">
+<div style="padding:50px 200px">
+
+<div class="row hide-m text-center" style="height:100px">
       <div class="c8 mx-auto hero-content">
         <h2 class="hero-title-h2">
           Your new travel mate
@@ -10,17 +10,21 @@
         </h3>
       </div>
     </div>
+
+<section class="hero" style="background-image: url('<?php echo base_url(); ?>uploads/slider/1.jpg');border-radius:10px">
+  <div class="contain">
+
     <div class="row">
       <div class="c12">
         <div class="search">
           <ul class="row-rtl">
             <li class="HOTELS">
-              <input id="HOTELS" type="radio" hidden checked name="module">
+              <input id="HOTELS" type="radio" hidden name="module">
               <label for="HOTELS"><i class="mdi mdi-hotel"></i> Hotels</label>
               <?php include $themeurl. 'views/modules/hotels/search.php';?>
             </li>
             <li class="FLIGHTS">
-              <input id="FLIGHTS" type="radio" hidden name="module">
+              <input id="FLIGHTS" type="radio" hidden checked name="module">
               <label for="FLIGHTS"><i class="mdi mdi-airplane"></i> Flights</label>
               <?php include $themeurl. 'views/modules/flights/search.php';?>
             </li>
@@ -35,9 +39,10 @@
     </div>
   </div>
 </section>
+</div>
 <!-- hero section end -->
 <!-- main start -->
-<div class="offers pt-20 mb-30">
+<div class="offers pt-100 mb-30">
   <div class="contain">
     <div class="row">
       <?php for ($i = 1; $i <= 3; $i++) { ?>

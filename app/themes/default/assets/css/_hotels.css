@@ -40,7 +40,6 @@ aside .help-detail .info a{font-size: 22px; font-weight: 500; color: #fff;}
 .cover-bar{position:absolute;background:#f2f6fb;height:100%;top:0;right:0;width:.8em;-webkit-transition:all .5s;opacity:1}
 .list-page aside:hover .cover-bar{opacity:0;-webkit-transition:all .6s}
 .list-page aside{position:-webkit-sticky;position:sticky;top:0;height: 100vh;padding: 0 4px; width: 100%;}
-
 .list-page .edit-search{background:#fff;width:100%;padding:25px 0;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);margin-bottom:31px}
 .list-page .edit-search .input-wrapper{/*background:#f2f6fb;*/}
 .list-page .left-side-info span{display:inline-block;font-size:20px;font-weight:500;margin-bottom:10px;color:#363636}
@@ -108,11 +107,11 @@ aside .help-detail .info a{font-size: 22px; font-weight: 500; color: #fff;}
 .hotels-detail-page .list-wrapper .total-price span:nth-child(1){font-size:15px;text-transform:capitalize;color:#363636;display:block}
 .hotels-detail-page .list-wrapper .total-price span:nth-child(2){font-size:22px;font-weight:400}
 .hotels-detail-page .list-wrapper .total-price span:nth-child(3){font-size:14px}
-.hotels-detail-page .list-wrapper .book-room{background-color:#005aff;color:#fff;cursor:pointer;border:none;padding:10px 14px;box-sizing:border-box;border-radius:4px;margin-bottom:8px;font-size:14px;display:inline-block;font-weight:500}
+.hotels-detail-page .list-wrapper .book-room{background-color:#194ec0;color:#fff;cursor:pointer;border:none;padding:10px 14px;box-sizing:border-box;border-radius:4px;margin-bottom:8px;font-size:14px;display:inline-block;font-weight:500}
 .hotels-detail-page .tabs{width:100%;z-index:10;border-radius:4px;background-color:#fff;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);list-style:none;padding:0;margin:0 0 20px;overflow:hidden}
 .hotels-detail-page .tabs li{border-right:1px solid #e1e2e6;width:100%}
 .hotels-detail-page .tabs li a{display: block;position:relative;padding:24.5px 0;display:block;color:#000;font-size:15px;font-weight:600;text-align:center;text-transform:capitalize;cursor:pointer;border-bottom:2px solid transparent;height:100%;letter-spacing:.3px}
-.hotels-detail-page .tabs li a.active{background-color: #005aff;color:#fff;}
+.hotels-detail-page .tabs li a.active{background-color: #194ec0;color:#fff;}
 .hotels-detail-page .grid-img{border-radius:4px;background-color:#fff;box-shadow:0 2px 10px 0 rgba(0,0,0,0.07);padding:10px;margin-bottom:20px}
 .hotels-detail-page .grid-img .main-img{height:268px;object-fit:cover;width:100%}
 .hotels-detail-page .grid-img .other-img img{height:132px;width:100%;object-fit:cover}
@@ -125,7 +124,7 @@ aside .help-detail .info a{font-size: 22px; font-weight: 500; color: #fff;}
 .hotels-detail-page .content-section .room-wrapper .filter-section .service-title{font-size:16px;font-weight:600;color:#363636;text-transform:capitalize;padding-bottom:15px}
 .hotels-detail-page .content-section .room-wrapper .filter-section label{color:#363636;margin-bottom:15px;display:block}
 .hotels-detail-page .content-section .room-wrapper .room-cart{background-color:#fff;border:1px solid #e1e1e1;border-radius:4px;margin-bottom:32px;position:relative}
-.hotels-detail-page .content-section .room-wrapper .room-cart .room-header{background-color:#005aff;border-top-right-radius:4px;border-top-left-radius:4px}
+.hotels-detail-page .content-section .room-wrapper .room-cart .room-header{background-color:#194ec0;border-top-right-radius:4px;border-top-left-radius:4px}
 .hotels-detail-page .content-section .room-wrapper .room-cart .room-header h3{color:#fff;text-transform:uppercase;font-size:16px;padding:10px 20px;margin-bottom:0;display:inline-block}
 .hotels-detail-page .content-section .room-wrapper .room-cart .room-header span{font-size:12px;color:#fff;text-transform:capitalize;font-weight:400}
 .hotels-detail-page .content-section .room-wrapper-inner{padding:15px;position:relative}
@@ -176,7 +175,7 @@ aside .help-detail .info a{font-size: 22px; font-weight: 500; color: #fff;}
 .hotels-detail-page .content-section aside .rank{position:relative;cursor:pointer;display:inline-block;width:100%;width:calc(100% - 26px);margin-bottom:10px;min-height:45px}
 .hotels-detail-page .content-section aside .rank:after{content:"";clear:unset;display:inline-block}
 .hotels-detail-page .content-section aside .rank .rank-value{color:#333;text-transform:capitalize;text-align:left;font-size:.9em;font-weight:500;padding:2px 0 2px 7px;width:100%;width:calc(100% - 40px);margin-left:30px;position:absolute;line-height:14px}
-.hotels-detail-page .content-section aside .rank .rank-value strong{color:#005aff;text-transform:uppercase}
+.hotels-detail-page .content-section aside .rank .rank-value strong{color:#194ec0;text-transform:uppercase}
 .hotels-detail-page .content-section aside.rank .rank-value .ranking-percentage{display:block;color:#aaa;font-weight:400;margin-top:3px}
 .hotels-detail-page .content-section aside .gtk{padding-bottom:5px;margin-top:20px}
 .hotels-detail-page .content-section aside .gtk ul li h2{word-break:break-word;-moz-hyphens:auto;-ms-hyphens:auto;-webkit-hyphens:auto;hyphens:auto;font-size:.8em;display:block;font-weight:400;margin-bottom:10px}
@@ -232,4 +231,3 @@ aside .help-detail .info a{font-size: 22px; font-weight: 500; color: #fff;}
 .booking-payment .list-wrapper { position: relative; background-color: #fff; border-radius: 5px; width: 100%; padding: 0 10px; box-shadow: 0 2px 10px 0 rgba(0,0,0,0.07); }
 .booking-payment .list-wrapper .detail ul {margin-top: 15px}
 .booking-payment .list-wrapper .detail ul li{width: 50%;float: left;margin-bottom: 10px}
-

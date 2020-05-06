@@ -9,8 +9,8 @@
                 </div>
                 <div class="c9 o1-sm">
                     <div class="section-info mt-50 rtl-align-right">
-                        <h2>Download almatar App &amp; Get the latest offers</h2>
-                        <h3>Download almatar app now for easier hotel &amp; flights bookings. Enjoy the best booking experience.</h3>
+                        <h2>Download PHPTRAVELS App &amp; Get the latest offers</h2>
+                        <h3>Download PHPTRAVELS app now for easier hotel &amp; flights bookings. Enjoy the best booking experience.</h3>
                     </div>
                 </div>
             </div>
@@ -83,8 +83,6 @@
 
 <script>
 
-    initVue();
-
     var flight_type = 'oneway';
 
     $("#submit").click(function(){
@@ -94,8 +92,9 @@
         var returnn = $("#return").val();
         var adult = $("#adult").text();
         var children  = $("#children").text();
+        var infant  = $("#infant").text();
 
-            /*origin & destination validation*/
+        /*origin & destination validation*/
         if(origin == ''){
           alert('Please fill out origin');
           $('#autocomplete').focus();
@@ -104,14 +103,11 @@
           $('#autocomplete2').focus();
         }else{ 
 
-            /*(from origin) url settings*/
+        /*(from origin) url settings*/
         var origin_res1 = origin.split(" ",1)[0];
 
-
-            /*(to destination) url settings*/
+        /*(to destination) url settings*/
         var destination_res1 = destination.split(" ",1)[0];
-
-
 
         /*cdeparture change data format (like 23/03/2020 to 23-03-2020)*/
         var parts = cdeparture.split('/');
@@ -121,11 +117,10 @@
         var partss = returnn.split('/');
         var re_turn = partss[0] + '-' + partss[1] + '-' + partss[2];
 
-                    /* finally url*/
+        /* finally url*/
         var base_url = "<?php echo base_url() ?>";
 
-        var url = base_url+"flights/"+origin_res1.toLowerCase()+"/"+destination_res1.toLowerCase()+"/"+flight_type+"/"
-            +departur+"/"+re_turn+"/"+adult+"/"+children;
+        var url = base_url+"flights/"+origin_res1.toLowerCase()+"/"+destination_res1.toLowerCase()+"/"+flight_type+"/"+departur+"/"+re_turn+"/"+adult+"/"+children+"/"+infant;
 
         window.location.href = url;
 
@@ -206,6 +201,28 @@
         }
         });
     });
+
+    $(document).ready(function(){
+        var quantitiy=0;
+        $('#increasee').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#intant').text());
+        // If is not undefined
+        $('#intant').text(quantity + 1);
+        });
+
+        $('#decreasee').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#intant').text());
+        if(quantity>0){
+        $('#intant').text(quantity - 1);
+        }
+        });
+    })
 </script>
 </body>
 </html>
