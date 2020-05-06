@@ -3,14 +3,14 @@
 .hero .hero-content { text-align: center; top: -45px; color: #fff; letter-spacing: 1px; text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.84); }
 
 /* hero search */
-.hero .search {/*background-color: rgba(33, 37, 41, 0.48);*/ padding: 20px 0px 0px 0px;position:relative;/*border-radius:4px 0 4px 4px*/}
+.hero .search { top: -120px; /*background-color: rgba(33, 37, 41, 0.48);*/ padding: 20px 0px 0px 0px;position:relative;/*border-radius:4px 0 4px 4px*/}
 .hero .search  ul { display: flex;margin-bottom: 10px;}
 .hero .search  li label{cursor: pointer; background-color:transparent;padding:10px 20px;color:#fff;border-radius:4px;font-size:18px;font-weight:500;text-transform:capitalize;border:none;text-align:center}
-.hero .search  li label:hover{ background: rgba(0, 0, 0, 0.51); }
+.hero .search  li label:hover{ background: rgba(26, 57, 96, 0.10196078431372549); }
 .hero .search  li:not(:last-child){margin-right:10px}
 .hero .search .fade{top: 37px;}
 .hero .search .input-items input::first-letter { color: #fff }
-.hero .search .input-items input { letter-spacing: 0.5px; font-family: 'Product Sans Regular';border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:4px;border-bottom-left-radius:4px; background: rgba(26, 57, 96, 0.10196078431372549); width: 100%; border: none; outline: 0; color: #000; font-size: 16px; font-weight: 900; padding: 15px; height: 55px; }
+.hero .search .input-items input,.hero .search select { letter-spacing: 0.5px; font-family: 'Muli Bold',sans-serif;letter-spacing: 0px;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:4px;border-bottom-left-radius:4px; background: rgba(26, 57, 96, 0.10196078431372549); width: 100%; border: none; outline: 0; color: #000; font-size: 16px; font-weight: 900; padding: 15px; height: 55px; }
 .hero .search .input-items input::placeholder { color: #000 }
 .hero .search .input-items:hover input { background: rgba(26, 57, 96, 0.15) }
 .hero .search .input-items input:focus { background: rgba(26, 57, 96, 0.25) }
@@ -19,7 +19,8 @@
 .hero .search .input-items .checkout,.hero .search .input-items .returning,.hero .search .input-items .busreturning{border-top-left-radius:0px;border-bottom-left-radius: 0px; }
 .passenger-dropdown {opacity:0;visibility:hidden;-webkit-transition: all 0.1s ease-out; -moz-transition: all 0.1s ease-out; -o-transition: all 0.1s ease-out; transition: all 0.1s ease-out; box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);}
 .dropshow:hover + .passenger-dropdown { -webkit-transition: opacity .3s,padding .3s; -moz-transition: opacity .3s,padding .3s; transition: opacity .3s,padding .3s; visibility: visible; opacity: 1; }
-.search li input[type=radio]:checked+label {background-color:#fff;color:#000;border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; }
+.search label { font-family: 'Muli Bold'; font-weight: normal; }
+.search li input[type=radio]:checked+label { background-color:#fff;color:#000;/*border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;*/ }
 .search li input[type=radio]:checked+label+.tab { -webkit-transition: opacity .3s,padding .3s; -moz-transition: opacity .3s,padding .3s; transition: opacity .3s,padding .3s; visibility: visible; opacity: 1; }
 .search li input[type=date]::-webkit-inner-spin-button{ -webkit-appearance: none; display: none; }
 .passenger-dropdown:hover { display: block !important;opacity: 1;visibility: visible; }
@@ -29,7 +30,11 @@ input[type="date"]::-webkit-calendar-picker-indicator { position: absolute; top:
 input[type="date"]::-webkit-inner-spin-button { z-index: 1; }
 
 .search .fade { margin: 15px 0px; position: absolute; width: 100%; left: 0; right: 0; z-index: 2; opacity:0;visibility:hidden;-webkit-transition: all 0.1s ease-out; -moz-transition: all 0.1s ease-out; -o-transition: all 0.1s ease-out; transition: all 0.1s ease-out; }
-
+.search_area { background: #fff; padding: 25px; box-shadow: rgba(50, 50, 93, 0.1) 0px 12px 35px 0px, rgba(50, 50, 93, 0.06) 0px 2px 6px 0px; border-radius: 4px; }
+.search_bottom { position: relative; background: rgb(255, 255, 255); border-radius: 4px; padding: 24px; width: 100%; margin-top: 15px; }
+.search_bottom::before { content: ""; position: absolute; left: 10px; right: 10px; top: 0px; height: 1px; background: linear-gradient(90deg, rgb(171, 181, 195) 40%, transparent 40%) 0% 0% / 13px 1px; }
+.search_bottom .direct { cursor: pointer; padding: 6px 20px !important; color: #000 !important; border-radius: 4px; font-size: 13px !important; font-weight: 500; text-transform: uppercase !important; letter-spacing: 1px !important; border: none; text-align: center; }
+.flight_type { height: 34px !important; padding: 0 18px !important; }
 .offers img{ margin: 25px 0; border-radius: 4px; box-shadow: 0 2px 10px 0 rgba(0,0,0,.07);  }
 .offers img:hover { opacity: 0.8;  }
 
@@ -52,10 +57,12 @@ input[type="date"]::-webkit-inner-spin-button { z-index: 1; }
 .searchbutton{flex: 1}
 .searchbutton:hover{opacity: 0.7;}
 .icon-search{font-size: 40px;font-weight: 700;color: #fff;display: inline-block;transform: rotate(81deg);margin-left: 7px;margin-top: 2px;}
-.searchbutton button{cursor: pointer;border: none;width: 100%;height: 100%;background-color: #005aff;outline: 0;/*border-top-right-radius:4px;border-bottom-right-radius: 4px */}
-.input-wrapper{position:relative;min-height:80px;background:#fff;padding:15px 10px;cursor:pointer}
+.searchbutton button{cursor: pointer;border: none;width: 100%;height: 100%;background-color: #194ec0;outline: 0;/*border-top-right-radius:4px;border-bottom-right-radius: 4px */}
+.input-wrapper{position:relative;min-height:60px;padding:10px;cursor:pointer}
 /*.data-input:first-child .input-wrapper{border-top-left-radius: 4px;border-bottom-left-radius: 4px}*/
-.data-input:not(:last-child) .input-wrapper{border-right: 1px solid #eee;}
+/*.data-input:not(:last-child) .input-wrapper{border-right: 1px solid #eee;}*/
+.passenger-dropdown-left span { text-transform: uppercase; font-size: 13px; color: #000; font-weight: 600; letter-spacing: 2px; }
+.passenger-dropdown-right { padding: 10px; font-size: 22px; font-weight: bold; }
 
 /*offers*/
 .offer-img{width: 100%;margin-bottom: 20px;border-radius: 4px;box-shadow: 0 2px 10px 0 rgba(0,0,0,.07);}
