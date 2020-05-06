@@ -42,7 +42,7 @@
 </div>
 <!-- hero section end -->
 <!-- main start -->
-<div class="offers pt-20 mb-30">
+<div class="offers pt-100 mb-30">
   <div class="contain">
     <div class="row">
       <?php for ($i = 1; $i <= 3; $i++) { ?>

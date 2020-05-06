@@ -9,8 +9,8 @@
                 </div>
                 <div class="c9 o1-sm">
                     <div class="section-info mt-50 rtl-align-right">
-                        <h2>Download almatar App &amp; Get the latest offers</h2>
-                        <h3>Download almatar app now for easier hotel &amp; flights bookings. Enjoy the best booking experience.</h3>
+                        <h2>Download PHPTRAVELS App &amp; Get the latest offers</h2>
+                        <h3>Download PHPTRAVELS app now for easier hotel &amp; flights bookings. Enjoy the best booking experience.</h3>
                     </div>
                 </div>
             </div>

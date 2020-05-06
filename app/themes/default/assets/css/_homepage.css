@@ -20,7 +20,7 @@
 .passenger-dropdown {opacity:0;visibility:hidden;-webkit-transition: all 0.1s ease-out; -moz-transition: all 0.1s ease-out; -o-transition: all 0.1s ease-out; transition: all 0.1s ease-out; box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);}
 .dropshow:hover + .passenger-dropdown { -webkit-transition: opacity .3s,padding .3s; -moz-transition: opacity .3s,padding .3s; transition: opacity .3s,padding .3s; visibility: visible; opacity: 1; }
 .search label { font-family: 'Muli Bold'; font-weight: normal; }
-.search li input[type=radio]:checked+label { background-color:#fff;color:#000;/*border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;*/ }
+.search li input[type=radio]:checked+label { background-color:#fff;color:#000;border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; }
 .search li input[type=radio]:checked+label+.tab { -webkit-transition: opacity .3s,padding .3s; -moz-transition: opacity .3s,padding .3s; transition: opacity .3s,padding .3s; visibility: visible; opacity: 1; }
 .search li input[type=date]::-webkit-inner-spin-button{ -webkit-appearance: none; display: none; }
 .passenger-dropdown:hover { display: block !important;opacity: 1;visibility: visible; }
