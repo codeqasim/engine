@@ -2,7 +2,7 @@
 <!-- <form action="<?php echo base_url(); ?>flights/" method="GET"> -->
 <!-- <form action="#"> -->
 
-<div class="row no-gutters row-rtl search_area">
+<div class="row no-gutters row-rtl search_area main_search">
     <div class="options c12 input-wrapper flight_types" style="position:relative;top:0px;color:#000;right:0px">
         <div class="c12">
             <input type="radio" name="trip" checked id="one-way" hidden>
@@ -17,17 +17,19 @@
             <label for="multi-trip" onclick="FlighType('multi')">
                 <div class="resize"><i class="icon mdi mdi-arrow-split"></i> Multi Trip</div>
             </label>
-            <div class="c3 f-right">
-                <div class="row">
-                    <label for="direct" class="direct f-left btn m">Flight Type</label>
-                    <select name="" id="" class="c8 flight_type">
+
+            <label class="f-right">
+                <div class="resize row">
+                 <select name="" id="" class="c12 flight_type">
                         <option>Economy</option>
                         <option>Premium</option>
                         <option>Business</option>
                         <option>First</option>
                     </select>
+
                 </div>
-            </div>
+            </label>
+
         </div>
     </div>
     <div class="row"></div>

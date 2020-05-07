@@ -87,7 +87,7 @@
 $(function() {
 $('.lazy').lazy({
 effect: "fadeIn",
-effectTime: 1500,
+effectTime: 400,
 threshold: 0
 });
 });
