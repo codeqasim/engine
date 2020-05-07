@@ -17,7 +17,7 @@
             <label for="multi-trip" onclick="FlighType('multi')">
                 <div class="resize"><i class="icon mdi mdi-arrow-split"></i> Multi Trip</div>
             </label>
-            <div class="c3 f-right">
+            <div class="c4 f-right">
                 <div class="row">
                     <label for="direct" class="direct f-left btn m">Type</label>
                     <select name="" id="" class="c8 flight_type">
