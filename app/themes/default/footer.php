@@ -92,9 +92,8 @@ $(".hero,input").click(function() {
 
 <script>
 
-    var flight_type = 'oneway';
-
-    $("#submit").click(function(){
+        var flight_type = 'oneway';
+        $("#submit").click(function(){
         var origin = $("#autocomplete").val();
         var destination = $("#autocomplete2").val();
         var cdeparture = $("#departure").val();
@@ -163,7 +162,6 @@ $(".hero,input").click(function() {
     function FlighType(value){
     flight_type = value;
     }
-
 
     $(document).ready(function(){
         $('#increase').click(function(e){
