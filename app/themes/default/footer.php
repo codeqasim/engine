@@ -78,8 +78,20 @@
     </div>
 </footer>
 <script src="<?php echo $theme_url;?>assets/js/jquery.min.js"></script>
+<script src="<?php echo $theme_url;?>assets/js/jquery.lazy.min.js"></script>
 <script src="<?php echo $theme_url;?>assets/js/app.js"></script>
 <script src="<?php echo $theme_url;?>assets/js/datepicker.js"></script>
+
+<!-- lazyload -->
+<script>
+$(function() {
+$('.lazy').lazy({
+effect: "fadeIn",
+effectTime: 1500,
+threshold: 0
+});
+});
+</script>
 
 <!-- scroll to hero section -->
 <script>

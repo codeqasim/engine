@@ -1,4 +1,4 @@
-<div class="">
+<div class="ptb-50-prl-150">
 
 <div class="row hide-m text-center" style="height:100px">
       <div class="c8 mx-auto hero-content">
@@ -11,7 +11,7 @@
       </div>
     </div>
 
-<section  id="search" class="hero" style="background-image: url('<?php echo base_url(); ?>uploads/slider/1.jpg');border-radius:10px">
+<section  id="search" class="hero lazy" data-src="<?php echo base_url(); ?>uploads/slider/1.jpg" style="border-radius:10px;">
   <div class="contain">
 
     <div class="row">

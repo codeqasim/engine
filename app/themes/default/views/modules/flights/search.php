@@ -17,9 +17,9 @@
             <label for="multi-trip" onclick="FlighType('multi')">
                 <div class="resize"><i class="icon mdi mdi-arrow-split"></i> Multi Trip</div>
             </label>
-            <div class="c4 f-right">
+            <div class="c3 f-right">
                 <div class="row">
-                    <label for="direct" class="direct f-left btn m">Type</label>
+                    <label for="direct" class="direct f-left btn m">Flight Type</label>
                     <select name="" id="" class="c8 flight_type">
                         <option>Economy</option>
                         <option>Premium</option>
@@ -78,7 +78,7 @@
                                 />
                         </div>
                     </div>
-                    <div class="c6 row-rtl pt-25">
+                    <div class="c6 row-rtl pt-15">
                         <div class="row">
                             <div class="c4 room-row flex-content-between row-rtl text-center">
                                 <div class="passenger-dropdown-left">
