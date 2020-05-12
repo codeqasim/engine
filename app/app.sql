@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 4.9.4
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Mar 30, 2020 at 06:33 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.1
+-- Host: localhost:3306
+-- Generation Time: May 12, 2020 at 04:22 AM
+-- Server version: 5.7.27
+-- PHP Version: 7.3.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -64,13 +64,13 @@ CREATE TABLE `accounts_roles_types` (
   `id` int(11) NOT NULL,
   `account_type_id` int(11) NOT NULL,
   `module_id` int(11) NOT NULL,
-  `module_edit` tinyint(1) NOT NULL DEFAULT 0,
-  `module_delete` tinyint(1) NOT NULL DEFAULT 0,
-  `module_add` tinyint(1) NOT NULL DEFAULT 0,
-  `module_view` tinyint(1) DEFAULT 0,
-  `is_active` tinyint(1) NOT NULL DEFAULT 0,
-  `module_view_own` tinyint(1) NOT NULL DEFAULT 0,
-  `module_view_global` tinyint(1) NOT NULL DEFAULT 0
+  `module_edit` tinyint(1) NOT NULL DEFAULT '0',
+  `module_delete` tinyint(1) NOT NULL DEFAULT '0',
+  `module_add` tinyint(1) NOT NULL DEFAULT '0',
+  `module_view` tinyint(1) DEFAULT '0',
+  `is_active` tinyint(1) NOT NULL DEFAULT '0',
+  `module_view_own` tinyint(1) NOT NULL DEFAULT '0',
+  `module_view_global` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
@@ -122,8 +122,8 @@ CREATE TABLE `global_cities` (
   `state_id` mediumint(8) UNSIGNED NOT NULL,
   `country_id` mediumint(8) UNSIGNED NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT '2013-12-31 19:31:01',
-  `updated_on` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `flag` tinyint(1) NOT NULL DEFAULT 1
+  `updated_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `flag` tinyint(1) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -48173,8 +48173,8 @@ CREATE TABLE `global_countries` (
   `capital` varchar(255) DEFAULT NULL,
   `currency` varchar(255) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `flag` tinyint(1) NOT NULL DEFAULT 1
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `flag` tinyint(1) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -48441,10 +48441,10 @@ CREATE TABLE `global_currencies` (
   `name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `symbol` varchar(6) COLLATE utf8_unicode_ci DEFAULT NULL,
   `code` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `rate` float NOT NULL DEFAULT 1,
-  `decimals` tinyint(1) NOT NULL DEFAULT 2,
+  `rate` float NOT NULL DEFAULT '1',
+  `decimals` tinyint(1) NOT NULL DEFAULT '2',
   `symbol_placement` enum('before','after') CHARACTER SET latin1 NOT NULL DEFAULT 'before',
-  `primary_order` tinyint(1) NOT NULL DEFAULT 0,
+  `primary_order` tinyint(1) NOT NULL DEFAULT '0',
   `is_default` enum('Yes','No') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'No',
   `is_active` enum('Yes','No') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Yes'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -48477,8 +48477,8 @@ INSERT INTO `global_currencies` (`id`, `name`, `symbol`, `code`, `rate`, `decima
 CREATE TABLE `global_currencies_cron_update` (
   `id` int(11) NOT NULL,
   `name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `rate` float NOT NULL DEFAULT 1,
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `rate` float NOT NULL DEFAULT '1',
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -48541,15 +48541,15 @@ INSERT INTO `global_meta` (`id`, `description`, `keywords`) VALUES
 CREATE TABLE `global_payment_gateways` (
   `payment_id` varchar(50) NOT NULL,
   `payment_name` varchar(200) DEFAULT NULL,
-  `payment_username` text DEFAULT NULL,
-  `payment_apikey` text DEFAULT NULL,
-  `payment_password` text DEFAULT NULL,
-  `payment_signature` text DEFAULT NULL,
+  `payment_username` text,
+  `payment_apikey` text,
+  `payment_password` text,
+  `payment_signature` text,
   `payment_testmode` varchar(10) DEFAULT NULL,
   `payment_development_mode` varchar(10) DEFAULT NULL,
-  `payment_percentage` double DEFAULT 0,
-  `payment_status` tinyint(4) NOT NULL DEFAULT 1,
-  `payment_show` tinyint(4) NOT NULL DEFAULT 1
+  `payment_percentage` double DEFAULT '0',
+  `payment_status` tinyint(4) NOT NULL DEFAULT '1',
+  `payment_show` tinyint(4) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -48622,9 +48622,9 @@ CREATE TABLE `modules` (
   `id` int(11) NOT NULL,
   `name` varchar(300) NOT NULL,
   `active` tinyint(1) DEFAULT NULL,
-  `credentials` text DEFAULT NULL,
+  `credentials` text,
   `parent` varchar(200) NOT NULL DEFAULT 'other',
-  `ordering` int(11) NOT NULL DEFAULT 1
+  `ordering` int(11) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -48635,7 +48635,7 @@ INSERT INTO `modules` (`id`, `name`, `active`, `credentials`, `parent`, `orderin
 (6, 'blogs', 0, NULL, 'other', 1),
 (11, 'kiwi', 1, '{\"ota_id\":\"131312121\"}', 'Flights', 1),
 (12, 'hotelsbed', 1, NULL, 'Hotels', 1),
-(13, 'travelhope', 1, '{\"ota_id\":\"8ed24880-e6ad-11e8-a4c9-15f8a84bf814\"}', 'Flights', 1);
+(13, 'travelhope', 1, '{\"ota_id\":\"172a7bc0-d892-11e9-ad7d-8d041c8c7592\"}', 'Flights', 1);
 
 -- --------------------------------------------------------
 
@@ -50004,7 +50004,7 @@ ALTER TABLE `module_cms_headings`
 -- AUTO_INCREMENT for table `pt_flights_airlines`
 --
 ALTER TABLE `pt_flights_airlines`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1052;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1049;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
